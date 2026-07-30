@@ -184,7 +184,27 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [
+    "q008_ans_p7.png"
+   ],
+   "statements": [
+    {
+     "t": "On January 7, Device1 is marked as compliant.",
+     "a": "no"
+    },
+    {
+     "t": "On January 8, Device1 is marked as compliant.",
+     "a": "no"
+    },
+    {
+     "t": "On January 8, Device2 is marked as compliant.",
+     "a": "yes"
+    }
+   ]
+  }
  },
  {
   "id": 9,
@@ -258,7 +278,35 @@
   "tema": "Identidad y cumplimiento normativo",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "context_images": [],
+   "segments": [
+    0,
+    "  Administrators /add \"",
+    1,
+    "\\user1@contoso.com\""
+   ],
+   "blanks": [
+    {
+     "options": [
+      "net accounts",
+      "net localgroup",
+      "net user"
+     ],
+     "correct": 1
+    },
+    {
+     "options": [
+      "AzureAD",
+      "CONTOSO",
+      "UPN"
+     ],
+     "correct": 1
+    }
+   ]
+  }
  },
  {
   "id": 13,

@@ -146,9 +146,12 @@ function renderQuestion(){
   let h = `<div class="qcard"><span class="q-id">#${q.id}</span>`+
           `<span class="q-tema">${q.tema}</span>`+
           `<p class="q-stem">${esc(q.stem)}</p>`;
-  (q.context_images||[]).forEach(im=> h+=`<img class="q-img" src="${IMG}${im}" alt="tabla">`);
+  const ctxImgs = q.inter ? (q.inter.context_images||[]) : (q.context_images||[]);
+  ctxImgs.forEach(im=> h+=`<img class="q-img" src="${IMG}${im}" alt="tabla">`);
 
-  if(q.type==='mc' && q.options.length){
+  if(q.inter){
+    renderInteractive(q, c, h);
+  } else if(q.type==='mc' && q.options.length){
     const multi = q.correct.length>1;
     if(multi) h+=`<p class="self-ask">Selecciona ${q.correct.length} opciones</p>`;
     h+=`<div class="opts">`;
@@ -201,6 +204,77 @@ function wireMC(q, multi){
       V('check').style.display='none';
       recordAnswer(q.id, ok); if(ok) session.correct++;
       verdict(ok); nextEnabled();
+    };
+  }
+}
+function renderInteractive(q, c, h){
+  const it=q.inter;
+  if(it.kind==='yesno'){
+    h+=`<div class="stmts">`;
+    it.statements.forEach((s,i)=>{
+      h+=`<div class="stmt" data-i="${i}"><p>${esc(s.t)}</p>`+
+         `<div class="yn"><button data-v="yes">Sí</button><button data-v="no">No</button></div></div>`;
+    });
+    h+=`</div><button class="check-btn" id="check">Comprobar</button></div>`;
+    c.innerHTML=h;
+    const chosen={};
+    c.querySelectorAll('.stmt').forEach(st=>{
+      st.querySelectorAll('.yn button').forEach(b=>b.onclick=()=>{
+        if(st.dataset.done) return;
+        chosen[st.dataset.i]=b.dataset.v;
+        st.querySelectorAll('.yn button').forEach(x=>x.classList.remove('sel'));
+        b.classList.add('sel');
+      });
+    });
+    V('check').onclick=()=>{
+      let allok=true;
+      c.querySelectorAll('.stmt').forEach(st=>{
+        const i=st.dataset.i; st.dataset.done='1';
+        const corr=it.statements[i].a;
+        st.querySelectorAll('.yn button').forEach(b=>{ b.disabled=true;
+          if(b.dataset.v===corr) b.classList.add('correct');
+          else if(b.dataset.v===chosen[i]) b.classList.add('wrong'); });
+        if(chosen[i]!==corr) allok=false;
+      });
+      V('check').style.display='none';
+      recordAnswer(q.id, allok); if(allok) session.correct++;
+      verdict(allok); nextEnabled();
+    };
+  } else { // 'select' : desplegables o emparejar
+    h+=`<div class="blanks">`;
+    if(it.segments){
+      h+=`<div class="inline-tpl">`;
+      it.segments.forEach(seg=>{
+        if(typeof seg==='number'){ const bl=it.blanks[seg];
+          h+=`<select class="sel-in" data-i="${seg}"><option value="-1">— elige —</option>`+
+             bl.options.map((o,j)=>`<option value="${j}">${esc(o)}</option>`).join('')+`</select>`;
+        } else h+=esc(seg);
+      });
+      h+=`</div>`;
+    } else {
+      it.blanks.forEach((bl,i)=>{
+        h+=`<div class="blank-row"><span class="blabel">${esc(bl.label||'')}</span>`+
+           `<select class="sel-in" data-i="${i}"><option value="-1">— elige —</option>`+
+           bl.options.map((o,j)=>`<option value="${j}">${esc(o)}</option>`).join('')+
+           `</select></div>`;
+      });
+    }
+    h+=`</div><button class="check-btn" id="check">Comprobar</button></div>`;
+    c.innerHTML=h;
+    V('check').onclick=()=>{
+      let allok=true;
+      c.querySelectorAll('.sel-in').forEach(sel=>{
+        const i=+sel.dataset.i, bl=it.blanks[i], val=+sel.value; sel.disabled=true;
+        if(val===bl.correct) sel.classList.add('correct');
+        else { sel.classList.add('wrong'); allok=false; }
+      });
+      const rev=document.createElement('div'); rev.className='explain';
+      rev.innerHTML='✔️ Correctas: '+it.blanks.map(b=>
+        `${b.label?esc(b.label)+': ':''}<b>${esc(b.options[b.correct])}</b>`).join(' · ');
+      c.querySelector('.blanks').after(rev);
+      V('check').style.display='none';
+      recordAnswer(q.id, allok); if(allok) session.correct++;
+      verdict(allok); nextEnabled();
     };
   }
 }
