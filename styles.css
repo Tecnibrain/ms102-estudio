@@ -97,6 +97,8 @@ body{
 .q-footer{position:sticky;bottom:0;padding:14px 0;background:linear-gradient(transparent,var(--bg) 30%)}
 .verdict{text-align:center;font-weight:700;margin-bottom:10px;font-size:16px}
 .verdict.ok{color:var(--ok)} .verdict.bad{color:var(--bad)}
+.explain{background:var(--card2);border:1px solid var(--line);border-left:3px solid var(--brand);
+  border-radius:10px;padding:12px 14px;margin:0 0 12px;font-size:14px;line-height:1.5;color:var(--ink)}
 
 /* multi-answer check button */
 .check-btn{width:100%;margin-top:12px;background:var(--brand);color:#fff;border:none;padding:14px;

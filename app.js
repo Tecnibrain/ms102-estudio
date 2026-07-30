@@ -140,6 +140,7 @@ function renderQuestion(){
   V('progress-fill').style.width = (session.idx/total*100)+'%';
   V('q-footer').classList.add('hidden');
   V('verdict').className='verdict'; V('verdict').textContent='';
+  document.querySelectorAll('.explain').forEach(e=>e.remove());
 
   const c = V('q-container');
   let h = `<div class="qcard"><span class="q-id">#${q.id}</span>`+
@@ -206,6 +207,12 @@ function wireMC(q, multi){
 function verdict(ok){
   const v=V('verdict'); v.textContent = ok?'✅ ¡Correcto!':'❌ Incorrecto';
   v.className='verdict '+(ok?'ok':'bad');
+  const q=session.queue[session.idx];
+  if(q && q.explicacion){
+    const e=document.createElement('div'); e.className='explain';
+    e.innerHTML='💡 '+esc(q.explicacion);
+    V('verdict').after(e);
+  }
 }
 function nextEnabled(){
   V('q-footer').classList.remove('hidden');
@@ -267,6 +274,11 @@ V('btn-back2').onclick=()=>{show('view-home');renderHome();};
 V('btn-stats').onclick=()=>{renderStats();show('view-stats');};
 V('btn-home').onclick=()=>{show('view-home');renderHome();};
 V('btn-again').onclick=()=>start(session?session.mode:'practice');
+V('btn-more').onclick=()=>{
+  const tema=V('filter-tema').value;
+  session={mode:'practice', queue:shuffle(pool(tema)).slice(0,5), idx:0, correct:0};
+  show('view-quiz'); renderQuestion();
+};
 V('btn-reset').onclick=()=>{ if(confirm('¿Borrar todo tu progreso?')){ localStorage.clear(); renderStats(); } };
 document.querySelectorAll('#daily-seg button').forEach(b=>b.onclick=()=>{
   const s=settings(); s.daily=+b.dataset.n; store.set('ms102_settings',s); renderHome();
