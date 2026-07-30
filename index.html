@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b0f1a">
+<title>MD-102 · Reto diario</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="logo">MD</span><b>102</b> · Estudio</div>
+  <button id="btn-stats" class="icon-btn" title="Estadísticas">📊</button>
+</header>
+
+<!-- HOME -->
+<main id="view-home" class="view">
+  <section class="hero">
+    <div class="ring-wrap">
+      <svg viewBox="0 0 120 120" class="ring">
+        <circle class="ring-bg" cx="60" cy="60" r="52"/>
+        <circle id="ring-fg" class="ring-fg" cx="60" cy="60" r="52"/>
+      </svg>
+      <div class="ring-center">
+        <span id="ring-pct">0%</span>
+        <small>dominado</small>
+      </div>
+    </div>
+    <div class="hero-meta">
+      <div class="stat"><b id="h-streak">0</b><span>🔥 racha</span></div>
+      <div class="stat"><b id="h-done">0</b><span>respondidas</span></div>
+      <div class="stat"><b id="h-total">369</b><span>preguntas</span></div>
+    </div>
+  </section>
+
+  <button id="btn-daily" class="cta">🎯 Reto de hoy <small id="daily-sub"></small></button>
+
+  <div class="grid2">
+    <button class="tile" data-mode="practice">🎲 Práctica libre</button>
+    <button class="tile" data-mode="review">🔁 Repasar falladas <em id="review-count"></em></button>
+  </div>
+
+  <div class="filters card">
+    <label>Estudiar por tema</label>
+    <select id="filter-tema">
+      <option value="">Todos los temas</option>
+    </select>
+    <label>Cantidad diaria</label>
+    <div class="seg" id="daily-seg">
+      <button data-n="2">2</button><button data-n="3" class="on">3</button>
+      <button data-n="5">5</button><button data-n="10">10</button>
+    </div>
+  </div>
+
+  <p class="hint">💡 Recibe también el reto en Telegram cada mañana. Tu progreso aquí se guarda en este dispositivo.</p>
+</main>
+
+<!-- QUIZ -->
+<main id="view-quiz" class="view hidden">
+  <div class="quiz-top">
+    <button id="btn-back" class="icon-btn">←</button>
+    <div class="progress"><div id="progress-fill"></div></div>
+    <span id="quiz-count" class="qcount">1/3</span>
+  </div>
+  <div id="q-container"></div>
+  <div id="q-footer" class="q-footer hidden">
+    <div id="verdict" class="verdict"></div>
+    <button id="btn-next" class="cta">Siguiente →</button>
+  </div>
+</main>
+
+<!-- STATS -->
+<main id="view-stats" class="view hidden">
+  <div class="quiz-top"><button id="btn-back2" class="icon-btn">←</button><h2>Tu progreso</h2></div>
+  <div id="stats-body"></div>
+  <button id="btn-reset" class="danger">Reiniciar progreso</button>
+</main>
+
+<!-- END SCREEN -->
+<main id="view-end" class="view hidden">
+  <div class="end-card">
+    <div id="end-emoji" class="end-emoji">🎉</div>
+    <h2 id="end-title">¡Reto completado!</h2>
+    <p id="end-score"></p>
+    <button id="btn-home" class="cta">Volver al inicio</button>
+    <button id="btn-again" class="ghost">Otra ronda</button>
+  </div>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+*.log
+# PDFs originales (material con derechos de autor): no publicar
+*.pdf
