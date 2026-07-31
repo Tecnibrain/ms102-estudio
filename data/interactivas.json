@@ -2,82 +2,1603 @@
  "12": {
   "kind": "select",
   "context_images": [],
-  "segments": [0, "  Administrators /add \"", 1, "\\user1@contoso.com\""],
+  "segments": [
+   0,
+   "  Administrators /add \"",
+   1,
+   "\\user1@contoso.com\""
+  ],
   "blanks": [
-   {"options": ["net accounts", "net localgroup", "net user"], "correct": 1},
-   {"options": ["AzureAD", "CONTOSO", "UPN"], "correct": 1}
+   {
+    "options": [
+     "net accounts",
+     "net localgroup",
+     "net user"
+    ],
+    "correct": 1
+   },
+   {
+    "options": [
+     "AzureAD",
+     "CONTOSO",
+     "UPN"
+    ],
+    "correct": 1
+   }
   ]
  },
  "1": {
   "kind": "yesno",
-  "context_images": ["q001_ctxauto.png", "q001_ans_p0.png", "q001_ans_p1.png", "q001_ans_p2.png", "q001_ans_p3.png"],
+  "context_images": [
+   "q001_ctxauto.png",
+   "q001_ans_p0.png",
+   "q001_ans_p1.png",
+   "q001_ans_p2.png",
+   "q001_ans_p3.png"
+  ],
   "statements": [
-   {"t": "User1 can create a file named D:\\Folder1\\file1.txt on Device4 by using Notepad.", "a": "no"},
-   {"t": "User2 can remove D:\\Folder1 from the list of protected folders on Device2.", "a": "yes"},
-   {"t": "User3 can create a file named C:\\Users\\User3\\Desktop\\file1.txt on Device2 by running a custom Windows PowerShell script.", "a": "no"}
+   {
+    "t": "User1 can create a file named D:\\Folder1\\file1.txt on Device4 by using Notepad.",
+    "a": "no"
+   },
+   {
+    "t": "User2 can remove D:\\Folder1 from the list of protected folders on Device2.",
+    "a": "yes"
+   },
+   {
+    "t": "User3 can create a file named C:\\Users\\User3\\Desktop\\file1.txt on Device2 by running a custom Windows PowerShell script.",
+    "a": "no"
+   }
   ]
  },
  "8": {
   "kind": "yesno",
-  "context_images": ["q008_ctxauto.png", "q008_ans_p7.png"],
+  "context_images": [
+   "q008_ctxauto.png",
+   "q008_ans_p7.png"
+  ],
   "statements": [
-   {"t": "On January 7, Device1 is marked as compliant.", "a": "no"},
-   {"t": "On January 8, Device1 is marked as compliant.", "a": "no"},
-   {"t": "On January 8, Device2 is marked as compliant.", "a": "yes"}
+   {
+    "t": "On January 7, Device1 is marked as compliant.",
+    "a": "no"
+   },
+   {
+    "t": "On January 8, Device1 is marked as compliant.",
+    "a": "no"
+   },
+   {
+    "t": "On January 8, Device2 is marked as compliant.",
+    "a": "yes"
+   }
   ]
  },
  "9": {
   "kind": "yesno",
-  "context_images": ["q009_ctxauto.png", "q009_ans_p8.png"],
+  "context_images": [
+   "q009_ctxauto.png",
+   "q009_ans_p8.png"
+  ],
   "statements": [
-   {"t": "The compliance status of Computer1 is in grace period.", "a": "yes"},
-   {"t": "The compliance status of Computer2 is Compliant.", "a": "yes"},
-   {"t": "The compliance status of Computer3 is Not compliant.", "a": "no"}
+   {
+    "t": "The compliance status of Computer1 is in grace period.",
+    "a": "yes"
+   },
+   {
+    "t": "The compliance status of Computer2 is Compliant.",
+    "a": "yes"
+   },
+   {
+    "t": "The compliance status of Computer3 is Not compliant.",
+    "a": "no"
+   }
   ]
  },
  "15": {
   "kind": "yesno",
-  "context_images": ["q015_ctxauto.png"],
+  "context_images": [
+   "q015_ctxauto.png"
+  ],
   "statements": [
-   {"t": "On June 4, Device1 is marked as compliant.", "a": "no"},
-   {"t": "On June 6, Device1 is marked as compliant.", "a": "no"},
-   {"t": "On June 9, Device2 is marked as compliant.", "a": "yes"}
+   {
+    "t": "On June 4, Device1 is marked as compliant.",
+    "a": "no"
+   },
+   {
+    "t": "On June 6, Device1 is marked as compliant.",
+    "a": "no"
+   },
+   {
+    "t": "On June 9, Device2 is marked as compliant.",
+    "a": "yes"
+   }
   ]
  },
  "17": {
   "kind": "yesno",
-  "context_images": ["q017_ctxauto.png", "q017_ans_p13.png"],
+  "context_images": [
+   "q017_ctxauto.png",
+   "q017_ans_p13.png"
+  ],
   "statements": [
-   {"t": "If User1 registers Device1 in contoso.com, Device1 is enrolled automatically in Microsoft Intune.", "a": "yes"},
-   {"t": "If User1 joins Device1 to contoso.com, Device2 is enrolled automatically in Microsoft Intune.", "a": "no"},
-   {"t": "If User2 registers Device3 in contoso.com, Device3 is enrolled automatically in Microsoft Intune.", "a": "no"}
+   {
+    "t": "If User1 registers Device1 in contoso.com, Device1 is enrolled automatically in Microsoft Intune.",
+    "a": "yes"
+   },
+   {
+    "t": "If User1 joins Device1 to contoso.com, Device2 is enrolled automatically in Microsoft Intune.",
+    "a": "no"
+   },
+   {
+    "t": "If User2 registers Device3 in contoso.com, Device3 is enrolled automatically in Microsoft Intune.",
+    "a": "no"
+   }
   ]
  },
  "22": {
   "kind": "yesno",
-  "context_images": ["q022_ctxauto.png", "q022_ans_p16.png"],
+  "context_images": [
+   "q022_ctxauto.png",
+   "q022_ans_p16.png"
+  ],
   "statements": [
-   {"t": "User1 can establish a Remote Desktop session to Computer2.", "a": "yes"},
-   {"t": "User2 can establish a Remote Desktop session to Computer2.", "a": "no"},
-   {"t": "User3 can establish a Remote Desktop session to Computer2.", "a": "yes"}
+   {
+    "t": "User1 can establish a Remote Desktop session to Computer2.",
+    "a": "yes"
+   },
+   {
+    "t": "User2 can establish a Remote Desktop session to Computer2.",
+    "a": "no"
+   },
+   {
+    "t": "User3 can establish a Remote Desktop session to Computer2.",
+    "a": "yes"
+   }
   ]
  },
  "54": {
   "kind": "yesno",
-  "context_images": ["q054_ctxauto.png", "q054_ans_p36.png", "q054_ans_p37.png"],
+  "context_images": [
+   "q054_ctxauto.png",
+   "q054_ans_p36.png",
+   "q054_ans_p37.png"
+  ],
   "statements": [
-   {"t": "If User1 signs in to Device1, Device1 will have both Configuration Profile1 and Compliance Policy1 assigned.", "a": "no"},
-   {"t": "If User2 signs in to Device2, Device2 will have both Configuration Profile1 and Compliance Policy1 assigned.", "a": "yes"},
-   {"t": "If User3 signs in to Device3, Device3 will have both Configuration Profile1 and Compliance Policy1 assigned.", "a": "no"}
+   {
+    "t": "If User1 signs in to Device1, Device1 will have both Configuration Profile1 and Compliance Policy1 assigned.",
+    "a": "no"
+   },
+   {
+    "t": "If User2 signs in to Device2, Device2 will have both Configuration Profile1 and Compliance Policy1 assigned.",
+    "a": "yes"
+   },
+   {
+    "t": "If User3 signs in to Device3, Device3 will have both Configuration Profile1 and Compliance Policy1 assigned.",
+    "a": "no"
+   }
   ]
  },
  "84": {
   "kind": "yesno",
-  "context_images": ["q084_ctxauto.png", "q084_ans_p72.png"],
+  "context_images": [
+   "q084_ctxauto.png",
+   "q084_ans_p72.png"
+  ],
   "statements": [
-   {"t": "Device1 is marked as compliant.", "a": "yes"},
-   {"t": "Device2 is marked as compliant.", "a": "yes"},
-   {"t": "Device3 is marked as compliant.", "a": "no"}
+   {
+    "t": "Device1 is marked as compliant.",
+    "a": "yes"
+   },
+   {
+    "t": "Device2 is marked as compliant.",
+    "a": "yes"
+   },
+   {
+    "t": "Device3 is marked as compliant.",
+    "a": "no"
+   }
+  ]
+ },
+ "42": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "LON-CL2 only",
+     "LON-CL4 Only",
+     "Both LON-CL2 and LON-CL4",
+     "Neither LON-CL2 or LON-CL4"
+    ],
+    "correct": 0
+   },
+   {
+    "label": "",
+    "options": [
+     "LON-CL2 only",
+     "LON-CL4 only",
+     "Both LON-CL2 and LON-CL4",
+     "Neither LON-CL2 or LON-CL4"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ "45": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Automatic restarts are blocked [answer choice].",
+    "options": [
+     "before 8 AM",
+     "between 8 AM and 5 PM",
+     "after 5 PM"
+    ],
+    "correct": 1
+   },
+   {
+    "label": "A restart will be forced on a device [answer choice] after the deadline.",
+    "options": [
+     "1 day",
+     "2 days",
+     "5 days"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ "50": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "3 days",
+     "7 days",
+     "10 days",
+     "13 days",
+     "No effect"
+    ],
+    "correct": 0
+   },
+   {
+    "label": "",
+    "options": [
+     "3 days",
+     "7 days",
+     "10 days",
+     "13 days",
+     "No effect"
+    ],
+    "correct": 4
+   }
+  ]
+ },
+ "55": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Number of devices",
+    "options": [
+     "200",
+     "800",
+     "1000"
+    ],
+    "correct": 1
+   },
+   {
+    "label": "",
+    "options": [
+     "Compliance policy",
+     "Conditional Access policy",
+     "Device restriction policy"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ "70": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Standard Olient Task Sequence",
+    "options": [
+     "Image3only",
+     "Image3,Image4,andlmage5only",
+     "Image1,Image2,andlmage3only",
+     "Image1.Image2lmage3.and Image4only",
+     "Image1.Image2.lmage3.lmade4.andlmage5"
+    ],
+    "correct": 4
+   },
+   {
+    "label": "",
+    "options": [
+     "Image3only",
+     "Image3,Image4,andlmage5only",
+     "Image1.lmage2.andlmage3only",
+     "Image1,lmage2,mage3,andmage4only"
+    ],
+    "correct": 3
+   }
+  ]
+ },
+ "77": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "To apply the profile to a new computer, you must first",
+    "options": [
+     "jointhedeviceto Azure AD",
+     "enroll the device in Microsoft Intune",
+     "limport a CSVfileinto Windows Autopilot"
+    ],
+    "correct": 2
+   },
+   {
+    "label": "When the Windows Autopilot profile is",
+    "options": [
+     "joinedto Azure ADonly",
+     "registeredin Azure ADonly",
+     "joinedto Active Directoryonly",
+     "joined to Active Directory and registered in Azure AD"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ "78": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "Windows 11 Enterprise",
+     "Windows 11 Pro",
+     "Windows 11 Pro for Workstations"
+    ],
+    "correct": 0
+   },
+   {
+    "label": "",
+    "options": [
+     "Windows 11 Enterprise",
+     "WInaows TTPro",
+     "Windows 11 Pro for Workstations"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ "86": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Requirement1",
+    "options": [
+     "A conditional access policy",
+     "A device compliance policy",
+     "A device configuration profile"
+    ],
+    "correct": 0
+   },
+   {
+    "label": "Requirement2",
+    "options": [
+     "A condifional access policy",
+     "A device compliance policy",
+     "A aevice conmgurauomproile"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ "87": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "Help Desk Operator",
+     "Intune Role Administrator",
+     "Intune Service Administrator",
+     "Policy and Profile Manager"
+    ],
+    "correct": 2
+   },
+   {
+    "label": "",
+    "options": [
+     "Help Desk Operator",
+     "Intune Role Administrator",
+     "Intune Service Administrator",
+     "Policy and Profile Manager"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ "94": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "37",
+     "10",
+     "14",
+     "90"
+    ],
+    "correct": 3
+   }
+  ]
+ },
+ "97": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "An Azure Storage account",
+     "Azure Cosmos DB",
+     "Azure SQl Database",
+     "Log Analytics"
+    ],
+    "correct": 3
+   },
+   {
+    "label": "",
+    "options": [
+     "Create a collector inifiated subscription",
+     "Install the Azure Monitor Agent",
+     "Enrollin Microsoft Intune",
+     "Register to Azure AD"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ "99": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "App configuration policy",
+     "App protection policy",
+     "Compliance policy",
+     "Configuration profile"
+    ],
+    "correct": 3
+   },
+   {
+    "label": "",
+    "options": [
+     "Imported public key pair (PKCS) certificate",
+     "Public key pair (PKCS) certificate",
+     "Simnle Certificate Enrollment Protocol (SCEP) certificate",
+     "Trusted certificate"
+    ],
+    "correct": 3
+   }
+  ]
+ },
+ "100": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "Group3 only",
+     "Group4 only",
+     "Group5 only",
+     "Group3, Group4, and Group5 only"
+    ],
+    "correct": 0
+   },
+   {
+    "label": "Computer1 will be a member of",
+    "options": [
+     "Group1 only",
+     "Group2 only",
+     "Group1 and Group2 only",
+     "Group1, Group2, Group3, Group4, and Group5"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ "104": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "Deliverv onfimization",
+     "Device restriction.",
+     "Endpoint protection",
+     "Identity protection"
+    ],
+    "correct": 1
+   },
+   {
+    "label": "",
+    "options": [
+     "Delivery optimization",
+     "Device restriction",
+     "Fndnoint nrotertion",
+     "Identity protection"
+    ],
+    "correct": 3
+   }
+  ]
+ },
+ "105": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Windows 11 devices managed by using Configuration Manager",
+    "options": [
+     "Co-management",
+     "User enrollment",
+     "Windows Autopilot"
+    ],
+    "correct": 0
+   },
+   {
+    "label": "Personali OS devices",
+    "options": [
+     "Apple Configurator",
+     "Automated Device Enrollment (ADE)",
+     "User enrollment"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ "108": {
+  "kind": "select",
+  "context_images": [
+   "q108_ans_p90.png"
+  ],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "Audit mode",
+     "Block",
+     "Disable",
+     "Warn"
+    ],
+    "correct": 0
+   },
+   {
+    "label": "",
+    "options": [
+     "Audit mode",
+     "Block",
+     "Disable",
+     "Warn"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ "114": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "Removed",
+     "Retained and the passphrase will be retained",
+     "Retained but the passphrase will be reset"
+    ],
+    "correct": 1
+   },
+   {
+    "label": "",
+    "options": [
+     "Reinstalled at sign-in",
+     "Removed",
+     "Retained"
+    ],
+    "correct": 1
+   },
+   {
+    "label": "",
+    "options": [
+     "Removed",
+     "Rerained and the credentials will be cached",
+     "Retained but the credentials will be reset"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ "115": {
+  "kind": "select",
+  "context_images": [
+   "q115_ans_p99.png"
+  ],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "Standard Client Task Sequence",
+     "Standard Client Replace Task Seauence",
+     "Standard Client Upgrade Task Sequence"
+    ],
+    "correct": 2
+   },
+   {
+    "label": "",
+    "options": [
+     "Image1.wim",
+     "Image2.wim",
+     "Install.wim"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ "117": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "FIDQ2 security kevs",
+     "Microsoft Authenticator",
+     "Temporary Access Pass",
+     "Windows Hello for Business"
+    ],
+    "correct": 1
+   },
+   {
+    "label": "",
+    "options": [
+     "FIDO2 security kevs",
+     "Microsoft Authenticator",
+     "Temporary Access Pass",
+     "Windows Hello for Business"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ "118": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Prevent the users from using Outlook",
+    "options": [
+     "Access reauirements",
+     "Conditional launch",
+     "Data protection",
+     "Scope"
+    ],
+    "correct": 1
+   },
+   {
+    "label": "Require the users to use an alphanumeric passcode to access Outlook",
+    "options": [
+     "Access requirements",
+     "Conditional launch",
+     "Data protection",
+     "Scope"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ "120": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "Microsoft Purview compliance portal",
+     "Windows Security app",
+     "Microsoft Intune admin center"
+    ],
+    "correct": 2
+   },
+   {
+    "label": "",
+    "options": [
+     "An Azure policy",
+     "An Endpoint Protection configuration profile",
+     "An Intune device compliance policy",
+     "A device restrictions configuration profile"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ "122": {
+  "kind": "select",
+  "context_images": [
+   "q122_ans_p104.png"
+  ],
+  "blanks": [
+   {
+    "label": "and versions can enroll in Microsoft Intune",
+    "options": [
+     "Android enrollment",
+     "Apple enrollment",
+     "Corporate device identifiers",
+     "Device cateaories",
+     "Enrollment restrictions",
+     "Windows enrollment"
+    ],
+    "correct": 4
+   },
+   {
+    "label": "Ensure that devices are added to Azure AD groups",
+    "options": [
+     "Android enrollment",
+     "Apple enrollment",
+     "Cornorate device identifiers",
+     "Device categories",
+     "Enrollment restrictions",
+     "Windows enrollment"
+    ],
+    "correct": 3
+   }
+  ]
+ },
+ "123": {
+  "kind": "select",
+  "context_images": [
+   "q123_ans_p105.png"
+  ],
+  "blanks": [
+   {
+    "label": "Device1",
+    "options": [
+     "File Vault",
+     "Cryptsetup",
+     "Encrvofina File Svstem (FFS)",
+     "Bit Locker Drive Encryption (Bit Locker)"
+    ],
+    "correct": 3
+   },
+   {
+    "label": "Device2",
+    "options": [
+     "File Vault",
+     "Cryptsetup",
+     "Encrypting File System (EFS)",
+     "Bit Locker Drive Encryption (Bit Locker)"
+    ],
+    "correct": 0
+   },
+   {
+    "label": "",
+    "options": [
+     "Help Desk Operator",
+     "Application Manager",
+     "Intune Role Administrator",
+     "Policy and Profile Manager"
+    ],
+    "correct": 3
+   }
+  ]
+ },
+ "129": {
+  "kind": "select",
+  "context_images": [
+   "q129_ans_p109.png"
+  ],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "Can get updates from Device3 only.]",
+     "Cannot get updates from any device.",
+     "Can get updates from Device1 and Device3 only.",
+     "Can get updates from Device1, Device3, and Device4."
+    ],
+    "correct": 0
+   },
+   {
+    "label": "",
+    "options": [
+     "Can get updates from Device3 only.",
+     "Cannot get updates from any device.",
+     "Can get updates from Device1 and Device3 only.",
+     "Can get updates from Device1, Device3, and Device4."
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ "131": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "Workloads",
+     "Log Analytics",
+     "Endpoint analytics",
+     "Security baselines"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ "139": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "Deployment Image Servicing and Management (Di SM)",
+     "Microsoft Application Virtualization (App-V) Sequencer",
+     "Win32 Content Prep Tool]",
+     "Windows Package Manager"
+    ],
+    "correct": 2
+   },
+   {
+    "label": "",
+    "options": [
+     ".apk",
+     "appv",
+     "intunewin",
+     "edr"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ "141": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Management tool",
+    "options": [
+     "Microsoft Entra admin center",
+     "Microsoft Intune admin center",
+     "Volume Activation Management Tool console",
+     "Windows Deployment Services console"
+    ],
+    "correct": 1
+   },
+   {
+    "label": "Required information from each computer",
+    "options": [
+     "Device serial number and hardware hash",
+     "MAC address and computer name",
+     "Volume License Key and computer name"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ "147": {
+  "kind": "select",
+  "context_images": [
+   "q147_ans_p121.png"
+  ],
+  "blanks": [
+   {
+    "label": "Phase that you must modify in the deployment task sequence",
+    "options": [
+     "Install",
+     "Preinstall",
+     "Validation"
+    ],
+    "correct": 1
+   },
+   {
+    "label": "Task that you must use to specify which folder contains the drivers",
+    "options": [
+     "Gather",
+     "Inject Drivers",
+     "Set Task Sequence Variable",
+     "Validate"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ "148": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "Bootstrap.ini",
+     "Custom Settings.ini",
+     "Seungs.ini",
+     "System.ini"
+    ],
+    "correct": 1
+   },
+   {
+    "label": "",
+    "options": [
+     "Bootstran ini",
+     "Custom Settings.ini",
+     "Settings.ini",
+     "System.ini"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ "161": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Devicesyoucanremovefrom Intunebyusing the Wipe action",
+    "options": [
+     "Device1only",
+     "Device1and Device2only",
+     "Device1,Device2,and Device3only",
+     "Device1Device2and Device4only",
+     "Device1,Device2,Device3,and Device4"
+    ],
+    "correct": 4
+   },
+   {
+    "label": "Theenrollmentstateandtheassociateduser",
+    "options": [
+     "Device1only",
+     "Device1and Device2only",
+     "Device1,Device2,and Device3only",
+     "Device1,Device2,and Device4only",
+     "Device1,Device2.Device3,and Device4"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ "167": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "Compliance policies",
+     "Device diagnostics",
+     "Endpoint analytics"
+    ],
+    "correct": 2
+   },
+   {
+    "label": "",
+    "options": [
+     "Microsoft 365 Apps admin center",
+     "Microsoft Entra admin center",
+     "Microsoft Intune admin center"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ "170": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "Computer1 only",
+     "Computer1 and Computer2 only",
+     "Computer1 and Computer3 only",
+     "Computer1, Computer2, Computer3, and Computer4"
+    ],
+    "correct": 0
+   },
+   {
+    "label": "",
+    "options": [
+     "Computer1 only",
+     "Computer1 and Computer2 only",
+     "Computer1 and Computer3 only",
+     "IComputer1, Computer2, and Computer4 only"
+    ],
+    "correct": 3
+   }
+  ]
+ },
+ "175": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "An Azure event hub",
+     "An Azure Log Analytics workspace",
+     "An Azure SQL database",
+     "An Azure Storage account"
+    ],
+    "correct": 1
+   },
+   {
+    "label": "",
+    "options": [
+     "Configure the Event Collector service",
+     "Create an event subscripfion",
+     "Install the Azure Monitor Agent"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ "197": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "To block data execution prevention",
+    "options": [
+     "LFile Explorer",
+     "Microsoft Defender",
+     "Microsoft Edge"
+    ],
+    "correct": 0
+   },
+   {
+    "label": "",
+    "options": [
+     "Device Guard",
+     "IMicrosoit Derehder",
+     "System"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ "205": {
+  "kind": "select",
+  "context_images": [
+   "q205_ans_p158.png"
+  ],
+  "blanks": [
+   {
+    "label": "Devicesthatsupporttheremotelockaction",
+    "options": [
+     "Device1only",
+     "Device2and Device3only",
+     "Device4and Device5only",
+     "Device2,Device3,Device4,and Device5",
+     "Device1,Device2,Device3,Device4,and Devic5"
+    ],
+    "correct": 3
+   }
+  ]
+ },
+ "207": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Use",
+    "options": [
+     "Intune Company Portal",
+     "Microsoft Denlovment Toolkit(MDT)",
+     "Windows Configuration Designer",
+     "Windows Setup"
+    ],
+    "correct": 1
+   },
+   {
+    "label": "Maximumamountoftime",
+    "options": [
+     "30days",
+     "90.days",
+     "180days",
+     "365days"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ "210": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Requirejailbrokendevicestobemarkedasnoncompliant",
+    "options": [
+     "Device Health",
+     "Device Properties",
+     "System Security"
+    ],
+    "correct": 0
+   },
+   {
+    "label": "Requireapasswordtounlockmobiledevices",
+    "options": [
+     "Device Health",
+     "Device Properties",
+     "System Security"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ "212": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Delivery Optimization setting",
+    "options": [
+     "Bandwidth optimization type",
+     "Download mode",
+     "VPN peer caching"
+    ],
+    "correct": 1
+   },
+   {
+    "label": "",
+    "options": [
+     "A configuration profile",
+     "App configuration policies",
+     "Windows 10 and later quality updates",
+     "Windows 10 and later update rings"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ "213": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Profile type",
+    "options": [
+     "Featureupdatesfor Windows10andlater",
+     "Qualityupdatesfor Windows10andlater",
+     "Updateringsfor Windows10andlater"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ "257": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Windows Update technology to use",
+    "options": [
+     "Windows Server Update Services (WSUS)",
+     "Microsoft Configuration Manager",
+     "Windows Update for Business"
+    ],
+    "correct": 2
+   },
+   {
+    "label": "",
+    "options": [
+     "A Group Policy object (GPO)",
+     "Microsoft Configuration Manager",
+     "Microsoft Intune"
+    ],
+    "correct": 2
+   },
+   {
+    "label": "Manage the traffic by using",
+    "options": [
+     "Delivery Optimization",
+     "Branch Cache",
+     "Peer cache"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ "272": {
+  "kind": "select",
+  "context_images": [
+   "q272_ans_p202.png"
+  ],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "Device1only",
+     "Device1 and Device2only",
+     "Devce Tana Devicesonty",
+     "Device1,Device2,and Device3only",
+     "Device1,Device2,Device3,and Device4"
+    ],
+    "correct": 0
+   },
+   {
+    "label": "",
+    "options": [
+     "Device1only",
+     "Device1 and Device2only",
+     "Device1and Device3only",
+     "Device1 Device2 and Device3 only",
+     "Device1,Device2,Device3,and Device4"
+    ],
+    "correct": 4
+   }
+  ]
+ },
+ "277": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "Remote Desktop",
+     "Remote Help",
+     "Windows Remote Management(Win RM)"
+    ],
+    "correct": 1
+   },
+   {
+    "label": "",
+    "options": [
+     "Endpoint Privilege Manager",
+     "Help Desk Operator",
+     "Policyana Protilemanager"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ "281": {
+  "kind": "select",
+  "context_images": [
+   "q281_ans_p208.png"
+  ],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "Enroll the device in Intune.",
+     "Installthe Intuneapp.",
+     "Install the Microsoft Defenderfor Endpoint app."
+    ],
+    "correct": 2
+   },
+   {
+    "label": "",
+    "options": [
+     "Change the Device Ownershipproperty.",
+     "Install Edge.",
+     "Install the Microsoft Defenderfor Endpointapp."
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ "284": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Answer Area",
+    "options": [
+     "Configure the Advanced featuressettings.",
+     "Cohrgtre Tmtune Peissionssengs",
+     "Select Onboarding and then configure the Deploymentmethod setting."
+    ],
+    "correct": 0
+   },
+   {
+    "label": "",
+    "options": [
+     "Createa Configuration profle.",
+     "Configure the Comolance settings",
+     "Configurethe Microsol Delenderfor Endpointsettings"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ "288": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "25",
+     "50",
+     "100",
+     "500",
+     "1000"
+    ],
+    "correct": 2
+   },
+   {
+    "label": "Collectdiagnostics",
+    "options": [
+     "25",
+     "50",
+     "100",
+     "500",
+     "1000"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ "289": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Answer Area",
+    "options": [
+     "cloud.microsoft",
+     ".manage.microsoft.com",
+     ".onmicrosoft.com",
+     ".windows.net"
+    ],
+    "correct": 1
+   },
+   {
+    "label": "",
+    "options": [
+     ".cloud.microsoft",
+     ".manage.microsoft.com",
+     ".onmicrosoft.com",
+     ".windows.net"
+    ],
+    "correct": 3
+   }
+  ]
+ },
+ "292": {
+  "kind": "select",
+  "context_images": [
+   "q292_ans_p215.png"
+  ],
+  "blanks": [
+   {
+    "label": "Answer Area",
+    "options": [
+     "User A only",
+     "User Aor User Bonly",
+     "User Aor User Conly",
+     "User A,User B,or User Conly",
+     "User A,User B,User C,or User D"
+    ],
+    "correct": 2
+   },
+   {
+    "label": "Credentialsof",
+    "options": [
+     "Admin1only",
+     "Admin1or Admin2only",
+     "Admin1or Admin3only",
+     "Admin1,Admin2,or Admin3only",
+     "Admin1,Admin2,Admin3,or User1"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ "295": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Answer Area",
+    "options": [
+     "Monitored",
+     "Sanctioned",
+     "Unsanctioned"
+    ],
+    "correct": 2
+   },
+   {
+    "label": "",
+    "options": [
+     "Anonymization",
+     "Assetrule manaaement",
+     "Enforceappaccess"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ "298": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Se5Sku=",
+    "options": [
+     "Get-Mg Subscribed Sku",
+     "uondunsanchw Dag",
+     "Get-Mg Userlicense Detail",
+     "Get-Mg Userlicense Detail Count"
+    ],
+    "correct": 0
+   },
+   {
+    "label": "",
+    "options": [
+     "Set-Mg User License",
+     "Update-Mgsutscniber Sku",
+     "Update-Mg Subscription"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ "306": {
+  "kind": "select",
+  "context_images": [
+   "q306_ans_p229.png"
+  ],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "Device1 only",
+     "Device1and Device2only",
+     "Device1and Device3only",
+     "Device1,Device2,and Device3only",
+     "Device1,De Vice2,Device3,and Device4"
+    ],
+    "correct": 1
+   },
+   {
+    "label": "",
+    "options": [
+     "Device1and Device2only",
+     "Device2and Device3only",
+     "Device3and Device4only",
+     "Device2. Device3. and Device4 only",
+     "Device1.Device2.Device3.and Device4"
+    ],
+    "correct": 4
+   }
+  ]
+ },
+ "316": {
+  "kind": "select",
+  "context_images": [
+   "q316_ans_p239.png"
+  ],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "Noneofthedevices",
+     "IDevicetony",
+     "Device1and Device3only",
+     "Device1,Device2,and Device3"
+    ],
+    "correct": 1
+   },
+   {
+    "label": "",
+    "options": [
+     "Noneofthedevices",
+     "Device1only",
+     "IDevice1and Device3ony",
+     "Device1,Device2,and Device3"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ "332": {
+  "kind": "select",
+  "context_images": [
+   "q332_ans_p255.png",
+   "q332_ans_p256.png"
+  ],
+  "blanks": [
+   {
+    "label": "User1 can enroll a maximum of",
+    "options": [
+     "5 devices",
+     "10 devices",
+     "15 devices",
+     "1,000 devices",
+     "An unlimited number of devices"
+    ],
+    "correct": 1
+   },
+   {
+    "label": "",
+    "options": [
+     "5 devices",
+     "10 devices",
+     "15 devices",
+     "1,000 devices",
+     "An unlimited number of devices"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ "333": {
+  "kind": "select",
+  "context_images": [
+   "q333_ans_p258.png",
+   "q333_ans_p259.png",
+   "q333_ans_p260.png"
+  ],
+  "blanks": [
+   {
+    "label": "Policy1",
+    "options": [
+     "Device1only",
+     "Device2only",
+     "Device3only",
+     "Device4only",
+     "Device2and Device3only",
+     "Device1and Device3only",
+     "Device1Device2,and Device3"
+    ],
+    "correct": 2
+   },
+   {
+    "label": "Policy2",
+    "options": [
+     "Device1only",
+     "Device2only",
+     "Device3only",
+     "Device4only",
+     "Device2and Device3only",
+     "Device1and Device3only",
+     "Device1,Device2.and Device3"
+    ],
+    "correct": 3
+   }
+  ]
+ },
+ "348": {
+  "kind": "select",
+  "context_images": [
+   "q348_ans_p270.png"
+  ],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "App configuration policy",
+     "App protection policy]",
+     "Conditional access policy",
+     "Device compliance policy"
+    ],
+    "correct": 1
+   }
   ]
  }
 }
