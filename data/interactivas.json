@@ -1600,5 +1600,243 @@
     "correct": 1
    }
   ]
+ },
+ "3": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "DEP",
+    "options": [
+     "Account protection",
+     "App & browser control",
+     "Device security",
+     "Virus & threat protection"
+    ],
+    "correct": 1
+   },
+   {
+    "label": "Mandatory ASLR",
+    "options": [
+     "Account protection",
+     "App & browser control",
+     "Device security",
+     "Virus & threat protection"
+    ],
+    "correct": 1
+   }
+  ],
+  "pool": "Protection areas"
+ },
+ "7": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "User1",
+    "options": [
+     "Global Administrator",
+     "Helpdesk Administrator",
+     "Security Administrator",
+     "User Administrator"
+    ],
+    "correct": 3
+   },
+   {
+    "label": "User2",
+    "options": [
+     "Global Administrator",
+     "Helpdesk Administrator",
+     "Security Administrator",
+     "User Administrator"
+    ],
+    "correct": 1
+   }
+  ],
+  "pool": "Roles"
+ },
+ "39": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Computers thatrunmac OSmust have File Vaultenabled",
+    "options": [
+     "Account protection",
+     "Attack surfacereduction (ASR)",
+     "Disk encryption",
+     "Endpoint detection and response (EDR)"
+    ],
+    "correct": 2
+   },
+   {
+    "label": "Defender Application Control enabled: Microsoft Defender Credential Guardenabled Computers.that run Windows10 must have ",
+    "options": [
+     "Account protection",
+     "Attack surfacereduction (ASR)",
+     "Disk encryption",
+     "Endpoint detection and response (EDR)"
+    ],
+    "correct": 1
+   }
+  ],
+  "pool": "Features"
+ },
+ "109": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Paso 1",
+    "options": [
+     "Assign the policy.",
+     "Create a compliance policy.",
+     "Set a scope tag to the policy.",
+     "Import an ADMX file.",
+     "Create a configuration profile.",
+     "Configure the Administrative Templates settings.",
+     "Assign the profile."
+    ],
+    "correct": 4
+   },
+   {
+    "label": "Paso 2",
+    "options": [
+     "Assign the policy.",
+     "Create a compliance policy.",
+     "Set a scope tag to the policy.",
+     "Import an ADMX file.",
+     "Create a configuration profile.",
+     "Configure the Administrative Templates settings.",
+     "Assign the profile."
+    ],
+    "correct": 5
+   },
+   {
+    "label": "Paso 3",
+    "options": [
+     "Assign the policy.",
+     "Create a compliance policy.",
+     "Set a scope tag to the policy.",
+     "Import an ADMX file.",
+     "Create a configuration profile.",
+     "Configure the Administrative Templates settings.",
+     "Assign the profile."
+    ],
+    "correct": 6
+   }
+  ],
+  "pool": "Actions"
+ },
+ "137": {
+  "kind": "select",
+  "context_images": [
+   "q137_ans_p113.png"
+  ],
+  "blanks": [
+   {
+    "label": "Device1",
+    "options": [
+     "App configuration policy",
+     "Device compliance policy",
+     "Device configuration profile",
+     "Endpoint security policy"
+    ],
+    "correct": 2
+   },
+   {
+    "label": "Device2",
+    "options": [
+     "App configuration policy",
+     "Device compliance policy",
+     "Device configuration profile",
+     "Endpoint security policy"
+    ],
+    "correct": 0
+   },
+   {
+    "label": "Device3",
+    "options": [
+     "App configuration policy",
+     "Device compliance policy",
+     "Device configuration profile",
+     "Endpoint security policy"
+    ],
+    "correct": 0
+   }
+  ],
+  "pool": "Intune Features"
+ },
+ "169": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Join type",
+    "options": [
+     "Azure network connection",
+     "Enterprise",
+     "Frontline",
+     "Microsoft Entra Hybrid Join",
+     "Microsoft Entra Join",
+     "Microsoft hosted network"
+    ],
+    "correct": 3
+   },
+   {
+    "label": "Network",
+    "options": [
+     "Azure network connection",
+     "Enterprise",
+     "Frontline",
+     "Microsoft Entra Hybrid Join",
+     "Microsoft Entra Join",
+     "Microsoft hosted network"
+    ],
+    "correct": 0
+   },
+   {
+    "label": "License type",
+    "options": [
+     "Azure network connection",
+     "Enterprise",
+     "Frontline",
+     "Microsoft Entra Hybrid Join",
+     "Microsoft Entra Join",
+     "Microsoft hosted network"
+    ],
+    "correct": 1
+   }
+  ],
+  "pool": "Options"
+ },
+ "305": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "User1",
+    "options": [
+     "Administrators",
+     "Event Log Readers",
+     "Performance Log Users",
+     "Power Users",
+     "System Managed Accounts Group"
+    ],
+    "correct": 3
+   },
+   {
+    "label": "User2",
+    "options": [
+     "Administrators",
+     "Event Log Readers",
+     "Performance Log Users",
+     "Power Users",
+     "System Managed Accounts Group"
+    ],
+    "correct": 2
+   }
+  ],
+  "pool": "Groups"
  }
 }

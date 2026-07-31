@@ -88,7 +88,34 @@
   "tema": "Aplicaciones y protección de endpoints",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "context_images": [],
+   "blanks": [
+    {
+     "label": "DEP",
+     "options": [
+      "Account protection",
+      "App & browser control",
+      "Device security",
+      "Virus & threat protection"
+     ],
+     "correct": 1
+    },
+    {
+     "label": "Mandatory ASLR",
+     "options": [
+      "Account protection",
+      "App & browser control",
+      "Device security",
+      "Virus & threat protection"
+     ],
+     "correct": 1
+    }
+   ],
+   "pool": "Protection areas"
+  }
  },
  {
   "id": 4,
@@ -194,7 +221,34 @@
   "tema": "Identidad y cumplimiento normativo",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "context_images": [],
+   "blanks": [
+    {
+     "label": "User1",
+     "options": [
+      "Global Administrator",
+      "Helpdesk Administrator",
+      "Security Administrator",
+      "User Administrator"
+     ],
+     "correct": 3
+    },
+    {
+     "label": "User2",
+     "options": [
+      "Global Administrator",
+      "Helpdesk Administrator",
+      "Security Administrator",
+      "User Administrator"
+     ],
+     "correct": 1
+    }
+   ],
+   "pool": "Roles"
+  }
  },
  {
   "id": 8,
@@ -268,14 +322,25 @@
  },
  {
   "id": 10,
-  "type": "yesno",
+  "type": "mc",
   "page": 10,
-  "stem": "Nota: Esta pregunta forma parte de una serie que presenta el mismo escenario. Cada\npregunta de la serie contiene una solución única que podría cumplir los objetivos\nplanteados. Algunos conjuntos de preguntas pueden tener más de una solución correcta,\nmientras que otros podrían no tener ninguna.\nDespués de responder una pregunta en esta sección, no podrá volver a ella. Por lo tanto,\nestas preguntas no aparecerán en la pantalla de revisión.\nSu empresa tiene un inquilino de Azure AD llamado contoso.com que contiene varios\ndispositivos Windows 10.\nCuando une nuevos dispositivos Windows 10 a contoso.com, se les solicita a los usuarios\nque configuren un PIN de cuatro dígitos.\nDebe asegurarse de que se solicite a los usuarios que configuren un PIN de seis dígitos\ncuando unan los dispositivos Windows 10 a contoso.com.\nSolución: desde el centro de administración de Microsoft Entra, configure los métodos de\nautenticación.\n¿Esto cumple el objetivo?\nA. Sí\nB. No",
-  "answer_images": [],
-  "tema": "Identidad y cumplimiento normativo",
+  "stem": "Nota: Esta pregunta forma parte de una serie que presenta el mismo escenario. Cada\npregunta de la serie contiene una solución única que podría cumplir los objetivos\nplanteados. Algunos conjuntos de preguntas pueden tener más de una solución correcta,\nmientras que otros podrían no tener ninguna.\nDespués de responder una pregunta en esta sección, no podrá volver a ella. Por lo tanto,\nestas preguntas no aparecerán en la pantalla de revisión.\nSu empresa tiene un inquilino de Azure AD llamado contoso.com que contiene varios\ndispositivos Windows 10.\nCuando une nuevos dispositivos Windows 10 a contoso.com, se les solicita a los usuarios\nque configuren un PIN de cuatro dígitos.\nDebe asegurarse de que se solicite a los usuarios que configuren un PIN de seis dígitos\ncuando unan los dispositivos Windows 10 a contoso.com.\nSolución: desde el centro de administración de Microsoft Entra, configure los métodos de\nautenticación.\n¿Esto cumple el objetivo?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Sí"
+   },
+   {
+    "letter": "B",
+    "text": "No"
+   }
+  ],
+  "correct": [
+   "B"
+  ],
   "context_images": [],
-  "options": [],
-  "correct": []
+  "tema": "Identidad y cumplimiento normativo",
+  "answer_images": []
  },
  {
   "id": 11,
@@ -1092,7 +1157,34 @@
   "tema": "Aplicaciones y protección de endpoints",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "context_images": [],
+   "blanks": [
+    {
+     "label": "Computers thatrunmac OSmust have File Vaultenabled",
+     "options": [
+      "Account protection",
+      "Attack surfacereduction (ASR)",
+      "Disk encryption",
+      "Endpoint detection and response (EDR)"
+     ],
+     "correct": 2
+    },
+    {
+     "label": "Defender Application Control enabled: Microsoft Defender Credential Guardenabled Computers.that run Windows10 must have ",
+     "options": [
+      "Account protection",
+      "Attack surfacereduction (ASR)",
+      "Disk encryption",
+      "Endpoint detection and response (EDR)"
+     ],
+     "correct": 1
+    }
+   ],
+   "pool": "Features"
+  }
  },
  {
   "id": 40,
@@ -3179,7 +3271,53 @@
   "tema": "Identidad y cumplimiento normativo",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "context_images": [],
+   "blanks": [
+    {
+     "label": "Paso 1",
+     "options": [
+      "Assign the policy.",
+      "Create a compliance policy.",
+      "Set a scope tag to the policy.",
+      "Import an ADMX file.",
+      "Create a configuration profile.",
+      "Configure the Administrative Templates settings.",
+      "Assign the profile."
+     ],
+     "correct": 4
+    },
+    {
+     "label": "Paso 2",
+     "options": [
+      "Assign the policy.",
+      "Create a compliance policy.",
+      "Set a scope tag to the policy.",
+      "Import an ADMX file.",
+      "Create a configuration profile.",
+      "Configure the Administrative Templates settings.",
+      "Assign the profile."
+     ],
+     "correct": 5
+    },
+    {
+     "label": "Paso 3",
+     "options": [
+      "Assign the policy.",
+      "Create a compliance policy.",
+      "Set a scope tag to the policy.",
+      "Import an ADMX file.",
+      "Create a configuration profile.",
+      "Configure the Administrative Templates settings.",
+      "Assign the profile."
+     ],
+     "correct": 6
+    }
+   ],
+   "pool": "Actions"
+  }
  },
  {
   "id": 110,
@@ -4101,7 +4239,46 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "context_images": [
+    "q137_ans_p113.png"
+   ],
+   "blanks": [
+    {
+     "label": "Device1",
+     "options": [
+      "App configuration policy",
+      "Device compliance policy",
+      "Device configuration profile",
+      "Endpoint security policy"
+     ],
+     "correct": 2
+    },
+    {
+     "label": "Device2",
+     "options": [
+      "App configuration policy",
+      "Device compliance policy",
+      "Device configuration profile",
+      "Endpoint security policy"
+     ],
+     "correct": 0
+    },
+    {
+     "label": "Device3",
+     "options": [
+      "App configuration policy",
+      "Device compliance policy",
+      "Device configuration profile",
+      "Endpoint security policy"
+     ],
+     "correct": 0
+    }
+   ],
+   "pool": "Intune Features"
+  }
  },
  {
   "id": 138,
@@ -4947,7 +5124,50 @@
   "tema": "Implementación de Windows",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "context_images": [],
+   "blanks": [
+    {
+     "label": "Join type",
+     "options": [
+      "Azure network connection",
+      "Enterprise",
+      "Frontline",
+      "Microsoft Entra Hybrid Join",
+      "Microsoft Entra Join",
+      "Microsoft hosted network"
+     ],
+     "correct": 3
+    },
+    {
+     "label": "Network",
+     "options": [
+      "Azure network connection",
+      "Enterprise",
+      "Frontline",
+      "Microsoft Entra Hybrid Join",
+      "Microsoft Entra Join",
+      "Microsoft hosted network"
+     ],
+     "correct": 0
+    },
+    {
+     "label": "License type",
+     "options": [
+      "Azure network connection",
+      "Enterprise",
+      "Frontline",
+      "Microsoft Entra Hybrid Join",
+      "Microsoft Entra Join",
+      "Microsoft hosted network"
+     ],
+     "correct": 1
+    }
+   ],
+   "pool": "Options"
+  }
  },
  {
   "id": 170,
@@ -7171,14 +7391,25 @@
  },
  {
   "id": 256,
-  "type": "yesno",
+  "type": "mc",
   "page": 194,
-  "stem": "Nota: Esta sección contiene uno o más conjuntos de preguntas con el mismo escenario y\nproblema. Cada pregunta presenta una solución única. Debe determinar si la solución\ncumple con los objetivos planteados. Más de una solución del conjunto podría resolver el\nproblema. También es posible que ninguna de las soluciones del conjunto lo resuelva.\nDespués de responder una pregunta en esta sección, no podrá regresar. Por lo tanto,\nestas preguntas no aparecen en la pantalla de revisión.\nTiene un inquilino de Microsoft Entra llamado contoso.com.\nCompra un dispositivo Android llamado Device1.\nDebe registrar el Dispositivo1 en contoso.com.\nSolución: utiliza la aplicación Portal de empresa de Microsoft Intune.\n¿Esto cumple el objetivo?\nA. Sí\nB. No",
-  "answer_images": [],
-  "tema": "Administración de dispositivos con Intune",
+  "stem": "Nota: Esta sección contiene uno o más conjuntos de preguntas con el mismo escenario y\nproblema. Cada pregunta presenta una solución única. Debe determinar si la solución\ncumple con los objetivos planteados. Más de una solución del conjunto podría resolver el\nproblema. También es posible que ninguna de las soluciones del conjunto lo resuelva.\nDespués de responder una pregunta en esta sección, no podrá regresar. Por lo tanto,\nestas preguntas no aparecen en la pantalla de revisión.\nTiene un inquilino de Microsoft Entra llamado contoso.com.\nCompra un dispositivo Android llamado Device1.\nDebe registrar el Dispositivo1 en contoso.com.\nSolución: utiliza la aplicación Portal de empresa de Microsoft Intune.\n¿Esto cumple el objetivo?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Sí"
+   },
+   {
+    "letter": "B",
+    "text": "No"
+   }
+  ],
+  "correct": [
+   "A"
+  ],
   "context_images": [],
-  "options": [],
-  "correct": []
+  "tema": "Administración de dispositivos con Intune",
+  "answer_images": []
  },
  {
   "id": 257,
@@ -7228,25 +7459,47 @@
  },
  {
   "id": 258,
-  "type": "yesno",
+  "type": "mc",
   "page": 195,
-  "stem": "Nota: Esta sección contiene uno o más conjuntos de preguntas con el mismo escenario y\nproblema. Cada pregunta presenta una solución única. Debe determinar si la solución\ncumple con los objetivos planteados. Más de una solución del conjunto podría resolver el\nproblema. También es posible que ninguna de las soluciones del conjunto lo resuelva.\nDespués de responder una pregunta en esta sección, no podrá regresar. Por lo tanto,\nestas preguntas no aparecen en la pantalla de revisión.\nTiene un inquilino de Microsoft Entra llamado contoso.com.\nCompra un dispositivo Android llamado Device1.\nDebe registrar el Dispositivo1 en contoso.com.\nSolución: utiliza Microsoft Entra Connect.\n¿Esto cumple el objetivo?\nA. Sí\nB. No",
-  "answer_images": [],
-  "tema": "Identidad y cumplimiento normativo",
+  "stem": "Nota: Esta sección contiene uno o más conjuntos de preguntas con el mismo escenario y\nproblema. Cada pregunta presenta una solución única. Debe determinar si la solución\ncumple con los objetivos planteados. Más de una solución del conjunto podría resolver el\nproblema. También es posible que ninguna de las soluciones del conjunto lo resuelva.\nDespués de responder una pregunta en esta sección, no podrá regresar. Por lo tanto,\nestas preguntas no aparecen en la pantalla de revisión.\nTiene un inquilino de Microsoft Entra llamado contoso.com.\nCompra un dispositivo Android llamado Device1.\nDebe registrar el Dispositivo1 en contoso.com.\nSolución: utiliza Microsoft Entra Connect.\n¿Esto cumple el objetivo?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Sí"
+   },
+   {
+    "letter": "B",
+    "text": "No"
+   }
+  ],
+  "correct": [
+   "B"
+  ],
   "context_images": [],
-  "options": [],
-  "correct": []
+  "tema": "Identidad y cumplimiento normativo",
+  "answer_images": []
  },
  {
   "id": 259,
-  "type": "yesno",
+  "type": "mc",
   "page": 196,
-  "stem": "Nota: Esta sección contiene uno o más conjuntos de preguntas con el mismo escenario y\nproblema. Cada pregunta presenta una solución única. Debe determinar si la solución\ncumple con los objetivos planteados. Más de una solución del conjunto podría resolver el\nproblema. También es posible que ninguna de las soluciones del conjunto lo resuelva.\nDespués de responder una pregunta en esta sección, no podrá regresar. Por lo tanto,\nestas preguntas no aparecen en la pantalla de revisión.\nTiene un inquilino de Microsoft Entra llamado contoso.com.\nCompra un dispositivo Android llamado Device1.\nDebe registrar el Dispositivo1 en contoso.com.\nSolución: utiliza la aplicación Microsoft Authenticator.\n¿Esto cumple el objetivo?\nA. Sí\nB. No",
-  "answer_images": [],
-  "tema": "Administración de dispositivos con Intune",
+  "stem": "Nota: Esta sección contiene uno o más conjuntos de preguntas con el mismo escenario y\nproblema. Cada pregunta presenta una solución única. Debe determinar si la solución\ncumple con los objetivos planteados. Más de una solución del conjunto podría resolver el\nproblema. También es posible que ninguna de las soluciones del conjunto lo resuelva.\nDespués de responder una pregunta en esta sección, no podrá regresar. Por lo tanto,\nestas preguntas no aparecen en la pantalla de revisión.\nTiene un inquilino de Microsoft Entra llamado contoso.com.\nCompra un dispositivo Android llamado Device1.\nDebe registrar el Dispositivo1 en contoso.com.\nSolución: utiliza la aplicación Microsoft Authenticator.\n¿Esto cumple el objetivo?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Sí"
+   },
+   {
+    "letter": "B",
+    "text": "No"
+   }
+  ],
+  "correct": [
+   "B"
+  ],
   "context_images": [],
-  "options": [],
-  "correct": []
+  "tema": "Administración de dispositivos con Intune",
+  "answer_images": []
  },
  {
   "id": 260,
@@ -7264,47 +7517,91 @@
  },
  {
   "id": 261,
-  "type": "yesno",
+  "type": "mc",
   "page": 197,
-  "stem": "Nota: Esta sección contiene uno o más conjuntos de preguntas con el mismo escenario y\nproblema. Cada pregunta presenta una solución única. Debe determinar si la solución\ncumple con los objetivos planteados. Más de una solución del conjunto podría resolver el\nproblema. También es posible que ninguna de las soluciones del conjunto lo resuelva.\nDespués de responder una pregunta en esta sección, no podrá regresar. Por lo tanto,\nestas preguntas no aparecen en la pantalla de revisión.\nTiene una suscripción a Microsoft 365 E5. Esta suscripción incluye dispositivos unidos a\nMicrosoft Entra e inscritos en Microsoft Intune.\nCrea un usuario llamado Usuario1.\nDebe asegurarse de que el Usuario1 pueda rotar las claves de recuperación de BitLocker\nmediante Intune.\nSolución: desde el centro de administración de Microsoft Entra, asigne el rol de\nAdministrador de la mesa de ayuda al Usuario1.\n¿Esto cumple el objetivo?\nA. Sí\nB. No",
-  "answer_images": [],
-  "tema": "Identidad y cumplimiento normativo",
+  "stem": "Nota: Esta sección contiene uno o más conjuntos de preguntas con el mismo escenario y\nproblema. Cada pregunta presenta una solución única. Debe determinar si la solución\ncumple con los objetivos planteados. Más de una solución del conjunto podría resolver el\nproblema. También es posible que ninguna de las soluciones del conjunto lo resuelva.\nDespués de responder una pregunta en esta sección, no podrá regresar. Por lo tanto,\nestas preguntas no aparecen en la pantalla de revisión.\nTiene una suscripción a Microsoft 365 E5. Esta suscripción incluye dispositivos unidos a\nMicrosoft Entra e inscritos en Microsoft Intune.\nCrea un usuario llamado Usuario1.\nDebe asegurarse de que el Usuario1 pueda rotar las claves de recuperación de BitLocker\nmediante Intune.\nSolución: desde el centro de administración de Microsoft Entra, asigne el rol de\nAdministrador de la mesa de ayuda al Usuario1.\n¿Esto cumple el objetivo?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Sí"
+   },
+   {
+    "letter": "B",
+    "text": "No"
+   }
+  ],
+  "correct": [
+   "B"
+  ],
   "context_images": [],
-  "options": [],
-  "correct": []
+  "tema": "Identidad y cumplimiento normativo",
+  "answer_images": []
  },
  {
   "id": 262,
-  "type": "yesno",
+  "type": "mc",
   "page": 198,
-  "stem": "Nota: Esta sección contiene uno o más conjuntos de preguntas con el mismo escenario y\nproblema. Cada pregunta presenta una solución única. Debe determinar si la solución\ncumple con los objetivos planteados. Más de una solución del conjunto podría resolver el\nproblema. También es posible que ninguna de las soluciones del conjunto lo resuelva.\nDespués de responder una pregunta en esta sección, no podrá regresar. Por lo tanto,\nestas preguntas no aparecen en la pantalla de revisión.\nTiene una suscripción a Microsoft 365 E5. Esta suscripción incluye dispositivos unidos a\nMicrosoft Entra e inscritos en Microsoft Intune.\nCrea un usuario llamado Usuario1.\nDebe asegurarse de que el Usuario1 pueda rotar las claves de recuperación de BitLocker\nmediante Intune.\nSolución: desde el centro de administración de Microsoft Intune, asigne el rol de\nOperador de la mesa de ayuda al Usuario1.\n¿Esto cumple el objetivo?\nA. Sí\nB. No",
-  "answer_images": [],
-  "tema": "Administración de dispositivos con Intune",
+  "stem": "Nota: Esta sección contiene uno o más conjuntos de preguntas con el mismo escenario y\nproblema. Cada pregunta presenta una solución única. Debe determinar si la solución\ncumple con los objetivos planteados. Más de una solución del conjunto podría resolver el\nproblema. También es posible que ninguna de las soluciones del conjunto lo resuelva.\nDespués de responder una pregunta en esta sección, no podrá regresar. Por lo tanto,\nestas preguntas no aparecen en la pantalla de revisión.\nTiene una suscripción a Microsoft 365 E5. Esta suscripción incluye dispositivos unidos a\nMicrosoft Entra e inscritos en Microsoft Intune.\nCrea un usuario llamado Usuario1.\nDebe asegurarse de que el Usuario1 pueda rotar las claves de recuperación de BitLocker\nmediante Intune.\nSolución: desde el centro de administración de Microsoft Intune, asigne el rol de\nOperador de la mesa de ayuda al Usuario1.\n¿Esto cumple el objetivo?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Sí"
+   },
+   {
+    "letter": "B",
+    "text": "No"
+   }
+  ],
+  "correct": [
+   "A"
+  ],
   "context_images": [],
-  "options": [],
-  "correct": []
+  "tema": "Administración de dispositivos con Intune",
+  "answer_images": []
  },
  {
   "id": 263,
-  "type": "yesno",
+  "type": "mc",
   "page": 198,
-  "stem": "Nota: Esta sección contiene uno o más conjuntos de preguntas con el mismo escenario y\nproblema. Cada pregunta presenta una solución única. Debe determinar si la solución\ncumple con los objetivos planteados. Más de una solución del conjunto podría resolver el\nproblema. También es posible que ninguna de las soluciones del conjunto lo resuelva.\nDespués de responder una pregunta en esta sección, no podrá regresar. Por lo tanto,\nestas preguntas no aparecen en la pantalla de revisión.\nTiene una suscripción a Microsoft 365 E5. Esta suscripción incluye dispositivos unidos a\nMicrosoft Entra e inscritos en Microsoft Intune.\nCrea un usuario llamado Usuario1.\nDebe asegurarse de que el Usuario1 pueda rotar las claves de recuperación de BitLocker\nmediante Intune.\nSolución: desde el centro de administración de Microsoft Intune, asigne la función de\nEndpoint Security Manager al Usuario1.\n¿Esto cumple el objetivo?\nA. Sí\nB. No",
-  "answer_images": [],
-  "tema": "Administración de dispositivos con Intune",
+  "stem": "Nota: Esta sección contiene uno o más conjuntos de preguntas con el mismo escenario y\nproblema. Cada pregunta presenta una solución única. Debe determinar si la solución\ncumple con los objetivos planteados. Más de una solución del conjunto podría resolver el\nproblema. También es posible que ninguna de las soluciones del conjunto lo resuelva.\nDespués de responder una pregunta en esta sección, no podrá regresar. Por lo tanto,\nestas preguntas no aparecen en la pantalla de revisión.\nTiene una suscripción a Microsoft 365 E5. Esta suscripción incluye dispositivos unidos a\nMicrosoft Entra e inscritos en Microsoft Intune.\nCrea un usuario llamado Usuario1.\nDebe asegurarse de que el Usuario1 pueda rotar las claves de recuperación de BitLocker\nmediante Intune.\nSolución: desde el centro de administración de Microsoft Intune, asigne la función de\nEndpoint Security Manager al Usuario1.\n¿Esto cumple el objetivo?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Sí"
+   },
+   {
+    "letter": "B",
+    "text": "No"
+   }
+  ],
+  "correct": [
+   "B"
+  ],
   "context_images": [],
-  "options": [],
-  "correct": []
+  "tema": "Administración de dispositivos con Intune",
+  "answer_images": []
  },
  {
   "id": 264,
-  "type": "yesno",
+  "type": "mc",
   "page": 199,
-  "stem": "Nota: Esta sección contiene uno o más conjuntos de preguntas con el mismo escenario y\nproblema. Cada pregunta presenta una solución única. Debe determinar si la solución\ncumple con los objetivos planteados. Más de una solución del conjunto podría resolver el\nproblema. También es posible que ninguna de las soluciones del conjunto lo resuelva.\nDespués de responder una pregunta en esta sección, no podrá regresar. Por lo tanto,\nestas preguntas no aparecen en la pantalla de revisión.\nTiene un inquilino de Microsoft Entra llamado contoso.com.\nCompra un dispositivo Android llamado Device1.\nDebe registrar el Dispositivo1 en contoso.com.\nSolución: utiliza la aplicación Google Chrome.\n¿Esto cumple el objetivo?\nA. Sí\nB. No",
-  "answer_images": [],
-  "tema": "Administración de dispositivos con Intune",
+  "stem": "Nota: Esta sección contiene uno o más conjuntos de preguntas con el mismo escenario y\nproblema. Cada pregunta presenta una solución única. Debe determinar si la solución\ncumple con los objetivos planteados. Más de una solución del conjunto podría resolver el\nproblema. También es posible que ninguna de las soluciones del conjunto lo resuelva.\nDespués de responder una pregunta en esta sección, no podrá regresar. Por lo tanto,\nestas preguntas no aparecen en la pantalla de revisión.\nTiene un inquilino de Microsoft Entra llamado contoso.com.\nCompra un dispositivo Android llamado Device1.\nDebe registrar el Dispositivo1 en contoso.com.\nSolución: utiliza la aplicación Google Chrome.\n¿Esto cumple el objetivo?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Sí"
+   },
+   {
+    "letter": "B",
+    "text": "No"
+   }
+  ],
+  "correct": [
+   "B"
+  ],
   "context_images": [],
-  "options": [],
-  "correct": []
+  "tema": "Administración de dispositivos con Intune",
+  "answer_images": []
  },
  {
   "id": 265,
@@ -8451,7 +8748,36 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "context_images": [],
+   "blanks": [
+    {
+     "label": "User1",
+     "options": [
+      "Administrators",
+      "Event Log Readers",
+      "Performance Log Users",
+      "Power Users",
+      "System Managed Accounts Group"
+     ],
+     "correct": 3
+    },
+    {
+     "label": "User2",
+     "options": [
+      "Administrators",
+      "Event Log Readers",
+      "Performance Log Users",
+      "Power Users",
+      "System Managed Accounts Group"
+     ],
+     "correct": 2
+    }
+   ],
+   "pool": "Groups"
+  }
  },
  {
   "id": 306,
@@ -8908,14 +9234,25 @@
  },
  {
   "id": 325,
-  "type": "yesno",
+  "type": "mc",
   "page": 245,
-  "stem": "Nota: Esta pregunta forma parte de una serie que presenta el mismo escenario. Cada\npregunta de la serie contiene una solución única que podría cumplir los objetivos\nplanteados. Algunos conjuntos de preguntas pueden tener más de una solución correcta,\nmientras que otros podrían no tener ninguna.\nDespués de responder una pregunta en esta sección, no podrá volver a ella. Por lo tanto,\nestas preguntas no aparecerán en la pantalla de revisión.\nSu empresa tiene un inquilino de Azure AD llamado contoso.com que contiene varios\ndispositivos Windows 10.\nCuando une nuevos dispositivos Windows 10 a contoso.com, se les solicita a los usuarios\nque configuren un PIN de cuatro dígitos.\nDebe asegurarse de que se solicite a los usuarios que configuren un PIN de seis dígitos\ncuando unan los dispositivos Windows 10 a contoso.com.\nSolución: desde el centro de administración de Microsoft Entra, modifica la configuración\ndel usuario y la configuración del dispositivo.\n¿Esto cumple el objetivo?\nA. Sí\nB. No",
-  "answer_images": [],
-  "tema": "Administración de dispositivos con Intune",
+  "stem": "Nota: Esta pregunta forma parte de una serie que presenta el mismo escenario. Cada\npregunta de la serie contiene una solución única que podría cumplir los objetivos\nplanteados. Algunos conjuntos de preguntas pueden tener más de una solución correcta,\nmientras que otros podrían no tener ninguna.\nDespués de responder una pregunta en esta sección, no podrá volver a ella. Por lo tanto,\nestas preguntas no aparecerán en la pantalla de revisión.\nSu empresa tiene un inquilino de Azure AD llamado contoso.com que contiene varios\ndispositivos Windows 10.\nCuando une nuevos dispositivos Windows 10 a contoso.com, se les solicita a los usuarios\nque configuren un PIN de cuatro dígitos.\nDebe asegurarse de que se solicite a los usuarios que configuren un PIN de seis dígitos\ncuando unan los dispositivos Windows 10 a contoso.com.\nSolución: desde el centro de administración de Microsoft Entra, modifica la configuración\ndel usuario y la configuración del dispositivo.\n¿Esto cumple el objetivo?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Sí"
+   },
+   {
+    "letter": "B",
+    "text": "No"
+   }
+  ],
+  "correct": [
+   "B"
+  ],
   "context_images": [],
-  "options": [],
-  "correct": []
+  "tema": "Administración de dispositivos con Intune",
+  "answer_images": []
  },
  {
   "id": 326,
@@ -8932,25 +9269,47 @@
  },
  {
   "id": 327,
-  "type": "yesno",
+  "type": "mc",
   "page": 247,
-  "stem": "Nota: Esta pregunta forma parte de una serie que presenta el mismo escenario. Cada\npregunta de la serie contiene una solución única que podría cumplir los objetivos\nplanteados. Algunos conjuntos de preguntas pueden tener más de una solución correcta,\nmientras que otros podrían no tener ninguna.\nDespués de responder una pregunta en esta sección, no podrá volver a ella. Por lo tanto,\nestas preguntas no aparecerán en la pantalla de revisión.\nSu empresa tiene un inquilino de Azure AD llamado contoso.com que contiene varios\ndispositivos Windows 10.\nCuando une nuevos dispositivos Windows 10 a contoso.com, se les solicita a los usuarios\nque configuren un PIN de cuatro dígitos.\nDebe asegurarse de que se solicite a los usuarios que configuren un PIN de seis dígitos\ncuando unan los dispositivos Windows 10 a contoso.com.\nSolución: Desde el centro de administración de Microsoft Entra, configure la inscripción\nautomática a la administración de dispositivos móviles (MDM). Desde el centro de\nadministración de Microsoft Intune, cree y asigne un perfil de restricciones de\ndispositivos.\n¿Esto cumple el objetivo?\nA. Sí\nB. No",
-  "answer_images": [],
-  "tema": "Administración de dispositivos con Intune",
+  "stem": "Nota: Esta pregunta forma parte de una serie que presenta el mismo escenario. Cada\npregunta de la serie contiene una solución única que podría cumplir los objetivos\nplanteados. Algunos conjuntos de preguntas pueden tener más de una solución correcta,\nmientras que otros podrían no tener ninguna.\nDespués de responder una pregunta en esta sección, no podrá volver a ella. Por lo tanto,\nestas preguntas no aparecerán en la pantalla de revisión.\nSu empresa tiene un inquilino de Azure AD llamado contoso.com que contiene varios\ndispositivos Windows 10.\nCuando une nuevos dispositivos Windows 10 a contoso.com, se les solicita a los usuarios\nque configuren un PIN de cuatro dígitos.\nDebe asegurarse de que se solicite a los usuarios que configuren un PIN de seis dígitos\ncuando unan los dispositivos Windows 10 a contoso.com.\nSolución: Desde el centro de administración de Microsoft Entra, configure la inscripción\nautomática a la administración de dispositivos móviles (MDM). Desde el centro de\nadministración de Microsoft Intune, cree y asigne un perfil de restricciones de\ndispositivos.\n¿Esto cumple el objetivo?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Sí"
+   },
+   {
+    "letter": "B",
+    "text": "No"
+   }
+  ],
+  "correct": [
+   "B"
+  ],
   "context_images": [],
-  "options": [],
-  "correct": []
+  "tema": "Administración de dispositivos con Intune",
+  "answer_images": []
  },
  {
   "id": 328,
-  "type": "yesno",
+  "type": "mc",
   "page": 247,
-  "stem": "Nota: Esta pregunta forma parte de una serie que presenta el mismo escenario. Cada\npregunta de la serie contiene una solución única que podría cumplir los objetivos\nplanteados. Algunos conjuntos de preguntas pueden tener más de una solución correcta,\nmientras que otros podrían no tener ninguna.\nDespués de responder una pregunta en esta sección, no podrá volver a ella. Por lo tanto,\nestas preguntas no aparecerán en la pantalla de revisión.\nSu empresa tiene un inquilino de Azure AD llamado contoso.com que contiene varios\ndispositivos Windows 10.\nCuando une nuevos dispositivos Windows 10 a contoso.com, se les solicita a los usuarios\nque configuren un PIN de cuatro dígitos.\nDebe asegurarse de que se solicite a los usuarios que configuren un PIN de seis dígitos\ncuando unan los dispositivos Windows 10 a contoso.com.\nSolución: Desde el centro de administración de Microsoft Entra, configure la inscripción\nautomática en la administración de dispositivos móviles (MDM). Desde el centro de\nadministración de Microsoft Intune, configure las opciones de inscripción de Windows\nHello para empresas.\n¿Esto cumple el objetivo?\nA. Sí\nB. No",
-  "answer_images": [],
-  "tema": "Administración de dispositivos con Intune",
+  "stem": "Nota: Esta pregunta forma parte de una serie que presenta el mismo escenario. Cada\npregunta de la serie contiene una solución única que podría cumplir los objetivos\nplanteados. Algunos conjuntos de preguntas pueden tener más de una solución correcta,\nmientras que otros podrían no tener ninguna.\nDespués de responder una pregunta en esta sección, no podrá volver a ella. Por lo tanto,\nestas preguntas no aparecerán en la pantalla de revisión.\nSu empresa tiene un inquilino de Azure AD llamado contoso.com que contiene varios\ndispositivos Windows 10.\nCuando une nuevos dispositivos Windows 10 a contoso.com, se les solicita a los usuarios\nque configuren un PIN de cuatro dígitos.\nDebe asegurarse de que se solicite a los usuarios que configuren un PIN de seis dígitos\ncuando unan los dispositivos Windows 10 a contoso.com.\nSolución: Desde el centro de administración de Microsoft Entra, configure la inscripción\nautomática en la administración de dispositivos móviles (MDM). Desde el centro de\nadministración de Microsoft Intune, configure las opciones de inscripción de Windows\nHello para empresas.\n¿Esto cumple el objetivo?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Sí"
+   },
+   {
+    "letter": "B",
+    "text": "No"
+   }
+  ],
+  "correct": [
+   "A"
+  ],
   "context_images": [],
-  "options": [],
-  "correct": []
+  "tema": "Administración de dispositivos con Intune",
+  "answer_images": []
  },
  {
   "id": 329,

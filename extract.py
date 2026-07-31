@@ -81,7 +81,8 @@ for si, (i, qnum) in enumerate(starts):
         qtype = 'drag'
     elif re.search(r'\bA[\.\)]\s*S[íi]\b', full_text) and re.search(r'\bB[\.\)]\s*No\b', full_text) \
             and not re.search(r'\bC[\.\)]', full_text):
-        qtype = 'yesno'
+        # "¿Esto cumple el objetivo? A. Sí / B. No" -> es opción múltiple normal
+        qtype = 'mc'
     else:
         # contar opciones tipo A. B. C.
         opt_lines = [ln for b in body_text_items for ln in b['text'].split('\n')
