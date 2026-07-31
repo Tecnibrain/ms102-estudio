@@ -8,13 +8,76 @@
    {"options": ["AzureAD", "CONTOSO", "UPN"], "correct": 1}
   ]
  },
+ "1": {
+  "kind": "yesno",
+  "context_images": ["q001_ctxauto.png", "q001_ans_p0.png", "q001_ans_p1.png", "q001_ans_p2.png", "q001_ans_p3.png"],
+  "statements": [
+   {"t": "User1 can create a file named D:\\Folder1\\file1.txt on Device4 by using Notepad.", "a": "no"},
+   {"t": "User2 can remove D:\\Folder1 from the list of protected folders on Device2.", "a": "yes"},
+   {"t": "User3 can create a file named C:\\Users\\User3\\Desktop\\file1.txt on Device2 by running a custom Windows PowerShell script.", "a": "no"}
+  ]
+ },
  "8": {
   "kind": "yesno",
-  "context_images": ["q008_ans_p7.png"],
+  "context_images": ["q008_ctxauto.png", "q008_ans_p7.png"],
   "statements": [
    {"t": "On January 7, Device1 is marked as compliant.", "a": "no"},
    {"t": "On January 8, Device1 is marked as compliant.", "a": "no"},
    {"t": "On January 8, Device2 is marked as compliant.", "a": "yes"}
+  ]
+ },
+ "9": {
+  "kind": "yesno",
+  "context_images": ["q009_ctxauto.png", "q009_ans_p8.png"],
+  "statements": [
+   {"t": "The compliance status of Computer1 is in grace period.", "a": "yes"},
+   {"t": "The compliance status of Computer2 is Compliant.", "a": "yes"},
+   {"t": "The compliance status of Computer3 is Not compliant.", "a": "no"}
+  ]
+ },
+ "15": {
+  "kind": "yesno",
+  "context_images": ["q015_ctxauto.png"],
+  "statements": [
+   {"t": "On June 4, Device1 is marked as compliant.", "a": "no"},
+   {"t": "On June 6, Device1 is marked as compliant.", "a": "no"},
+   {"t": "On June 9, Device2 is marked as compliant.", "a": "yes"}
+  ]
+ },
+ "17": {
+  "kind": "yesno",
+  "context_images": ["q017_ctxauto.png", "q017_ans_p13.png"],
+  "statements": [
+   {"t": "If User1 registers Device1 in contoso.com, Device1 is enrolled automatically in Microsoft Intune.", "a": "yes"},
+   {"t": "If User1 joins Device1 to contoso.com, Device2 is enrolled automatically in Microsoft Intune.", "a": "no"},
+   {"t": "If User2 registers Device3 in contoso.com, Device3 is enrolled automatically in Microsoft Intune.", "a": "no"}
+  ]
+ },
+ "22": {
+  "kind": "yesno",
+  "context_images": ["q022_ctxauto.png", "q022_ans_p16.png"],
+  "statements": [
+   {"t": "User1 can establish a Remote Desktop session to Computer2.", "a": "yes"},
+   {"t": "User2 can establish a Remote Desktop session to Computer2.", "a": "no"},
+   {"t": "User3 can establish a Remote Desktop session to Computer2.", "a": "yes"}
+  ]
+ },
+ "54": {
+  "kind": "yesno",
+  "context_images": ["q054_ctxauto.png", "q054_ans_p36.png", "q054_ans_p37.png"],
+  "statements": [
+   {"t": "If User1 signs in to Device1, Device1 will have both Configuration Profile1 and Compliance Policy1 assigned.", "a": "no"},
+   {"t": "If User2 signs in to Device2, Device2 will have both Configuration Profile1 and Compliance Policy1 assigned.", "a": "yes"},
+   {"t": "If User3 signs in to Device3, Device3 will have both Configuration Profile1 and Compliance Policy1 assigned.", "a": "no"}
+  ]
+ },
+ "84": {
+  "kind": "yesno",
+  "context_images": ["q084_ctxauto.png", "q084_ans_p72.png"],
+  "statements": [
+   {"t": "Device1 is marked as compliant.", "a": "yes"},
+   {"t": "Device2 is marked as compliant.", "a": "yes"},
+   {"t": "Device3 is marked as compliant.", "a": "no"}
   ]
  }
 }

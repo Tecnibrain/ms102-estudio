@@ -63,6 +63,27 @@ def deliver(q, num, total, chat=None):
     expl = (q.get('explicacion') or '').strip()
     header = f'🎯 MD-102 · {num}/{total}  ·  #{q["id"]}\n📚 {tema}'
 
+    it = q.get('inter')
+    if it:
+        # interactiva: enunciado + contexto y luego una encuesta por hueco
+        send_msg(f'{header}\n\n{stem}', chat=chat)
+        for im in it.get('context_images', []):
+            p = IMGDIR / im
+            if p.exists():
+                send_photo(p, chat=chat)
+                time.sleep(0.3)
+        if it['kind'] == 'yesno':
+            for s in it['statements']:
+                send_quiz(s['t'][:300], ['Sí', 'No'],
+                          0 if s['a'] == 'yes' else 1, expl or None, chat=chat)
+                time.sleep(0.4)
+        else:
+            for bl in it['blanks']:
+                label = bl.get('label') or 'Elige la opción correcta'
+                send_quiz(label[:300], bl['options'], bl['correct'], expl or None, chat=chat)
+                time.sleep(0.4)
+        return
+
     if q['type'] == 'mc' and q.get('options'):
         opts = [o['text'] for o in q['options']]
         letters = [o['letter'] for o in q['options']]
