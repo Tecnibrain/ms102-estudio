@@ -80,7 +80,15 @@ def deliver(q, num, total, chat=None, st=None, exam=None):
             if p.exists():
                 send_photo(p, chat=chat)
                 time.sleep(0.3)
-        if it['kind'] == 'yesno':
+        if it['kind'] == 'multi':
+            letras = 'ABCDEFGHIJ'
+            body = '\n'.join(f'{letras[i]}. {o}' for i, o in enumerate(it['options']))
+            send_msg(f'{body}\n\n(Selecciona {len(it["correct"])})', chat=chat)
+            send_msg('Respuesta: ||' + ', '.join(letras[i] for i in it['correct']) + '||',
+                     md=True, chat=chat)
+            if expl:
+                send_msg('💡 ' + expl, chat=chat)
+        elif it['kind'] == 'yesno':
             for s in it['statements']:
                 send_quiz(s['t'][:300], ['Sí', 'No'],
                           0 if s['a'] == 'yes' else 1, expl or None, chat=chat,

@@ -240,6 +240,24 @@ function renderInteractive(q, c, h){
       recordAnswer(q.id, allok); if(allok) session.correct++;
       verdict(allok); nextEnabled();
     };
+  } else if(it.kind==='multi'){   // marcar N opciones (como el examen real)
+    h+=`<p class="self-ask">Selecciona ${it.correct.length} opciones</p><div class="opts">`;
+    it.options.forEach((o,i)=>{ h+=`<button class="opt" data-i="${i}"><span class="k">▢</span><span>${esc(o)}</span></button>`; });
+    h+=`</div><button class="check-btn" id="check">Comprobar</button></div>`;
+    c.innerHTML=h;
+    const corr=new Set(it.correct);
+    const btns=[...c.querySelectorAll('.opt')];
+    btns.forEach(b=>b.onclick=()=>{ if(!b.disabled) b.classList.toggle('sel'); });
+    V('check').onclick=()=>{
+      const sel=new Set(btns.filter(b=>b.classList.contains('sel')).map(b=>+b.dataset.i));
+      const ok = sel.size===corr.size && [...sel].every(i=>corr.has(i));
+      btns.forEach(b=>{ b.disabled=true; const i=+b.dataset.i;
+        if(corr.has(i)) b.classList.add('correct');
+        else if(b.classList.contains('sel')) b.classList.add('wrong'); });
+      V('check').style.display='none';
+      recordAnswer(q.id, ok); if(ok) session.correct++;
+      verdict(ok); nextEnabled();
+    };
   } else { // 'select' : desplegables o emparejar
     h+=`<div class="blanks">`;
     if(it.segments){

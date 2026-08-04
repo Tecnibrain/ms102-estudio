@@ -1,6 +1,6 @@
 /* Service Worker: app shell precache + runtime cache para datos e imágenes */
-const V = 'ms102-v1';
-const SHELL = ['./','./index.html','./styles.css','./app.js','./manifest.json',
+const V = 'ms102-v3';
+const SHELL = ['./','./index.html','./styles.css?v=3','./app.js?v=3','./manifest.json',
   './icons/icon-192.png','./icons/icon-512.png'];
 
 self.addEventListener('install', e=>{

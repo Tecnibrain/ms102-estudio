@@ -1,0 +1,22 @@
+{
+ "19": {"kind":"multi",
+  "options":["Deployment mode","Join to Azure AD as","Microsoft Software License Terms","Privacy settings","Hide change account options","User account type","Allow pre-provisioned deployment","Language (Region)","Automatically configure keyboard","Apply device name template"],
+  "correct":[0,9]},
+ "33": {"kind":"multi",
+  "options":["App Store","Cellular and connectivity","Cloud and Storage","Cloud Printer","Control Panel and Settings","Display","General","Locked Screen Experience","Messaging","Microsoft Edge Browser","Network proxy","Password","Personalization","Printer","Privacy","Projection"],
+  "correct":[7,12]},
+ "35": {"kind":"multi",
+  "options":["Monthly Enterprise","Device Configuration","Policy Management","What's New Management","Apps Health","Security Update Status","OneDrive Sync","Service Health","Inventory","Setup"],
+  "correct":[1,2]},
+ "51": {"kind":"multi",
+  "options":["Microsoft Defender Application Guard","Microsoft Defender Firewall","Microsoft Defender SmartScreen","Windows Encryption","Microsoft Defender Exploit Guard","Microsoft Defender Application Control","Microsoft Defender Credential Guard","Microsoft Defender Security Center","Local device security options","Xbox services"],
+  "correct":[1,4]},
+ "81": {"kind":"select",
+  "blanks":[
+   {"label":"Devices must be joined to AD DS regardless of their current working location",
+    "options":["Deploy Always On VPN.","Install the Intune connector for Active Directory.","Modify the Autopilot deployment profile.","Edit the Co-management settings in Intune."],
+    "correct":0},
+   {"label":"The marketing department users must have an LOB app installed during the deployment",
+    "options":["Modify the Autopilot deployment profile.","Create a Microsoft Intune app deployment.","Create a device configuration profile in Intune."],
+    "correct":1}]}
+}

@@ -11,6 +11,20 @@ MAN = json.load(open('data/manual_drag.json', encoding='utf-8'))
 P = 'data/interactivas.json'
 inter = json.load(open(P, encoding='utf-8'))
 
+# hotspots transcritos a mano: 'multi' (marcar N) o 'select' con blanks ya listos
+try:
+    HS = json.load(open('data/manual_hotspot.json', encoding='utf-8'))
+except FileNotFoundError:
+    HS = {}
+for qid, m in HS.items():
+    e = dict(m); e['manual'] = True
+    e.setdefault('context_images', [])
+    if e['kind'] == 'multi':
+        assert all(0 <= i < len(e['options']) for i in e['correct']), qid
+    else:
+        assert all(0 <= b['correct'] < len(b['options']) for b in e['blanks']), qid
+    inter[qid] = e
+
 n = 0
 for qid, m in MAN.items():
     opts = m['options']

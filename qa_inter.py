@@ -27,7 +27,7 @@ def bad_option(o):
 
 def score(entry):
     """Devuelve (ok, motivo)."""
-    if entry['kind'] == 'yesno':
+    if entry['kind'] in ('yesno', 'multi'):
         return True, ''
     blanks = entry.get('blanks') or []
     if not blanks:
