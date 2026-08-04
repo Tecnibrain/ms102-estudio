@@ -50,7 +50,7 @@ def score(entry):
 
 keep, drop = {}, []
 for k, v in d.items():
-    if k in MANUAL:
+    if k in MANUAL or v.get('manual'):     # verificadas a mano: no filtrar
         keep[k] = v; continue
     ok, why = score(v)
     if ok:

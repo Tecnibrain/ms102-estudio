@@ -1915,5 +1915,745 @@
     "correct": 1
    }
   ]
+ },
+ "26": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Paso 1",
+    "options": [
+     "Modify a Windows 11 operating system setting.",
+     "Modify a selection profile.",
+     "Add App1 to DS1.",
+     "Identify the GUID of App1.",
+     "Modify CustomSettings.ini."
+    ],
+    "correct": 2
+   },
+   {
+    "label": "Paso 2",
+    "options": [
+     "Modify a Windows 11 operating system setting.",
+     "Modify a selection profile.",
+     "Add App1 to DS1.",
+     "Identify the GUID of App1.",
+     "Modify CustomSettings.ini."
+    ],
+    "correct": 3
+   },
+   {
+    "label": "Paso 3",
+    "options": [
+     "Modify a Windows 11 operating system setting.",
+     "Modify a selection profile.",
+     "Add App1 to DS1.",
+     "Identify the GUID of App1.",
+     "Modify CustomSettings.ini."
+    ],
+    "correct": 4
+   }
+  ],
+  "pool": "Actions",
+  "manual": true
+ },
+ "71": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Mostrar el progreso de las implementaciones de aplicaciones y perfiles",
+    "options": [
+     "Enrollment Status Page",
+     "Deployment Profiles"
+    ],
+    "correct": 0
+   },
+   {
+    "label": "Unir los dispositivos a Azure AD",
+    "options": [
+     "Enrollment Status Page",
+     "Deployment Profiles"
+    ],
+    "correct": 1
+   }
+  ],
+  "pool": "Opciones",
+  "manual": true
+ },
+ "74": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Paso 1",
+    "options": [
+     "Enable multicast.",
+     "Install Windows Deployment Services (WDS).",
+     "Create a deployment share.",
+     "Add the Windows 11 image.",
+     "Create a task sequence."
+    ],
+    "correct": 2
+   },
+   {
+    "label": "Paso 2",
+    "options": [
+     "Enable multicast.",
+     "Install Windows Deployment Services (WDS).",
+     "Create a deployment share.",
+     "Add the Windows 11 image.",
+     "Create a task sequence."
+    ],
+    "correct": 3
+   },
+   {
+    "label": "Paso 3",
+    "options": [
+     "Enable multicast.",
+     "Install Windows Deployment Services (WDS).",
+     "Create a deployment share.",
+     "Add the Windows 11 image.",
+     "Create a task sequence."
+    ],
+    "correct": 4
+   }
+  ],
+  "pool": "Actions",
+  "manual": true
+ },
+ "125": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Paso 1",
+    "options": [
+     "Create a Microsoft SharePoint Online site.",
+     "Purchase an Azure subscription.",
+     "Add diagnostic settings.",
+     "Install Microsoft Power BI Desktop.",
+     "Create a Log Analytics workspace.",
+     "Add a certificate connector to Microsoft Intune."
+    ],
+    "correct": 1
+   },
+   {
+    "label": "Paso 2",
+    "options": [
+     "Create a Microsoft SharePoint Online site.",
+     "Purchase an Azure subscription.",
+     "Add diagnostic settings.",
+     "Install Microsoft Power BI Desktop.",
+     "Create a Log Analytics workspace.",
+     "Add a certificate connector to Microsoft Intune."
+    ],
+    "correct": 4
+   },
+   {
+    "label": "Paso 3",
+    "options": [
+     "Create a Microsoft SharePoint Online site.",
+     "Purchase an Azure subscription.",
+     "Add diagnostic settings.",
+     "Install Microsoft Power BI Desktop.",
+     "Create a Log Analytics workspace.",
+     "Add a certificate connector to Microsoft Intune."
+    ],
+    "correct": 2
+   }
+  ],
+  "pool": "Actions",
+  "manual": true
+ },
+ "126": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "macOS",
+    "options": [
+     "Ansible",
+     "Group Policy",
+     "Microsoft Intune",
+     "Virtual Desktop Infrastructure (VDI) scripts"
+    ],
+    "correct": 2
+   },
+   {
+    "label": "Linux Server",
+    "options": [
+     "Ansible",
+     "Group Policy",
+     "Microsoft Intune",
+     "Virtual Desktop Infrastructure (VDI) scripts"
+    ],
+    "correct": 0
+   }
+  ],
+  "pool": "Tools",
+  "manual": true
+ },
+ "144": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Paso 1",
+    "options": [
+     "Copy the feature pack to D:\\MDTShare\\Tools\\x86.",
+     "Copy the feature pack to D:\\MDTShare\\Packages.",
+     "Modify the Windows PE properties of the deployment share.",
+     "Modify the General properties of the deployment share.",
+     "Update the deployment share."
+    ],
+    "correct": 0
+   },
+   {
+    "label": "Paso 2",
+    "options": [
+     "Copy the feature pack to D:\\MDTShare\\Tools\\x86.",
+     "Copy the feature pack to D:\\MDTShare\\Packages.",
+     "Modify the Windows PE properties of the deployment share.",
+     "Modify the General properties of the deployment share.",
+     "Update the deployment share."
+    ],
+    "correct": 2
+   },
+   {
+    "label": "Paso 3",
+    "options": [
+     "Copy the feature pack to D:\\MDTShare\\Tools\\x86.",
+     "Copy the feature pack to D:\\MDTShare\\Packages.",
+     "Modify the Windows PE properties of the deployment share.",
+     "Modify the General properties of the deployment share.",
+     "Update the deployment share."
+    ],
+    "correct": 4
+   }
+  ],
+  "pool": "Actions",
+  "manual": true
+ },
+ "146": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Enforces compliance",
+    "options": [
+     "A device restriction policy",
+     "A security baseline",
+     "An attack surface reduction (ASR) rule",
+     "An Intune connection"
+    ],
+    "correct": 3
+   },
+   {
+    "label": "Prevents suspicious scripts",
+    "options": [
+     "A device restriction policy",
+     "A security baseline",
+     "An attack surface reduction (ASR) rule",
+     "An Intune connection"
+    ],
+    "correct": 2
+   }
+  ],
+  "pool": "Features",
+  "manual": true
+ },
+ "182": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Step 1",
+    "options": [
+     "Create a compliance policy.",
+     "Create a Conditional Access policy.",
+     "Create an attack surface reduction (ASR) policy.",
+     "From Compliance policies, create a notification message template.",
+     "From Tenant admin, create a custom notification."
+    ],
+    "correct": 0
+   },
+   {
+    "label": "Step 2",
+    "options": [
+     "Create a compliance policy.",
+     "Create a Conditional Access policy.",
+     "Create an attack surface reduction (ASR) policy.",
+     "From Compliance policies, create a notification message template.",
+     "From Tenant admin, create a custom notification."
+    ],
+    "correct": 3
+   }
+  ],
+  "pool": "Actions",
+  "manual": true
+ },
+ "234": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Device1",
+    "options": [
+     "Delete",
+     "Fresh Start",
+     "Retire",
+     "Sync",
+     "Wipe"
+    ],
+    "correct": 1
+   },
+   {
+    "label": "Device2",
+    "options": [
+     "Delete",
+     "Fresh Start",
+     "Retire",
+     "Sync",
+     "Wipe"
+    ],
+    "correct": 2
+   }
+  ],
+  "pool": "Remote actions",
+  "manual": true
+ },
+ "239": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Paso 1",
+    "options": [
+     "Enable Group1 to join devices to Microsoft Entra.",
+     "Create a group named Group1 and add User1 to Group1.",
+     "Configure the mobile device management (MDM) user scope.",
+     "Assign the Cloud Device Administrator role to User1.",
+     "Instruct User1 to register Device1 in contoso.com.",
+     "Add User1 as a device enrollment manager.",
+     "Instruct User1 to join Device1 to contoso.com."
+    ],
+    "correct": 1
+   },
+   {
+    "label": "Paso 2",
+    "options": [
+     "Enable Group1 to join devices to Microsoft Entra.",
+     "Create a group named Group1 and add User1 to Group1.",
+     "Configure the mobile device management (MDM) user scope.",
+     "Assign the Cloud Device Administrator role to User1.",
+     "Instruct User1 to register Device1 in contoso.com.",
+     "Add User1 as a device enrollment manager.",
+     "Instruct User1 to join Device1 to contoso.com."
+    ],
+    "correct": 2
+   },
+   {
+    "label": "Paso 3",
+    "options": [
+     "Enable Group1 to join devices to Microsoft Entra.",
+     "Create a group named Group1 and add User1 to Group1.",
+     "Configure the mobile device management (MDM) user scope.",
+     "Assign the Cloud Device Administrator role to User1.",
+     "Instruct User1 to register Device1 in contoso.com.",
+     "Add User1 as a device enrollment manager.",
+     "Instruct User1 to join Device1 to contoso.com."
+    ],
+    "correct": 6
+   }
+  ],
+  "pool": "Actions",
+  "manual": true
+ },
+ "249": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Only allow the enrollment of devices with a specific IMEI",
+    "options": [
+     "CNAME Validation",
+     "Corporate device identifiers",
+     "Device enrollment managers",
+     "Device limit restriction",
+     "Device platform restriction"
+    ],
+    "correct": 1
+   },
+   {
+    "label": "Support the enrollment and management of up to 1,000 devices",
+    "options": [
+     "CNAME Validation",
+     "Corporate device identifiers",
+     "Device enrollment managers",
+     "Device limit restriction",
+     "Device platform restriction"
+    ],
+    "correct": 2
+   }
+  ],
+  "pool": "Enrollment settings",
+  "manual": true
+ },
+ "276": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Paso 1",
+    "options": [
+     "Create device configuration SCEP certificate profiles.",
+     "Create an issuing certification authority (CA).",
+     "Create device configuration PKCS certificate profiles.",
+     "Create device configuration trusted certificate profiles.",
+     "Create a root certification authority (CA).",
+     "Create an account protection profile.",
+     "Create a Windows platform script."
+    ],
+    "correct": 4
+   },
+   {
+    "label": "Paso 2",
+    "options": [
+     "Create device configuration SCEP certificate profiles.",
+     "Create an issuing certification authority (CA).",
+     "Create device configuration PKCS certificate profiles.",
+     "Create device configuration trusted certificate profiles.",
+     "Create a root certification authority (CA).",
+     "Create an account protection profile.",
+     "Create a Windows platform script."
+    ],
+    "correct": 1
+   },
+   {
+    "label": "Paso 3",
+    "options": [
+     "Create device configuration SCEP certificate profiles.",
+     "Create an issuing certification authority (CA).",
+     "Create device configuration PKCS certificate profiles.",
+     "Create device configuration trusted certificate profiles.",
+     "Create a root certification authority (CA).",
+     "Create an account protection profile.",
+     "Create a Windows platform script."
+    ],
+    "correct": 3
+   },
+   {
+    "label": "Paso 4",
+    "options": [
+     "Create device configuration SCEP certificate profiles.",
+     "Create an issuing certification authority (CA).",
+     "Create device configuration PKCS certificate profiles.",
+     "Create device configuration trusted certificate profiles.",
+     "Create a root certification authority (CA).",
+     "Create an account protection profile.",
+     "Create a Windows platform script."
+    ],
+    "correct": 0
+   }
+  ],
+  "pool": "Actions",
+  "manual": true
+ },
+ "290": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Requires BitLocker",
+    "options": [
+     "Device Health",
+     "Device Properties",
+     "Microsoft Defender for Endpoint",
+     "System Security"
+    ],
+    "correct": 0
+   },
+   {
+    "label": "Requires a minimum operating system version",
+    "options": [
+     "Device Health",
+     "Device Properties",
+     "Microsoft Defender for Endpoint",
+     "System Security"
+    ],
+    "correct": 1
+   }
+  ],
+  "pool": "Settings",
+  "manual": true
+ },
+ "302": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Device1 (Windows 10)",
+    "options": [
+     "Require BitLocker",
+     "Prevent jailbroken devices from having corporate access.",
+     "Prevent rooted devices from having corporate access.",
+     "Require Secure Boot to be enabled on the device."
+    ],
+    "correct": 3
+   },
+   {
+    "label": "Device2 (iOS)",
+    "options": [
+     "Require BitLocker",
+     "Prevent jailbroken devices from having corporate access.",
+     "Prevent rooted devices from having corporate access.",
+     "Require Secure Boot to be enabled on the device."
+    ],
+    "correct": 1
+   },
+   {
+    "label": "Device3 (Android Enterprise)",
+    "options": [
+     "Require BitLocker",
+     "Prevent jailbroken devices from having corporate access.",
+     "Prevent rooted devices from having corporate access.",
+     "Require Secure Boot to be enabled on the device."
+    ],
+    "correct": 2
+   }
+  ],
+  "pool": "Settings",
+  "manual": true
+ },
+ "303": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Paso 1",
+    "options": [
+     "Review the compliance dashboard for results.",
+     "Create and assign a compliance policy that has System Security settings configured.",
+     "Review the Conditional Access Insights and Reporting workbook for results.",
+     "Create a PowerShell discovery script and a JSON file.",
+     "Upload the PowerShell script to Intune.",
+     "Upload the JSON file to Azure AD.",
+     "Create and assign a custom compliancy policy."
+    ],
+    "correct": 3
+   },
+   {
+    "label": "Paso 2",
+    "options": [
+     "Review the compliance dashboard for results.",
+     "Create and assign a compliance policy that has System Security settings configured.",
+     "Review the Conditional Access Insights and Reporting workbook for results.",
+     "Create a PowerShell discovery script and a JSON file.",
+     "Upload the PowerShell script to Intune.",
+     "Upload the JSON file to Azure AD.",
+     "Create and assign a custom compliancy policy."
+    ],
+    "correct": 4
+   },
+   {
+    "label": "Paso 3",
+    "options": [
+     "Review the compliance dashboard for results.",
+     "Create and assign a compliance policy that has System Security settings configured.",
+     "Review the Conditional Access Insights and Reporting workbook for results.",
+     "Create a PowerShell discovery script and a JSON file.",
+     "Upload the PowerShell script to Intune.",
+     "Upload the JSON file to Azure AD.",
+     "Create and assign a custom compliancy policy."
+    ],
+    "correct": 6
+   },
+   {
+    "label": "Paso 4",
+    "options": [
+     "Review the compliance dashboard for results.",
+     "Create and assign a compliance policy that has System Security settings configured.",
+     "Review the Conditional Access Insights and Reporting workbook for results.",
+     "Create a PowerShell discovery script and a JSON file.",
+     "Upload the PowerShell script to Intune.",
+     "Upload the JSON file to Azure AD.",
+     "Create and assign a custom compliancy policy."
+    ],
+    "correct": 0
+   }
+  ],
+  "pool": "Actions",
+  "manual": true
+ },
+ "311": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Paso 1",
+    "options": [
+     "Modify the task sequence.",
+     "Replace the ISO image.",
+     "Modify the CustomSettings.ini file",
+     "Modify the Bootstrap.ini file",
+     "Update the deployment share."
+    ],
+    "correct": 2
+   },
+   {
+    "label": "Paso 2",
+    "options": [
+     "Modify the task sequence.",
+     "Replace the ISO image.",
+     "Modify the CustomSettings.ini file",
+     "Modify the Bootstrap.ini file",
+     "Update the deployment share."
+    ],
+    "correct": 0
+   },
+   {
+    "label": "Paso 3",
+    "options": [
+     "Modify the task sequence.",
+     "Replace the ISO image.",
+     "Modify the CustomSettings.ini file",
+     "Modify the Bootstrap.ini file",
+     "Update the deployment share."
+    ],
+    "correct": 4
+   }
+  ],
+  "pool": "Actions",
+  "manual": true
+ },
+ "317": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Paso 1",
+    "options": [
+     "Configure known folder redirection in Microsoft OneDrive.",
+     "Run scanstate.exe.",
+     "Run loadstate.exe.",
+     "Enable Enterprise State Roaming.",
+     "Create a system image Backup.",
+     "Deploy Windows 11.",
+     "Restore a system image backup."
+    ],
+    "correct": 1
+   },
+   {
+    "label": "Paso 2",
+    "options": [
+     "Configure known folder redirection in Microsoft OneDrive.",
+     "Run scanstate.exe.",
+     "Run loadstate.exe.",
+     "Enable Enterprise State Roaming.",
+     "Create a system image Backup.",
+     "Deploy Windows 11.",
+     "Restore a system image backup."
+    ],
+    "correct": 5
+   },
+   {
+    "label": "Paso 3",
+    "options": [
+     "Configure known folder redirection in Microsoft OneDrive.",
+     "Run scanstate.exe.",
+     "Run loadstate.exe.",
+     "Enable Enterprise State Roaming.",
+     "Create a system image Backup.",
+     "Deploy Windows 11.",
+     "Restore a system image backup."
+    ],
+    "correct": 2
+   }
+  ],
+  "pool": "Actions",
+  "manual": true
+ },
+ "346": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Paso 1",
+    "options": [
+     "Upload the file by using Microsoft Intune.",
+     "Generate a CSV file that contains the computer information.",
+     "Reset the computer.",
+     "Generate a JSON file that contains the computer information.",
+     "Upload the file by running azcopy.exe."
+    ],
+    "correct": 1
+   },
+   {
+    "label": "Paso 2",
+    "options": [
+     "Upload the file by using Microsoft Intune.",
+     "Generate a CSV file that contains the computer information.",
+     "Reset the computer.",
+     "Generate a JSON file that contains the computer information.",
+     "Upload the file by running azcopy.exe."
+    ],
+    "correct": 0
+   },
+   {
+    "label": "Paso 3",
+    "options": [
+     "Upload the file by using Microsoft Intune.",
+     "Generate a CSV file that contains the computer information.",
+     "Reset the computer.",
+     "Generate a JSON file that contains the computer information.",
+     "Upload the file by running azcopy.exe."
+    ],
+    "correct": 2
+   }
+  ],
+  "pool": "Actions",
+  "manual": true
+ },
+ "368": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Paso 1",
+    "options": [
+     "From the Microsoft Intune admin center, configure enrollment restrictions.",
+     "From the Enterprise CA, configure certificate managers.",
+     "Obtain the root certificate.",
+     "From the Microsoft Intune admin center, create a trusted certificate configuration profile.",
+     "From the Microsoft Intune admin center, create a PKCS certificate configuration profile."
+    ],
+    "correct": 2
+   },
+   {
+    "label": "Paso 2",
+    "options": [
+     "From the Microsoft Intune admin center, configure enrollment restrictions.",
+     "From the Enterprise CA, configure certificate managers.",
+     "Obtain the root certificate.",
+     "From the Microsoft Intune admin center, create a trusted certificate configuration profile.",
+     "From the Microsoft Intune admin center, create a PKCS certificate configuration profile."
+    ],
+    "correct": 3
+   },
+   {
+    "label": "Paso 3",
+    "options": [
+     "From the Microsoft Intune admin center, configure enrollment restrictions.",
+     "From the Enterprise CA, configure certificate managers.",
+     "Obtain the root certificate.",
+     "From the Microsoft Intune admin center, create a trusted certificate configuration profile.",
+     "From the Microsoft Intune admin center, create a PKCS certificate configuration profile."
+    ],
+    "correct": 4
+   }
+  ],
+  "pool": "Actions",
+  "manual": true
  }
 }
