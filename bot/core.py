@@ -48,16 +48,24 @@ def send_photo(path, caption=None, spoiler=False, chat=None):
         return api('sendPhoto', data=data, files={'photo': f})
 
 
-def send_quiz(question, options, correct_idx, explanation=None, chat=None):
+def send_quiz(question, options, correct_idx, explanation=None, chat=None,
+              qid=None, tema=None, st=None, exam=None):
     p = {'chat_id': chat or CHAT_ID, 'question': question[:300],
          'options': json.dumps([o[:100] for o in options], ensure_ascii=False),
          'type': 'quiz', 'correct_option_id': correct_idx, 'is_anonymous': 'false'}
     if explanation:
         p['explanation'] = explanation[:200]
-    return api('sendPoll', data=p)
+    r = api('sendPoll', data=p)
+    # registrar la encuesta para poder puntuar la respuesta más tarde
+    if st is not None and r.get('ok'):
+        poll = (r.get('result') or {}).get('poll') or {}
+        pid = poll.get('id')
+        if pid:
+            st['polls'][pid] = {'q': qid, 'c': correct_idx, 'tema': tema, 'x': exam}
+    return r
 
 
-def deliver(q, num, total, chat=None):
+def deliver(q, num, total, chat=None, st=None, exam=None):
     tema = q.get('tema', '')
     stem = (q.get('stem') or '').strip()
     expl = (q.get('explicacion') or '').strip()
@@ -75,12 +83,14 @@ def deliver(q, num, total, chat=None):
         if it['kind'] == 'yesno':
             for s in it['statements']:
                 send_quiz(s['t'][:300], ['Sí', 'No'],
-                          0 if s['a'] == 'yes' else 1, expl or None, chat=chat)
+                          0 if s['a'] == 'yes' else 1, expl or None, chat=chat,
+                          qid=q['id'], tema=tema, st=st, exam=exam)
                 time.sleep(0.4)
         else:
             for bl in it['blanks']:
                 label = bl.get('label') or 'Elige la opción correcta'
-                send_quiz(label[:300], bl['options'], bl['correct'], expl or None, chat=chat)
+                send_quiz(label[:300], bl['options'], bl['correct'], expl or None,
+                          chat=chat, qid=q['id'], tema=tema, st=st, exam=exam)
                 time.sleep(0.4)
         return
 
@@ -96,10 +106,12 @@ def deliver(q, num, total, chat=None):
             cidx = letters.index(correct[0])
             qtext = f'{header}\n\n{stem}'
             if len(stem) <= 250 and len(qtext) <= 300:
-                send_quiz(qtext, opts, cidx, exp_txt, chat=chat)
+                send_quiz(qtext, opts, cidx, exp_txt, chat=chat,
+                          qid=q['id'], tema=tema, st=st, exam=exam)
             else:
                 send_msg(f'{header}\n\n{stem}', chat=chat)
-                send_quiz('¿Cuál es la respuesta correcta?', opts, cidx, exp_txt, chat=chat)
+                send_quiz('¿Cuál es la respuesta correcta?', opts, cidx, exp_txt,
+                          chat=chat, qid=q['id'], tema=tema, st=st, exam=exam)
         else:
             body = f'{header}\n\n{stem}\n\n' + '\n'.join(
                 f'{o["letter"]}. {o["text"]}' for o in q['options'])
@@ -130,12 +142,17 @@ def send_batch(n, chat=None, header_msg=None):
 
 def set_commands():
     cmds = [
-        {'command': 'reto',   'description': 'Recibir el reto de hoy'},
-        {'command': 'mas',    'description': 'Enviar 3 preguntas más'},
-        {'command': 'mas5',   'description': 'Enviar 5 preguntas más'},
-        {'command': 'mas10',  'description': 'Enviar 10 preguntas más'},
-        {'command': 'cantidad','description': 'Cambiar preguntas por día (ej: /cantidad 5)'},
-        {'command': 'web',    'description': 'Abrir la app web de estudio'},
-        {'command': 'ayuda',  'description': 'Ver la ayuda'},
+        {'command': 'reto',      'description': '🎯 El reto de hoy'},
+        {'command': 'mas',       'description': '➕ 3 preguntas más'},
+        {'command': 'flash',     'description': '⚡ 5 preguntas rápidas'},
+        {'command': 'mas10',     'description': '➕ 10 preguntas más'},
+        {'command': 'examen',    'description': '🎓 Simulacro de examen'},
+        {'command': 'resultado', 'description': '📋 Calificar el simulacro'},
+        {'command': 'stats',     'description': '📊 Tu progreso y precisión'},
+        {'command': 'debiles',   'description': '🔁 Repasar lo que más fallas'},
+        {'command': 'tema',      'description': '📚 Elegir dominio del examen'},
+        {'command': 'cantidad',  'description': '⚙️ Preguntas por día (ej: /cantidad 5)'},
+        {'command': 'web',       'description': '🌐 Abrir la app web'},
+        {'command': 'ayuda',     'description': '❓ Ver la ayuda'},
     ]
     api('setMyCommands', data={'commands': json.dumps(cmds, ensure_ascii=False)})

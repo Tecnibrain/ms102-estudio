@@ -1,0 +1,7 @@
+{
+ "polls": {},
+ "stats": {"total": 0, "correct": 0, "tema": {}, "q": {}},
+ "exam": null,
+ "streak": {"count": 0, "last": null},
+ "daily": 3
+}
