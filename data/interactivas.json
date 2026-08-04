@@ -12,14 +12,14 @@
    {
     "options": [
      "net accounts",
-     "net localgroup",
+     "net local group",
      "net user"
     ],
     "correct": 1
    },
    {
     "options": [
-     "AzureAD",
+     "Azure AD",
      "CONTOSO",
      "UPN"
     ],
@@ -38,15 +38,15 @@
   ],
   "statements": [
    {
-    "t": "User1 can create a file named D:\\Folder1\\file1.txt on Device4 by using Notepad.",
+    "t": "User 1 can create a file named D:\\Folder 1\\file 1. txt on Device 4 by using Notepad.",
     "a": "no"
    },
    {
-    "t": "User2 can remove D:\\Folder1 from the list of protected folders on Device2.",
+    "t": "User 2 can remove D:\\Folder 1 from the list of protected folders on Device 2.",
     "a": "yes"
    },
    {
-    "t": "User3 can create a file named C:\\Users\\User3\\Desktop\\file1.txt on Device2 by running a custom Windows PowerShell script.",
+    "t": "User 3 can create a file named C:\\Users\\User 3\\Desktop\\file 1. txt on Device 2 by running a custom Windows Power Shell script.",
     "a": "no"
    }
   ]
@@ -59,15 +59,15 @@
   ],
   "statements": [
    {
-    "t": "On January 7, Device1 is marked as compliant.",
+    "t": "On January 7, Device 1 is marked as compliant.",
     "a": "no"
    },
    {
-    "t": "On January 8, Device1 is marked as compliant.",
+    "t": "On January 8, Device 1 is marked as compliant.",
     "a": "no"
    },
    {
-    "t": "On January 8, Device2 is marked as compliant.",
+    "t": "On January 8, Device 2 is marked as compliant.",
     "a": "yes"
    }
   ]
@@ -80,15 +80,15 @@
   ],
   "statements": [
    {
-    "t": "The compliance status of Computer1 is in grace period.",
+    "t": "The compliance status of Computer 1 is in grace period.",
     "a": "yes"
    },
    {
-    "t": "The compliance status of Computer2 is Compliant.",
+    "t": "The compliance status of Computer 2 is Compliant.",
     "a": "yes"
    },
    {
-    "t": "The compliance status of Computer3 is Not compliant.",
+    "t": "The compliance status of Computer 3 is Not compliant.",
     "a": "no"
    }
   ]
@@ -100,15 +100,15 @@
   ],
   "statements": [
    {
-    "t": "On June 4, Device1 is marked as compliant.",
+    "t": "On June 4, Device 1 is marked as compliant.",
     "a": "no"
    },
    {
-    "t": "On June 6, Device1 is marked as compliant.",
+    "t": "On June 6, Device 1 is marked as compliant.",
     "a": "no"
    },
    {
-    "t": "On June 9, Device2 is marked as compliant.",
+    "t": "On June 9, Device 2 is marked as compliant.",
     "a": "yes"
    }
   ]
@@ -121,15 +121,15 @@
   ],
   "statements": [
    {
-    "t": "If User1 registers Device1 in contoso.com, Device1 is enrolled automatically in Microsoft Intune.",
+    "t": "If User 1 registers Device 1 in contoso. com, Device 1 is enrolled automatically in Microsoft Intune.",
     "a": "yes"
    },
    {
-    "t": "If User1 joins Device1 to contoso.com, Device2 is enrolled automatically in Microsoft Intune.",
+    "t": "If User 1 joins Device 1 to contoso. com, Device 2 is enrolled automatically in Microsoft Intune.",
     "a": "no"
    },
    {
-    "t": "If User2 registers Device3 in contoso.com, Device3 is enrolled automatically in Microsoft Intune.",
+    "t": "If User 2 registers Device 3 in contoso. com, Device 3 is enrolled automatically in Microsoft Intune.",
     "a": "no"
    }
   ]
@@ -142,15 +142,15 @@
   ],
   "statements": [
    {
-    "t": "User1 can establish a Remote Desktop session to Computer2.",
+    "t": "User 1 can establish a Remote Desktop session to Computer 2.",
     "a": "yes"
    },
    {
-    "t": "User2 can establish a Remote Desktop session to Computer2.",
+    "t": "User 2 can establish a Remote Desktop session to Computer 2.",
     "a": "no"
    },
    {
-    "t": "User3 can establish a Remote Desktop session to Computer2.",
+    "t": "User 3 can establish a Remote Desktop session to Computer 2.",
     "a": "yes"
    }
   ]
@@ -164,15 +164,15 @@
   ],
   "statements": [
    {
-    "t": "If User1 signs in to Device1, Device1 will have both Configuration Profile1 and Compliance Policy1 assigned.",
+    "t": "If User 1 signs in to Device 1, Device 1 will have both Configuration Profile 1 and Compliance Policy 1 assigned.",
     "a": "no"
    },
    {
-    "t": "If User2 signs in to Device2, Device2 will have both Configuration Profile1 and Compliance Policy1 assigned.",
+    "t": "If User 2 signs in to Device 2, Device 2 will have both Configuration Profile 1 and Compliance Policy 1 assigned.",
     "a": "yes"
    },
    {
-    "t": "If User3 signs in to Device3, Device3 will have both Configuration Profile1 and Compliance Policy1 assigned.",
+    "t": "If User 3 signs in to Device 3, Device 3 will have both Configuration Profile 1 and Compliance Policy 1 assigned.",
     "a": "no"
    }
   ]
@@ -185,15 +185,15 @@
   ],
   "statements": [
    {
-    "t": "Device1 is marked as compliant.",
+    "t": "Device 1 is marked as compliant.",
     "a": "yes"
    },
    {
-    "t": "Device2 is marked as compliant.",
+    "t": "Device 2 is marked as compliant.",
     "a": "yes"
    },
    {
-    "t": "Device3 is marked as compliant.",
+    "t": "Device 3 is marked as compliant.",
     "a": "no"
    }
   ]
@@ -205,20 +205,20 @@
    {
     "label": "",
     "options": [
-     "LON-CL2 only",
-     "LON-CL4 Only",
-     "Both LON-CL2 and LON-CL4",
-     "Neither LON-CL2 or LON-CL4"
+     "LON-CL 2 only",
+     "LON-CL 4 Only",
+     "Both LON-CL 2 and LON-CL 4",
+     "Neither LON-CL 2 or LON-CL 4"
     ],
     "correct": 0
    },
    {
     "label": "",
     "options": [
-     "LON-CL2 only",
-     "LON-CL4 only",
-     "Both LON-CL2 and LON-CL4",
-     "Neither LON-CL2 or LON-CL4"
+     "LON-CL 2 only",
+     "LON-CL 4 only",
+     "Both LON-CL 2 and LON-CL 4",
+     "Neither LON-CL 2 or LON-CL 4"
     ],
     "correct": 1
    }
@@ -307,21 +307,21 @@
    {
     "label": "Standard Olient Task Sequence",
     "options": [
-     "Image3only",
-     "Image3,Image4,andlmage5only",
-     "Image1,Image2,andlmage3only",
-     "Image1.Image2lmage3.and Image4only",
-     "Image1.Image2.lmage3.lmade4.andlmage5"
+     "Image 3 only",
+     "Image 3, Image 4, and Image 5 only",
+     "Image 1, Image 2, and Image 3 only",
+     "Image 1. Image 2 Image 3. and Image 4 only",
+     "Image 1. Image 2. Image 3. Image 4. and Image 5"
     ],
     "correct": 4
    },
    {
     "label": "",
     "options": [
-     "Image3only",
-     "Image3,Image4,andlmage5only",
-     "Image1.lmage2.andlmage3only",
-     "Image1,lmage2,mage3,andmage4only"
+     "Image 3 only",
+     "Image 3, Image 4, and Image 5 only",
+     "Image 1. Image 2. and Image 3 only",
+     "Image 1, Image 2, mage 3, andmage 4 only"
     ],
     "correct": 3
    }
@@ -334,18 +334,18 @@
    {
     "label": "To apply the profile to a new computer, you must first",
     "options": [
-     "jointhedeviceto Azure AD",
+     "join the device to Azure AD",
      "enroll the device in Microsoft Intune",
-     "limport a CSVfileinto Windows Autopilot"
+     "Import a CSV file into Windows Autopilot"
     ],
     "correct": 2
    },
    {
     "label": "When the Windows Autopilot profile is",
     "options": [
-     "joinedto Azure ADonly",
-     "registeredin Azure ADonly",
-     "joinedto Active Directoryonly",
+     "joined to Azure ADonly",
+     "registered in Azure ADonly",
+     "joined to Active Directoryonly",
      "joined to Active Directory and registered in Azure AD"
     ],
     "correct": 0
@@ -373,30 +373,6 @@
      "Windows 11 Pro for Workstations"
     ],
     "correct": 0
-   }
-  ]
- },
- "86": {
-  "kind": "select",
-  "context_images": [],
-  "blanks": [
-   {
-    "label": "Requirement1",
-    "options": [
-     "A conditional access policy",
-     "A device compliance policy",
-     "A device configuration profile"
-    ],
-    "correct": 0
-   },
-   {
-    "label": "Requirement2",
-    "options": [
-     "A condifional access policy",
-     "A device compliance policy",
-     "A aevice conmgurauomproile"
-    ],
-    "correct": 1
    }
   ]
  },
@@ -459,9 +435,9 @@
    {
     "label": "",
     "options": [
-     "Create a collector inifiated subscription",
+     "Create a collector initiated subscription",
      "Install the Azure Monitor Agent",
-     "Enrollin Microsoft Intune",
+     "Enroll in Microsoft Intune",
      "Register to Azure AD"
     ],
     "correct": 0
@@ -487,7 +463,7 @@
     "options": [
      "Imported public key pair (PKCS) certificate",
      "Public key pair (PKCS) certificate",
-     "Simnle Certificate Enrollment Protocol (SCEP) certificate",
+     "Simple Certificate Enrollment Protocol (SCEP) certificate",
      "Trusted certificate"
     ],
     "correct": 3
@@ -501,20 +477,20 @@
    {
     "label": "",
     "options": [
-     "Group3 only",
-     "Group4 only",
-     "Group5 only",
-     "Group3, Group4, and Group5 only"
+     "Group 3 only",
+     "Group 4 only",
+     "Group 5 only",
+     "Group 3, Group 4, and Group 5 only"
     ],
     "correct": 0
    },
    {
-    "label": "Computer1 will be a member of",
+    "label": "Computer 1 will be a member of",
     "options": [
-     "Group1 only",
-     "Group2 only",
-     "Group1 and Group2 only",
-     "Group1, Group2, Group3, Group4, and Group5"
+     "Group 1 only",
+     "Group 2 only",
+     "Group 1 and Group 2 only",
+     "Group 1, Group 2, Group 3, Group 4, and Group 5"
     ],
     "correct": 0
    }
@@ -527,7 +503,7 @@
    {
     "label": "",
     "options": [
-     "Deliverv onfimization",
+     "Delivery optimization",
      "Device restriction.",
      "Endpoint protection",
      "Identity protection"
@@ -624,7 +600,7 @@
     "label": "",
     "options": [
      "Removed",
-     "Rerained and the credentials will be cached",
+     "Retained and the credentials will be cached",
      "Retained but the credentials will be reset"
     ],
     "correct": 0
@@ -649,9 +625,9 @@
    {
     "label": "",
     "options": [
-     "Image1.wim",
-     "Image2.wim",
-     "Install.wim"
+     "Image 1. wim",
+     "Image 2. wim",
+     "Install. wim"
     ],
     "correct": 2
    }
@@ -664,7 +640,7 @@
    {
     "label": "",
     "options": [
-     "FIDQ2 security kevs",
+     "FIDQ 2 security kevs",
      "Microsoft Authenticator",
      "Temporary Access Pass",
      "Windows Hello for Business"
@@ -674,7 +650,7 @@
    {
     "label": "",
     "options": [
-     "FIDO2 security kevs",
+     "FIDO 2 security kevs",
      "Microsoft Authenticator",
      "Temporary Access Pass",
      "Windows Hello for Business"
@@ -690,7 +666,7 @@
    {
     "label": "Prevent the users from using Outlook",
     "options": [
-     "Access reauirements",
+     "Access requirements",
      "Conditional launch",
      "Data protection",
      "Scope"
@@ -746,7 +722,7 @@
      "Android enrollment",
      "Apple enrollment",
      "Corporate device identifiers",
-     "Device cateaories",
+     "Device categories",
      "Enrollment restrictions",
      "Windows enrollment"
     ],
@@ -773,7 +749,7 @@
   ],
   "blanks": [
    {
-    "label": "Device1",
+    "label": "Device 1",
     "options": [
      "File Vault",
      "Cryptsetup",
@@ -783,7 +759,7 @@
     "correct": 3
    },
    {
-    "label": "Device2",
+    "label": "Device 2",
     "options": [
      "File Vault",
      "Cryptsetup",
@@ -813,20 +789,20 @@
    {
     "label": "",
     "options": [
-     "Can get updates from Device3 only.]",
+     "Can get updates from Device 3 only.]",
      "Cannot get updates from any device.",
-     "Can get updates from Device1 and Device3 only.",
-     "Can get updates from Device1, Device3, and Device4."
+     "Can get updates from Device 1 and Device 3 only.",
+     "Can get updates from Device 1, Device 3, and Device 4."
     ],
     "correct": 0
    },
    {
     "label": "",
     "options": [
-     "Can get updates from Device3 only.",
+     "Can get updates from Device 3 only.",
      "Cannot get updates from any device.",
-     "Can get updates from Device1 and Device3 only.",
-     "Can get updates from Device1, Device3, and Device4."
+     "Can get updates from Device 1 and Device 3 only.",
+     "Can get updates from Device 1, Device 3, and Device 4."
     ],
     "correct": 1
    }
@@ -857,7 +833,7 @@
     "options": [
      "Deployment Image Servicing and Management (Di SM)",
      "Microsoft Application Virtualization (App-V) Sequencer",
-     "Win32 Content Prep Tool]",
+     "Win 32 Content Prep Tool]",
      "Windows Package Manager"
     ],
     "correct": 2
@@ -865,7 +841,7 @@
    {
     "label": "",
     "options": [
-     ".apk",
+     ". apk",
      "appv",
      "intunewin",
      "edr"
@@ -933,10 +909,10 @@
    {
     "label": "",
     "options": [
-     "Bootstrap.ini",
-     "Custom Settings.ini",
-     "Seungs.ini",
-     "System.ini"
+     "Bootstrap. ini",
+     "Custom Settings. ini",
+     "Seungs. ini",
+     "System. ini"
     ],
     "correct": 1
    },
@@ -944,9 +920,9 @@
     "label": "",
     "options": [
      "Bootstran ini",
-     "Custom Settings.ini",
-     "Settings.ini",
-     "System.ini"
+     "Custom Settings. ini",
+     "Settings. ini",
+     "System. ini"
     ],
     "correct": 1
    }
@@ -957,24 +933,24 @@
   "context_images": [],
   "blanks": [
    {
-    "label": "Devicesyoucanremovefrom Intunebyusing the Wipe action",
+    "label": "Devicesyou can remove from Intunebyusing the Wipe action",
     "options": [
-     "Device1only",
-     "Device1and Device2only",
-     "Device1,Device2,and Device3only",
-     "Device1Device2and Device4only",
-     "Device1,Device2,Device3,and Device4"
+     "Device 1 only",
+     "Device 1 and Device 2 only",
+     "Device 1, Device 2, and Device 3 only",
+     "Device 1 Device 2 and Device 4 only",
+     "Device 1, Device 2, Device 3, and Device 4"
     ],
     "correct": 4
    },
    {
     "label": "Theenrollmentstateandtheassociateduser",
     "options": [
-     "Device1only",
-     "Device1and Device2only",
-     "Device1,Device2,and Device3only",
-     "Device1,Device2,and Device4only",
-     "Device1,Device2.Device3,and Device4"
+     "Device 1 only",
+     "Device 1 and Device 2 only",
+     "Device 1, Device 2, and Device 3 only",
+     "Device 1, Device 2, and Device 4 only",
+     "Device 1, Device 2. Device 3, and Device 4"
     ],
     "correct": 0
    }
@@ -1011,20 +987,20 @@
    {
     "label": "",
     "options": [
-     "Computer1 only",
-     "Computer1 and Computer2 only",
-     "Computer1 and Computer3 only",
-     "Computer1, Computer2, Computer3, and Computer4"
+     "Computer 1 only",
+     "Computer 1 and Computer 2 only",
+     "Computer 1 and Computer 3 only",
+     "Computer 1, Computer 2, Computer 3, and Computer 4"
     ],
     "correct": 0
    },
    {
     "label": "",
     "options": [
-     "Computer1 only",
-     "Computer1 and Computer2 only",
-     "Computer1 and Computer3 only",
-     "IComputer1, Computer2, and Computer4 only"
+     "Computer 1 only",
+     "Computer 1 and Computer 2 only",
+     "Computer 1 and Computer 3 only",
+     "IComputer 1, Computer 2, and Computer 4 only"
     ],
     "correct": 3
    }
@@ -1048,7 +1024,7 @@
     "label": "",
     "options": [
      "Configure the Event Collector service",
-     "Create an event subscripfion",
+     "Create an event subscription",
      "Install the Azure Monitor Agent"
     ],
     "correct": 2
@@ -1088,11 +1064,11 @@
    {
     "label": "Devicesthatsupporttheremotelockaction",
     "options": [
-     "Device1only",
-     "Device2and Device3only",
-     "Device4and Device5only",
-     "Device2,Device3,Device4,and Device5",
-     "Device1,Device2,Device3,Device4,and Devic5"
+     "Device 1 only",
+     "Device 2 and Device 3 only",
+     "Device 4 and Device 5 only",
+     "Device 2, Device 3, Device 4, and Device 5",
+     "Device 1, Device 2, Device 3, Device 4, and Devic 5"
     ],
     "correct": 3
    }
@@ -1115,10 +1091,10 @@
    {
     "label": "Maximumamountoftime",
     "options": [
-     "30days",
-     "90.days",
-     "180days",
-     "365days"
+     "30 days",
+     "90. days",
+     "180 days",
+     "365 days"
     ],
     "correct": 1
    }
@@ -1180,9 +1156,9 @@
    {
     "label": "Profile type",
     "options": [
-     "Featureupdatesfor Windows10andlater",
-     "Qualityupdatesfor Windows10andlater",
-     "Updateringsfor Windows10andlater"
+     "Feature updates for Windows 10 and later",
+     "Quality updates for Windows 10 and later",
+     "Update rings for Windows 10 and later"
     ],
     "correct": 2
    }
@@ -1230,22 +1206,22 @@
    {
     "label": "",
     "options": [
-     "Device1only",
-     "Device1 and Device2only",
+     "Device 1 only",
+     "Device 1 and Device 2 only",
      "Devce Tana Devicesonty",
-     "Device1,Device2,and Device3only",
-     "Device1,Device2,Device3,and Device4"
+     "Device 1, Device 2, and Device 3 only",
+     "Device 1, Device 2, Device 3, and Device 4"
     ],
     "correct": 0
    },
    {
     "label": "",
     "options": [
-     "Device1only",
-     "Device1 and Device2only",
-     "Device1and Device3only",
-     "Device1 Device2 and Device3 only",
-     "Device1,Device2,Device3,and Device4"
+     "Device 1 only",
+     "Device 1 and Device 2 only",
+     "Device 1 and Device 3 only",
+     "Device 1 Device 2 and Device 3 only",
+     "Device 1, Device 2, Device 3, and Device 4"
     ],
     "correct": 4
    }
@@ -1285,8 +1261,8 @@
     "label": "",
     "options": [
      "Enroll the device in Intune.",
-     "Installthe Intuneapp.",
-     "Install the Microsoft Defenderfor Endpoint app."
+     "Install the Intune app.",
+     "Install the Microsoft Defender for Endpoint app."
     ],
     "correct": 2
    },
@@ -1295,7 +1271,7 @@
     "options": [
      "Change the Device Ownershipproperty.",
      "Install Edge.",
-     "Install the Microsoft Defenderfor Endpointapp."
+     "Install the Microsoft Defender for Endpoint app."
     ],
     "correct": 1
    }
@@ -1308,7 +1284,7 @@
    {
     "label": "Answer Area",
     "options": [
-     "Configure the Advanced featuressettings.",
+     "Configure the Advanced features settings.",
      "Cohrgtre Tmtune Peissionssengs",
      "Select Onboarding and then configure the Deploymentmethod setting."
     ],
@@ -1319,7 +1295,7 @@
     "options": [
      "Createa Configuration profle.",
      "Configure the Comolance settings",
-     "Configurethe Microsol Delenderfor Endpointsettings"
+     "Configure the Microsol Delenderfor Endpointsettings"
     ],
     "correct": 1
    }
@@ -1360,20 +1336,20 @@
    {
     "label": "Answer Area",
     "options": [
-     "cloud.microsoft",
-     ".manage.microsoft.com",
-     ".onmicrosoft.com",
-     ".windows.net"
+     "cloud. microsoft",
+     ". manage. microsoft. com",
+     ". on microsoft. com",
+     ". windows. net"
     ],
     "correct": 1
    },
    {
     "label": "",
     "options": [
-     ".cloud.microsoft",
-     ".manage.microsoft.com",
-     ".onmicrosoft.com",
-     ".windows.net"
+     ". cloud. microsoft",
+     ". manage. microsoft. com",
+     ". on microsoft. com",
+     ". windows. net"
     ],
     "correct": 3
    }
@@ -1391,68 +1367,19 @@
      "User A only",
      "User Aor User Bonly",
      "User Aor User Conly",
-     "User A,User B,or User Conly",
-     "User A,User B,User C,or User D"
+     "User A, User B, or User Conly",
+     "User A, User B, User C, or User D"
     ],
     "correct": 2
    },
    {
     "label": "Credentialsof",
     "options": [
-     "Admin1only",
-     "Admin1or Admin2only",
-     "Admin1or Admin3only",
-     "Admin1,Admin2,or Admin3only",
-     "Admin1,Admin2,Admin3,or User1"
-    ],
-    "correct": 0
-   }
-  ]
- },
- "295": {
-  "kind": "select",
-  "context_images": [],
-  "blanks": [
-   {
-    "label": "Answer Area",
-    "options": [
-     "Monitored",
-     "Sanctioned",
-     "Unsanctioned"
-    ],
-    "correct": 2
-   },
-   {
-    "label": "",
-    "options": [
-     "Anonymization",
-     "Assetrule manaaement",
-     "Enforceappaccess"
-    ],
-    "correct": 2
-   }
-  ]
- },
- "298": {
-  "kind": "select",
-  "context_images": [],
-  "blanks": [
-   {
-    "label": "Se5Sku=",
-    "options": [
-     "Get-Mg Subscribed Sku",
-     "uondunsanchw Dag",
-     "Get-Mg Userlicense Detail",
-     "Get-Mg Userlicense Detail Count"
-    ],
-    "correct": 0
-   },
-   {
-    "label": "",
-    "options": [
-     "Set-Mg User License",
-     "Update-Mgsutscniber Sku",
-     "Update-Mg Subscription"
+     "Admin 1 only",
+     "Admin 1 or Admin 2 only",
+     "Admin 1 or Admin 3 only",
+     "Admin 1, Admin 2, or Admin 3 only",
+     "Admin 1, Admin 2, Admin 3, or User 1"
     ],
     "correct": 0
    }
@@ -1467,22 +1394,22 @@
    {
     "label": "",
     "options": [
-     "Device1 only",
-     "Device1and Device2only",
-     "Device1and Device3only",
-     "Device1,Device2,and Device3only",
-     "Device1,De Vice2,Device3,and Device4"
+     "Device 1 only",
+     "Device 1 and Device 2 only",
+     "Device 1 and Device 3 only",
+     "Device 1, Device 2, and Device 3 only",
+     "Device 1, De Vice 2, Device 3, and Device 4"
     ],
     "correct": 1
    },
    {
     "label": "",
     "options": [
-     "Device1and Device2only",
-     "Device2and Device3only",
-     "Device3and Device4only",
-     "Device2. Device3. and Device4 only",
-     "Device1.Device2.Device3.and Device4"
+     "Device 1 and Device 2 only",
+     "Device 2 and Device 3 only",
+     "Device 3 and Device 4 only",
+     "Device 2. Device 3. and Device 4 only",
+     "Device 1. Device 2. Device 3. and Device 4"
     ],
     "correct": 4
    }
@@ -1497,20 +1424,20 @@
    {
     "label": "",
     "options": [
-     "Noneofthedevices",
+     "None of the devices",
      "IDevicetony",
-     "Device1and Device3only",
-     "Device1,Device2,and Device3"
+     "Device 1 and Device 3 only",
+     "Device 1, Device 2, and Device 3"
     ],
     "correct": 1
    },
    {
     "label": "",
     "options": [
-     "Noneofthedevices",
-     "Device1only",
-     "IDevice1and Device3ony",
-     "Device1,Device2,and Device3"
+     "None of the devices",
+     "Device 1 only",
+     "IDevice 1 and Device 3 ony",
+     "Device 1, Device 2, and Device 3"
     ],
     "correct": 2
    }
@@ -1524,12 +1451,12 @@
   ],
   "blanks": [
    {
-    "label": "User1 can enroll a maximum of",
+    "label": "User 1 can enroll a maximum of",
     "options": [
      "5 devices",
      "10 devices",
      "15 devices",
-     "1,000 devices",
+     "1, 000 devices",
      "An unlimited number of devices"
     ],
     "correct": 1
@@ -1540,7 +1467,7 @@
      "5 devices",
      "10 devices",
      "15 devices",
-     "1,000 devices",
+     "1, 000 devices",
      "An unlimited number of devices"
     ],
     "correct": 2
@@ -1556,28 +1483,28 @@
   ],
   "blanks": [
    {
-    "label": "Policy1",
+    "label": "Policy 1",
     "options": [
-     "Device1only",
-     "Device2only",
-     "Device3only",
-     "Device4only",
-     "Device2and Device3only",
-     "Device1and Device3only",
-     "Device1Device2,and Device3"
+     "Device 1 only",
+     "Device 2 only",
+     "Device 3 only",
+     "Device 4 only",
+     "Device 2 and Device 3 only",
+     "Device 1 and Device 3 only",
+     "Device 1 Device 2, and Device 3"
     ],
     "correct": 2
    },
    {
-    "label": "Policy2",
+    "label": "Policy 2",
     "options": [
-     "Device1only",
-     "Device2only",
-     "Device3only",
-     "Device4only",
-     "Device2and Device3only",
-     "Device1and Device3only",
-     "Device1,Device2.and Device3"
+     "Device 1 only",
+     "Device 2 only",
+     "Device 3 only",
+     "Device 4 only",
+     "Device 2 and Device 3 only",
+     "Device 1 and Device 3 only",
+     "Device 1, Device 2. and Device 3"
     ],
     "correct": 3
    }
@@ -1633,7 +1560,7 @@
   "context_images": [],
   "blanks": [
    {
-    "label": "User1",
+    "label": "User 1",
     "options": [
      "Global Administrator",
      "Helpdesk Administrator",
@@ -1643,7 +1570,7 @@
     "correct": 3
    },
    {
-    "label": "User2",
+    "label": "User 2",
     "options": [
      "Global Administrator",
      "Helpdesk Administrator",
@@ -1660,20 +1587,20 @@
   "context_images": [],
   "blanks": [
    {
-    "label": "Computers thatrunmac OSmust have File Vaultenabled",
+    "label": "Computers that run mac OSmust have File Vaultenabled",
     "options": [
      "Account protection",
-     "Attack surfacereduction (ASR)",
+     "Attack surface reduction (ASR)",
      "Disk encryption",
      "Endpoint detection and response (EDR)"
     ],
     "correct": 2
    },
    {
-    "label": "Defender Application Control enabled: Microsoft Defender Credential Guardenabled Computers.that run Windows10 must have ",
+    "label": "Defender Application Control enabled: Microsoft Defender Credential Guard enabled Computers. that run Windows 10 must have",
     "options": [
      "Account protection",
-     "Attack surfacereduction (ASR)",
+     "Attack surface reduction (ASR)",
      "Disk encryption",
      "Endpoint detection and response (EDR)"
     ],
@@ -1735,7 +1662,7 @@
   ],
   "blanks": [
    {
-    "label": "Device1",
+    "label": "Device 1",
     "options": [
      "App configuration policy",
      "Device compliance policy",
@@ -1745,7 +1672,7 @@
     "correct": 2
    },
    {
-    "label": "Device2",
+    "label": "Device 2",
     "options": [
      "App configuration policy",
      "Device compliance policy",
@@ -1755,7 +1682,7 @@
     "correct": 0
    },
    {
-    "label": "Device3",
+    "label": "Device 3",
     "options": [
      "App configuration policy",
      "Device compliance policy",
@@ -1815,7 +1742,7 @@
   "context_images": [],
   "blanks": [
    {
-    "label": "User1",
+    "label": "User 1",
     "options": [
      "Administrators",
      "Event Log Readers",
@@ -1826,7 +1753,7 @@
     "correct": 3
    },
    {
-    "label": "User2",
+    "label": "User 2",
     "options": [
      "Administrators",
      "Event Log Readers",

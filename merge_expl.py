@@ -21,6 +21,8 @@ for e in q:
     it = inter.get(str(e['id']))
     if it:
         e['inter'] = it; m += 1
+    else:
+        e.pop('inter', None)      # retirada del archivo -> quitarla del banco
 
 json.dump(q, open(P, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 open('data/preguntas.js', 'w', encoding='utf-8').write(
