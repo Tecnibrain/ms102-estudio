@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """Repara texto OCR de data/interactivas.json: l->I, palabras pegadas, espacios."""
 import json, re, sys
+from difflib import SequenceMatcher
 
 VOCAB = """the a an and or of to in for on with from by not none all only both neither
 is are was were be can cannot must should will would may
@@ -25,15 +26,36 @@ company portal line business lob win32 msi appx msix intunewin ipa apk
 role administrator administrators helpdesk global local power performance readers
 system managed accounts event later into onto within before after during
 template templates custom baseline ADMX GPO OMA URI hybrid cloud tunnel
+service principal enterprise registration privilege monitored sanctioned
+unsanctioned enforce anonymization asset rule collection collector
 printer printers certificate certificates wifi vpn email exchange sharepoint
-teams onedrive edge browser control application guard smartscreen exploit"""
+teams onedrive edge browser control application guard smartscreen exploit
+deferred deferral indefinitely immediately connectors tokens diagnostic diagnostics
+multifactor authentication authenticator strength session grant require required
+purview export exported hash hardware connector directory active local remote
+themselves additional desktop desktops modify modifying prevented create creating
+credentials credential pin password passphrase biometric hello windows10 windows11
+every minutes hourly daily weekly monthly hour eight three five fifteen thirty
+enforced restrictions restriction owners readers operators guests
+add-ons addons settings setting collector initiated subscription event forwarding
+baseline baselines categories identifiers corporate personal byod
+optimization bandwidth cache peer branch delivery
+public key pair certificate certificates protocol scep pkcs imported
+retained reset cached workspace database analytics
+uninstall uninstalled available featured store"""
 WORDS = sorted(set(VOCAB.split()), key=len, reverse=True)
 WSET = set(WORDS)
 
 LFIX = {'lmage': 'Image', 'lntune': 'Intune', 'lnstall': 'Install', 'lmport': 'Import',
         'lOS': 'iOS', 'lmages': 'Images', 'lmade': 'Image', 'lncluded': 'Included',
         'lidentity': 'Identity', 'lnformation': 'Information',
-        'limport': 'Import', 'lmplement': 'Implement', 'lnclude': 'Include'}
+        'limport': 'Import', 'lmplement': 'Implement', 'lnclude': 'Include',
+        'Seauence': 'Sequence', 'seauence': 'sequence', 'Cornorate': 'Corporate',
+        'WInaows': 'Windows', 'Reauirements': 'Requirements', 'reauirements': 'requirements',
+        'Cateaories': 'Categories', 'cateaories': 'categories', 'Confiaurator': 'Configurator',
+        'Deliverv': 'Delivery', 'onfimization': 'optimization', 'Punview': 'Purview',
+        'Microsoit': 'Microsoft', 'multitactor': 'multifactor', 'Auinenticator': 'Authenticator', 'onlhe': 'on the', 'Power Bl': 'Power BI',
+        'conmgurauomproile': 'configuration profile', 'aevice': 'device'}
 
 
 def split_run(run):
@@ -60,9 +82,33 @@ def split_run(run):
     return run
 
 
+def fuzzy_word(w):
+    """Corrige una palabra desconocida por la más parecida del vocabulario."""
+    lw = w.lower()
+    if len(lw) < 6 or lw in WSET:
+        return w
+    best, bw = 0.0, None
+    for v in WSET:
+        if abs(len(v) - len(lw)) > 2:
+            continue
+        r = SequenceMatcher(None, lw, v).ratio()
+        if r > best:
+            best, bw = r, v
+    if best >= 0.85 and bw:
+        return bw.capitalize() if w[0].isupper() else bw
+    return w
+
+
+CMDLET = re.compile(r'^[A-Z][a-z]+-[A-Za-z0-9]+$')
+
+
 def repair(t):
     if not t:
         return t
+    if any(CMDLET.match(w) for w in t.split()):
+        for bad, good in LFIX.items():
+            t = re.sub(r'' + bad, good, t)
+        return re.sub(r'\s+', ' ', t).strip()
     for bad, good in LFIX.items():
         t = re.sub(r'\b' + bad, good, t)
     t = re.sub(r'([A-Za-z])(\d)', r'\1 \2', t)          # Windows10 -> Windows 10

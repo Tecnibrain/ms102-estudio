@@ -345,7 +345,7 @@
     "options": [
      "joined to Azure ADonly",
      "registered in Azure ADonly",
-     "joined to Active Directoryonly",
+     "joined to Active Directory only",
      "joined to Active Directory and registered in Azure AD"
     ],
     "correct": 0
@@ -369,7 +369,7 @@
     "label": "",
     "options": [
      "Windows 11 Enterprise",
-     "WInaows TTPro",
+     "Windows TTPro",
      "Windows 11 Pro for Workstations"
     ],
     "correct": 0
@@ -617,7 +617,7 @@
     "label": "",
     "options": [
      "Standard Client Task Sequence",
-     "Standard Client Replace Task Seauence",
+     "Standard Client Replace Task Sequence",
      "Standard Client Upgrade Task Sequence"
     ],
     "correct": 2
@@ -733,7 +733,7 @@
     "options": [
      "Android enrollment",
      "Apple enrollment",
-     "Cornorate device identifiers",
+     "Corporate device identifiers",
      "Device categories",
      "Enrollment restrictions",
      "Windows enrollment"
@@ -1373,7 +1373,7 @@
     "correct": 2
    },
    {
-    "label": "Credentialsof",
+    "label": "Credentials of",
     "options": [
      "Admin 1 only",
      "Admin 1 or Admin 2 only",
@@ -1765,5 +1765,155 @@
    }
   ],
   "pool": "Groups"
+ },
+ "48": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "Audit logs in Azure AD",
+     "Audit logs in Microsoft Intune",
+     "Azure Synapse Analytics",
+     "The Microsoft Intune Data Warehouse"
+    ],
+    "correct": 3
+   },
+   {
+    "label": "",
+    "options": [
+     "Azure Data-Studio",
+     "Microsoft Power BI",
+     "Microsoftlntune admin center"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ "65": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "install the Company Portal app on the device",
+     "installine Microsoft Authenticator app on ine device",
+     "onboard the device to Microsoft Defender for Endpoint",
+     "onboard the device to the Microsoft Purview compliance portal"
+    ],
+    "correct": 0
+   },
+   {
+    "label": "",
+    "options": [
+     "users only",
+     "devices only",
+     "iselsalfoaevices"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ "79": {
+  "kind": "select",
+  "context_images": [
+   "q079_ans_p69.png"
+  ],
+  "blanks": [
+   {
+    "label": "Windowsfunctionality[answerchoice]",
+    "options": [
+     "can be deferred indefinitely",
+     "can be deferred for 30 days",
+     "will be installed immediately"
+    ],
+    "correct": 2
+   },
+   {
+    "label": "Updatesthatcontainnew Windowsfunclionalily Will be installed within[answerchoice]ofrelease",
+    "options": [
+     "1 day",
+     "30 days",
+     "60 days"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ "86": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Requirement 1",
+    "options": [
+     "A conditional access policy",
+     "A device compliance policy",
+     "A device configuration profile"
+    ],
+    "correct": 0
+   },
+   {
+    "label": "Requirement 2",
+    "options": [
+     "A condifional access policy",
+     "A device compliance policy",
+     "A device configuration profile"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ "178": {
+  "kind": "select",
+  "context_images": [
+   "q178_ans_p142.png"
+  ],
+  "blanks": [
+   {
+    "label": "",
+    "options": [
+     "Enroll in Microsoft Intune.",
+     "Export the hardware hash andupload the hash to Microsoft Intune.",
+     "Install the Intune Connector for Active Directory."
+    ],
+    "correct": 2
+   },
+   {
+    "label": "",
+    "options": [
+     "Admin 1",
+     "o U 1",
+     "Server 1"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ "192": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Microsoft Entraobject",
+    "options": [
+     "A service principal",
+     "An app registration",
+     "An enterprise application"
+    ],
+    "correct": 0
+   },
+   {
+    "label": "Policy",
+    "options": [
+     "Compliance",
+     "Conditional Access",
+     "Endpoint Privilege Management"
+    ],
+    "correct": 1
+   }
+  ]
  }
 }
