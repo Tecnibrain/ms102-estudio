@@ -21,17 +21,34 @@ def ocr_lines(path):
 
 
 def find_ovals(path):
+    """Marcas de respuesta: óvalo azul relleno o recuadro negro grueso."""
     im = np.array(Image.open(path).convert('RGB')).astype(int)
     r, g, b = im[:, :, 0], im[:, :, 1], im[:, :, 2]
+    ov = []
+
+    # a) óvalo azul/teal relleno
     mask = (b > 110) & (r < 100) & (g > 60) & (g < 170) & (b >= g)
     lbl, n = ndimage.label(mask)
-    ov = []
     for i in range(1, n + 1):
         yy, xx = np.where(lbl == i)
-        if 120 < len(xx) < 450:                 # óvalo de radio (no botones grandes)
+        if 120 < len(xx) < 450:
             w = xx.max() - xx.min(); h = yy.max() - yy.min()
             if 0.5 < (w / max(h, 1)) < 2.2 and w < 40 and h < 40:
                 ov.append((xx.mean(), yy.mean(), len(xx)))
+    if ov:
+        return ov, im.shape[0], im.shape[1]
+
+    # b) recuadro negro grueso alrededor del botón de radio
+    dark = (r < 100) & (g < 100) & (b < 100)
+    er = ndimage.binary_erosion(dark, structure=np.ones((3, 3)), iterations=1)
+    lbl, n = ndimage.label(er, structure=np.ones((3, 3)))
+    for i in range(1, n + 1):
+        yy, xx = np.where(lbl == i)
+        if len(xx) < 60:
+            continue
+        w = xx.max() - xx.min(); h = yy.max() - yy.min()
+        if 12 <= w <= 45 and 12 <= h <= 45 and 0.6 < (w / max(h, 1)) < 1.7:
+            ov.append((xx.mean(), yy.mean(), len(xx)))
     return ov, im.shape[0], im.shape[1]
 
 
@@ -107,17 +124,15 @@ def clean(t):
 
 def run_all():
     data = json.load(open('data/preguntas.json', encoding='utf-8'))
-    manual = {'12'}   # desplegable hecho a mano
     try:
-        old = json.load(open('data/interactivas.json', encoding='utf-8'))
+        inter = json.load(open('data/interactivas.json', encoding='utf-8'))
     except FileNotFoundError:
-        old = {}
-    inter = {k: old[k] for k in manual if k in old}   # regenerar el resto desde cero
+        inter = {}
     ok = skip = 0
     for e in data:
         if e['type'] not in ('hotspot', 'yesno', 'drag'):
             continue
-        if str(e['id']) in manual:
+        if str(e['id']) in inter:       # ya resuelta (OCR previo o a mano)
             continue
         res, status = convert(e['id'], e.get('answer_images', []))
         if res and len(res['statements']) >= 2:

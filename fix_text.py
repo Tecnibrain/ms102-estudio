@@ -28,6 +28,8 @@ system managed accounts event later into onto within before after during
 template templates custom baseline ADMX GPO OMA URI hybrid cloud tunnel
 service principal enterprise registration privilege monitored sanctioned
 unsanctioned enforce anonymization asset rule collection collector
+requires additional hardware before upgraded activated license activate
+saves spreadsheet format used automatic new will elevation rules approved
 printer printers certificate certificates wifi vpn email exchange sharepoint
 teams onedrive edge browser control application guard smartscreen exploit
 deferred deferral indefinitely immediately connectors tokens diagnostic diagnostics

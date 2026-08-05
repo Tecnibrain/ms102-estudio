@@ -565,15 +565,15 @@
    ],
    "statements": [
     {
-     "t": "If User 1 registers Device 1 in contoso. com, Device 1 is enrolled automatically in Microsoft Intune.",
+     "t": "If User 1 registers Device 1 in contoso .com, Device 1 is enrolled automatically in Microsoft Intune.",
      "a": "yes"
     },
     {
-     "t": "If User 1 joins Device 1 to contoso. com, Device 2 is enrolled automatically in Microsoft Intune.",
+     "t": "If User 1 joins Device 1 to contoso .com, Device 2 is enrolled automatically in Microsoft Intune.",
      "a": "no"
     },
     {
-     "t": "If User 2 registers Device 3 in contoso. com, Device 3 is enrolled automatically in Microsoft Intune.",
+     "t": "If User 2 registers Device 3 in contoso .com, Device 3 is enrolled automatically in Microsoft Intune.",
      "a": "no"
     }
    ]
@@ -1314,7 +1314,7 @@
      "correct": 2
     },
     {
-     "label": "Defender Application Control enabled: Microsoft Defender Credential Guard enabled Computers. that run Windows 10 must have",
+     "label": "Defender Application Control enabled: Microsoft Defender Credential Guard enabled Computers .that run Windows 10 must have",
      "options": [
       "Account protection",
       "Attack surface reduction (ASR)",
@@ -1893,7 +1893,32 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [
+    "q056_ctxauto.png",
+    "q056_ans_p39.png",
+    "q056_ans_p40.png",
+    "q056_ans_p41.png",
+    "q056_ans_p42.png",
+    "q056_ans_p43.png"
+   ],
+   "statements": [
+    {
+     "t": "If User 1 joinsa Windows 10 device to Azure AD, the device will be enrolled in Intuneautomatically.",
+     "a": "no"
+    },
+    {
+     "t": "If User 2 joinsa Windows 10 device to Azure AD the device will be enrolled in Intuneautomatically.",
+     "a": "yes"
+    },
+    {
+     "t": "If User 3 joinsa Windows 10 device to Azure AD, the device will be enrolled in Intuneautomatically.",
+     "a": "no"
+    }
+   ]
+  }
  },
  {
   "id": 57,
@@ -2990,7 +3015,24 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [
+    "q088_ctxauto.png",
+    "q088_ans_p75.png"
+   ],
+   "statements": [
+    {
+     "t": "Device 2 is marked as compliant.",
+     "a": "yes"
+    },
+    {
+     "t": "Device 3 is marked as compliant.",
+     "a": "yes"
+    }
+   ]
+  }
  },
  {
   "id": 89,
@@ -3005,7 +3047,29 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [
+    "q089_ctxauto.png",
+    "q089_ans_p76.png",
+    "q089_ans_p78.png"
+   ],
+   "statements": [
+    {
+     "t": "User 1 can access Microsoft Share Point On line from Device 1 byusing Microsoft Edge",
+     "a": "yes"
+    },
+    {
+     "t": "User 1 can access Microsoft Share Point On line from Device 2 byusing Microsoft Edge",
+     "a": "yes"
+    },
+    {
+     "t": "User 1 can access Microsoft Share Point On line from Device 3 byusing Microsoft Edge.O",
+     "a": "no"
+    }
+   ]
+  }
  },
  {
   "id": 90,
@@ -3572,7 +3636,28 @@
   "tema": "Identidad y cumplimiento normativo",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [
+    "q107_ctxauto.png",
+    "q107_ans_p88.png"
+   ],
+   "statements": [
+    {
+     "t": "User 1 can enroll Device 1 in Intune by using automatic enrollment.",
+     "a": "yes"
+    },
+    {
+     "t": "User 1 can enroll Device 2 in Intune by using automatic enrollment.",
+     "a": "no"
+    },
+    {
+     "t": "User 2 can enroll Device 1 in Intune by using automatic enrollment.",
+     "a": "no"
+    }
+   ]
+  }
  },
  {
   "id": 108,
@@ -3880,7 +3965,7 @@
      "options": [
       "Image 1. wim",
       "Image 2. wim",
-      "Install. wim"
+      "Install .wim"
      ],
      "correct": 2
     }
@@ -4720,7 +4805,28 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [
+    "q138_ctxauto.png",
+    "q138_ans_p114.png"
+   ],
+   "statements": [
+    {
+     "t": "When User 1 saves a new spreadsheet, the .ods format is used.",
+     "a": "no"
+    },
+    {
+     "t": "When User 2 saves a new spreadsheet, the .xlsb format is used.",
+     "a": "yes"
+    },
+    {
+     "t": "When User 3 saves a new spreadsheet, the .xlsx format is used.",
+     "a": "no"
+    }
+   ]
+  }
  },
  {
   "id": 139,
@@ -5090,10 +5196,10 @@
     {
      "label": "",
      "options": [
-      "Bootstrap. ini",
-      "Custom Settings. ini",
-      "Seungs. ini",
-      "System. ini"
+      "Bootstrap .ini",
+      "Custom Settings .ini",
+      "Seungs .ini",
+      "System .ini"
      ],
      "correct": 1
     },
@@ -5101,9 +5207,9 @@
      "label": "",
      "options": [
       "Bootstran ini",
-      "Custom Settings. ini",
-      "Settings. ini",
-      "System. ini"
+      "Custom Settings .ini",
+      "Settings .ini",
+      "System .ini"
      ],
      "correct": 1
     }
@@ -5164,7 +5270,28 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [
+    "q150_ctxauto.png",
+    "q150_ans_p122.png"
+   ],
+   "statements": [
+    {
+     "t": "Device 1 can be upgraded to Windows 11 andactivated.",
+     "a": "no"
+    },
+    {
+     "t": "Device 2 requiresadditionalhardwarebeforeitcanbeupgradedto Windows 11.",
+     "a": "no"
+    },
+    {
+     "t": "User 3 requiresanadditionallicensetoactivate Windows 11 on Device 3.",
+     "a": "yes"
+    }
+   ]
+  }
  },
  {
   "id": 151,
@@ -5521,7 +5648,28 @@
   "tema": "Implementación de Windows",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [
+    "q163_ctxauto.png",
+    "q163_ans_p133.png"
+   ],
+   "statements": [
+    {
+     "t": "TB 1 will download the image from MDT 3.",
+     "a": "no"
+    },
+    {
+     "t": "DT 1 will have a Keyboard Locale of en-gb",
+     "a": "yes"
+    },
+    {
+     "t": "LT 1 will download the image from MDT 1",
+     "a": "yes"
+    }
+   ]
+  }
  },
  {
   "id": 164,
@@ -5606,7 +5754,28 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [
+    "q166_ctxauto.png",
+    "q166_ans_p135.png"
+   ],
+   "statements": [
+    {
+     "t": "App 1 shows in the Company Portal.",
+     "a": "yes"
+    },
+    {
+     "t": "Word is installed on Device 1.",
+     "a": "no"
+    },
+    {
+     "t": "Excel is installed on Device 1.",
+     "a": "yes"
+    }
+   ]
+  }
  },
  {
   "id": 167,
@@ -6205,7 +6374,28 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [
+    "q184_ctxauto.png",
+    "q184_ans_p146.png"
+   ],
+   "statements": [
+    {
+     "t": "Device 1 will be upgraded to Windows 11, version 22H2.",
+     "a": "no"
+    },
+    {
+     "t": "Device 2 will be upgraded to Windows 11, version 22H2.",
+     "a": "yes"
+    },
+    {
+     "t": "Device 3 will be upgraded to Windows 11, version 22H2.",
+     "a": "no"
+    }
+   ]
+  }
  },
  {
   "id": 185,
@@ -6836,7 +7026,28 @@
   "tema": "Identidad y cumplimiento normativo",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [
+    "q206_ctxauto.png",
+    "q206_ans_p159.png"
+   ],
+   "statements": [
+    {
+     "t": "User 1 canuse Microsoft Entra toread the local administrator password of Device 1.",
+     "a": "no"
+    },
+    {
+     "t": "User 2 canuse Microsoft Entratoread the local administrator password of Device 2.",
+     "a": "no"
+    },
+    {
+     "t": "User 3 canuse Microsoft Entratoread the local administrator password of Device 3.",
+     "a": "yes"
+    }
+   ]
+  }
  },
  {
   "id": 207,
@@ -7098,7 +7309,28 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [
+    "q214_ctxauto.png",
+    "q214_ans_p164.png"
+   ],
+   "statements": [
+    {
+     "t": "The local administrator password of Device 1 will be reset every 30 days.",
+     "a": "yes"
+    },
+    {
+     "t": "The local administrator password of Device 2 will berecoverablefrom Microsoft Entra ID.",
+     "a": "yes"
+    },
+    {
+     "t": "The local administrator password of Device 3 will be reset every 30 days.",
+     "a": "no"
+    }
+   ]
+  }
  },
  {
   "id": 215,
@@ -7304,7 +7536,24 @@
   "tema": "Identidad y cumplimiento normativo",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [
+    "q221_ctxauto.png",
+    "q221_ans_p168.png"
+   ],
+   "statements": [
+    {
+     "t": "Azure Monitorcollects CPU performance data from Device 1.",
+     "a": "no"
+    },
+    {
+     "t": "Azure Monitorcollectsmemoryperformancedatafrom Device 2.",
+     "a": "yes"
+    }
+   ]
+  }
  },
  {
   "id": 222,
@@ -7366,7 +7615,28 @@
   "tema": "Identidad y cumplimiento normativo",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [
+    "q224_ctxauto.png",
+    "q224_ans_p175.png"
+   ],
+   "statements": [
+    {
+     "t": "User 1 receives Notification 1 on Device 1.",
+     "a": "no"
+    },
+    {
+     "t": "User 2 receives Notification 1 on Device 2.",
+     "a": "no"
+    },
+    {
+     "t": "User 1 receives Notification 1 on Device 3",
+     "a": "yes"
+    }
+   ]
+  }
  },
  {
   "id": 225,
@@ -8536,7 +8806,28 @@
   "tema": "Identidad y cumplimiento normativo",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [
+    "q269_ctxauto.png",
+    "q269_ans_p200.png"
+   ],
+   "statements": [
+    {
+     "t": "User 2 can enroll Device 1 by using the Company Portal app.",
+     "a": "yes"
+    },
+    {
+     "t": "User 1 can enroll Device 2 byusing automaticenrollment.",
+     "a": "no"
+    },
+    {
+     "t": "User 1 can enroll Device 3 byusingthe Company Portal app",
+     "a": "yes"
+    }
+   ]
+  }
  },
  {
   "id": 270,
@@ -9015,7 +9306,28 @@
   "tema": "Identidad y cumplimiento normativo",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [
+    "q283_ctxauto.png",
+    "q283_ans_p209.png"
+   ],
+   "statements": [
+    {
+     "t": "Admin 1 can join Device 1 tocontoso .com.",
+     "a": "no"
+    },
+    {
+     "t": "User 1 can join Device 2 tocontoso .com.",
+     "a": "yes"
+    },
+    {
+     "t": "User 1 can join Device 3 tocontoso .com.",
+     "a": "no"
+    }
+   ]
+  }
  },
  {
   "id": 284,
@@ -9193,9 +9505,9 @@
      "label": "Answer Area",
      "options": [
       "cloud. microsoft",
-      ". manage. microsoft. com",
-      ". on microsoft. com",
-      ". windows. net"
+      ". manage. microsoft .com",
+      ". on microsoft .com",
+      ". windows .net"
      ],
      "correct": 1
     },
@@ -9203,9 +9515,9 @@
      "label": "",
      "options": [
       ". cloud. microsoft",
-      ". manage. microsoft. com",
-      ". on microsoft. com",
-      ". windows. net"
+      ". manage. microsoft .com",
+      ". on microsoft .com",
+      ". windows .net"
      ],
      "correct": 3
     }
@@ -9506,7 +9818,28 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [
+    "q300_ctxauto.png",
+    "q300_ans_p220.png"
+   ],
+   "statements": [
+    {
+     "t": "Device 1 will have Policy assigned and will be marked ascompliant.",
+     "a": "yes"
+    },
+    {
+     "t": "Device 2 will have Policy assigned and will bemarked ascompliant.",
+     "a": "no"
+    },
+    {
+     "t": "Device 3 will have Policy assigned and will be marked ascompliant.",
+     "a": "no"
+    }
+   ]
+  }
  },
  {
   "id": 301,
@@ -9519,7 +9852,27 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [
+    "q301_ctxauto.png"
+   ],
+   "statements": [
+    {
+     "t": "Admin 1 cantakefull control of Device 2.",
+     "a": "yes"
+    },
+    {
+     "t": "Admin 2 cantakefull control of Device 1.",
+     "a": "no"
+    },
+    {
+     "t": "Admin 2 cantakeunattendedcontrol of Device 3.",
+     "a": "yes"
+    }
+   ]
+  }
  },
  {
   "id": 302,
@@ -9781,7 +10134,28 @@
   "tema": "Identidad y cumplimiento normativo",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [
+    "q307_ctxauto.png",
+    "q307_ans_p230.png"
+   ],
+   "statements": [
+    {
+     "t": "User 1@contoso .com is a member of the local Administrators group on Computer 1.",
+     "a": "no"
+    },
+    {
+     "t": "Admin 1 @contoso .com can configure the firewall and Microsoft Defender on Computer 1.",
+     "a": "yes"
+    },
+    {
+     "t": "Admin 2@contoso .com can install software on Computer 1.",
+     "a": "no"
+    }
+   ]
+  }
  },
  {
   "id": 308,
@@ -9934,7 +10308,29 @@
   "tema": "Identidad y cumplimiento normativo",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [
+    "q313_ctxauto.png",
+    "q313_ans_p235.png",
+    "q313_ans_p236.png"
+   ],
+   "statements": [
+    {
+     "t": "If Device 1 startsin Outof Box Experience(Oo BE)mode, thedevicewillbedeployedbyusing Autopilot.",
+     "a": "no"
+    },
+    {
+     "t": "If Device 2 startsin Outof Box Experience(Oo BE)mode thedevicewillbedeployedbyusing Autopilot.",
+     "a": "no"
+    },
+    {
+     "t": "If Device 3 startsin Outof Box Experience(Oo BE)mode the device will bedeployedbyusing Autopilot.",
+     "a": "yes"
+    }
+   ]
+  }
  },
  {
   "id": 314,
@@ -10767,7 +11163,24 @@
   "tema": "Identidad y cumplimiento normativo",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [
+    "q341_ctxauto.png",
+    "q341_ans_p264.png"
+   ],
+   "statements": [
+    {
+     "t": "If User 1 signsinto Device 1, Device 1 isupgraded to Windows 11 Enterpriseautomatically.",
+     "a": "yes"
+    },
+    {
+     "t": "If User 2 signsinto Device 2, Device 2 isupgraded to Windows 11 Enterpriseautomatically",
+     "a": "yes"
+    }
+   ]
+  }
  },
  {
   "id": 342,
@@ -10782,7 +11195,29 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [
+    "q342_ctxauto.png",
+    "q342_ans_p265.png",
+    "q342_ans_p266.png"
+   ],
+   "statements": [
+    {
+     "t": "From Computer 2, youcanuse Disk Management tomanage Computer 1 remotely.",
+     "a": "no"
+    },
+    {
+     "t": "From Computer 2, youcanuse Registry Editortoedit theregistryof Computer 1 remotely.",
+     "a": "no"
+    },
+    {
+     "t": "From Computer 3, youcanuse Performance Monitor tomonitortheperformanceof Computer 1.",
+     "a": "no"
+    }
+   ]
+  }
  },
  {
   "id": 343,
@@ -10832,7 +11267,24 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [
+    "q344_ctxauto.png",
+    "q344_ans_p267.png"
+   ],
+   "statements": [
+    {
+     "t": "User 2 cancompletethe Autopilot process on Device 1",
+     "a": "yes"
+    },
+    {
+     "t": "User 3 canviewdevicesetupinformationduring the enrollmentphase of Device 1.",
+     "a": "yes"
+    }
+   ]
+  }
  },
  {
   "id": 345,
@@ -11145,7 +11597,25 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [
+    "q354_ctxauto.png",
+    "q354_ans_p274.png",
+    "q354_ans_p275.png"
+   ],
+   "statements": [
+    {
+     "t": "LT 2 will have Microsoft 365 apps installed.",
+     "a": "no"
+    },
+    {
+     "t": "LT 3 will have Microsoft 365 apps installed",
+     "a": "no"
+    }
+   ]
+  }
  },
  {
   "id": 355,
