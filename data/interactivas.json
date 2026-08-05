@@ -38,7 +38,7 @@
   ],
   "statements": [
    {
-    "t": "User 1 can create a file named D:\\Folder 1\\file 1. txt on Device 4 by using Notepad.",
+    "t": "User 1 can create a file named D:\\Folder 1\\file1.txt on Device 4 by using Notepad.",
     "a": "no"
    },
    {
@@ -46,7 +46,7 @@
     "a": "yes"
    },
    {
-    "t": "User 3 can create a file named C:\\Users\\User 3\\Desktop\\file 1. txt on Device 2 by running a custom Windows Power Shell script.",
+    "t": "User 3 can create a file named C:\\Users\\User 3\\Desktop\\file1.txt on Device 2 by running a custom Windows Power Shell script.",
     "a": "no"
    }
   ]
@@ -3742,5 +3742,156 @@
     "correct": 0
    }
   ]
+ },
+ "240": {
+  "kind": "yesno",
+  "context_images": [
+   "q240_ctxauto.png",
+   "q240_ans_p185.png"
+  ],
+  "statements": [
+   {
+    "t": "A user on Device 1 must provide credentials to run App 2 with elevated access",
+    "a": "yes"
+   },
+   {
+    "t": "A user on Device 2 can run App 1 with elevated access without providing credentials.",
+    "a": "no"
+   },
+   {
+    "t": "A user on Device 3 must provide credentials to run App 1 with elevated credentials.",
+    "a": "no"
+   }
+  ]
+ },
+ "248": {
+  "kind": "yesno",
+  "context_images": [
+   "q248_ctxauto.png",
+   "q248_ans_p189.png"
+  ],
+  "statements": [
+   {
+    "t": "Device 1 is a member of Group 1 only.",
+    "a": "no"
+   },
+   {
+    "t": "Device 2 is a member of Group 1 and Group 2.",
+    "a": "yes"
+   },
+   {
+    "t": "Device 3 is a member of Group 2 only.",
+    "a": "yes"
+   }
+  ]
+ },
+ "260": {
+  "kind": "yesno",
+  "context_images": [
+   "q260_ctxauto.png",
+   "q260_ans_p195.png"
+  ],
+  "statements": [
+   {
+    "t": "A user on Device 1 must provide a business justification to run File1.exe.",
+    "a": "yes"
+   },
+   {
+    "t": "A user on Device 2 can run File1.exe.",
+    "a": "yes"
+   },
+   {
+    "t": "A user on Device 3 can run File1.exe without providinga business justification.",
+    "a": "no"
+   }
+  ]
+ },
+ "204": {
+  "kind": "yesno",
+  "context_images": [
+   "q204_ans_p157.png"
+  ],
+  "statements": [
+   {
+    "t": "Device1 is registered for Autopilot.",
+    "a": "no"
+   },
+   {
+    "t": "Device2 is registered for Autopilot.",
+    "a": "yes"
+   },
+   {
+    "t": "Device3 is registered for Autopilot.",
+    "a": "no"
+   }
+  ],
+  "manual": true
+ },
+ "253": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Group1 (solo Device1 y Device2)",
+    "options": [
+     "(device.deviceTrustType -eq \"AzureAD\")",
+     "(device.displayName -eq \"Device1\") and (device.displayName -eq \"Device2\")",
+     "(device.displayName -startsWith \"Device\") and (device.deviceOSType -eq \"Windows\")"
+    ],
+    "correct": 2
+   },
+   {
+    "label": "Group2 (solo Device1 y Device3)",
+    "options": [
+     "(device.deviceOSType -eq \"iPhone\") and (device.deviceOSType -eq \"Windows\")",
+     "(device.deviceOSType -eq \"iPhone\") or (device.deviceOSType -eq \"Windows\")",
+     "(device.deviceTrustType -eq \"AzureAD\") or (device.deviceOSType -eq \"iPhone\")"
+    ],
+    "correct": 2
+   }
+  ],
+  "manual": true
+ },
+ "267": {
+  "kind": "yesno",
+  "context_images": [
+   "q267_ans_p199.png"
+  ],
+  "statements": [
+   {
+    "t": "You can use Action1 on Device1.",
+    "a": "no"
+   },
+   {
+    "t": "You can use Action2 on Device2.",
+    "a": "no"
+   },
+   {
+    "t": "You can use Action2 on Device3.",
+    "a": "yes"
+   }
+  ],
+  "manual": true
+ },
+ "364": {
+  "kind": "yesno",
+  "context_images": [
+   "q364_ans_p280.png"
+  ],
+  "statements": [
+   {
+    "t": "If an iOS update becomes available on Tuesday at 5 AM, the update is installed on Device1 automatically on Wednesday.",
+    "a": "yes"
+   },
+   {
+    "t": "If an iPadOS update becomes available on Thursday at 2 AM, the update is installed on Device2 automatically on Thursday.",
+    "a": "no"
+   },
+   {
+    "t": "If an iPadOS update becomes available on Friday at 10 PM, the update is installed on Device3 automatically on Sunday.",
+    "a": "no"
+   }
+  ],
+  "manual": true
  }
 }

@@ -7,10 +7,19 @@ EXT = re.compile(r'([a-záéíóúñ])\.\s([a-z]{2,5})\b')
 DOT = re.compile(r'\s+\.\s+([a-z]{2,5})\b')
 
 
+PEGADAS = {'canrun': 'can run', 'isa': 'is a', 'providea': 'provide a',
+           'useron': 'user on', 'cannotrun': 'cannot run', 'mustprovide': 'must provide',
+           'isamember': 'is a member', 'anda': 'and a'}
+FILE = re.compile(r'\b([A-Za-z]+)\s(\d)\.\s?(exe|dll|msi|ps1|xml|ini|txt|apk|ipa)\b')
+
+
 def polish(t):
     t = VER.sub(lambda m: m.group(1) + m.group(2), t)
     t = EXT.sub(lambda m: m.group(1) + ' .' + m.group(2), t)
     t = DOT.sub(lambda m: ' .' + m.group(1), t)
+    t = FILE.sub(lambda m: m.group(1) + m.group(2) + '.' + m.group(3), t)
+    for bad, good in PEGADAS.items():
+        t = re.sub(r'\b' + bad + r'\b', good, t, flags=re.I)
     return re.sub(r'\s+', ' ', t).strip()
 
 

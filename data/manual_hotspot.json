@@ -1,98 +1,514 @@
 {
- "19": {"kind":"multi",
-  "options":["Deployment mode","Join to Azure AD as","Microsoft Software License Terms","Privacy settings","Hide change account options","User account type","Allow pre-provisioned deployment","Language (Region)","Automatically configure keyboard","Apply device name template"],
-  "correct":[0,9]},
- "33": {"kind":"multi",
-  "options":["App Store","Cellular and connectivity","Cloud and Storage","Cloud Printer","Control Panel and Settings","Display","General","Locked Screen Experience","Messaging","Microsoft Edge Browser","Network proxy","Password","Personalization","Printer","Privacy","Projection"],
-  "correct":[7,12]},
- "35": {"kind":"multi",
-  "options":["Monthly Enterprise","Device Configuration","Policy Management","What's New Management","Apps Health","Security Update Status","OneDrive Sync","Service Health","Inventory","Setup"],
-  "correct":[1,2]},
- "51": {"kind":"multi",
-  "options":["Microsoft Defender Application Guard","Microsoft Defender Firewall","Microsoft Defender SmartScreen","Windows Encryption","Microsoft Defender Exploit Guard","Microsoft Defender Application Control","Microsoft Defender Credential Guard","Microsoft Defender Security Center","Local device security options","Xbox services"],
-  "correct":[1,4]},
- "37": {"kind":"multi",
-  "options":["Antivirus","Disk encryption","Firewall","Endpoint detection and response","Attack surface reduction","Account protection","Device compliance","Conditional access"],
-  "correct":[0,5]},
- "95": {"kind":"multi",
-  "options":["Devices","Identities","Vulnerability management","Configuration management","Email & collaboration","Cloud apps","Reports","Audit","Health","Permissions & roles","Settings"],
-  "correct":[0,10]},
- "107": {"kind":"yesno","context_images":["q107_ctxauto.png","q107_ans_p88.png"],
-  "statements":[
-   {"t":"User1 can enroll Device1 in Intune by using automatic enrollment.","a":"yes"},
-   {"t":"User1 can enroll Device2 in Intune by using automatic enrollment.","a":"no"},
-   {"t":"User2 can enroll Device1 in Intune by using automatic enrollment.","a":"no"}]},
- "158": {"kind":"select",
-  "blanks":[
-   {"label":"Device1 (Windows 10)",
-    "options":["Every 15 minutes for one hour, and then every eight hours","Every five minutes for 15 minutes, then every 15 minutes for two hours, and then every eight hours","Every three minutes for 15 minutes, then every 15 minutes for two hours, and then every eight hours"],
-    "correct":2},
-   {"label":"Device2 (iOS)",
-    "options":["Every 15 minutes for one hour, and then every eight hours","Every five minutes for 15 minutes, then every 15 minutes for two hours, and then every eight hours","Every three minutes for 15 minutes, then every 15 minutes for two hours, and then every eight hours"],
-    "correct":0}]},
- "159": {"kind":"yesno","context_images":["q159_ans_p128.png"],
-  "statements":[
-   {"t":"Device1 is marked as compliant on August 4.","a":"no"},
-   {"t":"Device2 is marked as compliant on August 2.","a":"yes"},
-   {"t":"Device2 is retired on August 6.","a":"no"}]},
- "183": {"kind":"select",
-  "blanks":[
-   {"label":"Windows Hello for Business",
-    "options":["Device restrictions","Device restrictions (Windows 10 Team)","Endpoint protection","Identity protection","Microsoft Defender for Endpoint (Desktop devices running Windows 10 or later)"],
-    "correct":3},
-   {"label":"Microsoft Defender SmartScreen",
-    "options":["Windows health monitoring","Device restrictions (Windows 10 Team)","Endpoint protection","Identity protection","Microsoft Defender for Endpoint (Desktop devices running Windows 10 or later)"],
-    "correct":2}]},
- "201": {"kind":"select",
-  "blanks":[
-   {"label":"Users [answer choice]",
-    "options":["can access any URL","cannot view the address bar in Microsoft Edge","can only access URLs that include contoso.com","can only access URLs that start with https://contoso.com"],
-    "correct":0},
-   {"label":"Windows 10 and later devices can have [answer choice]",
-    "options":["a single Microsoft Edge instance that has a single tab","a single Microsoft Edge instance that has multiple tabs","multiple Microsoft Edge instances that have multiple tabs","multiple Microsoft Edge instances that each has a single tab"],
-    "correct":1}]},
- "27": {"kind":"select",
-  "blanks":[
-   {"label":"Device1 (retirado, Windows 10 de 32 bits)",
-    "options":["LoadState.exe \\\\server1\\share1 /i:MigApp.xml /v:13 /decrypt /key:\"mysecretKey\"","LoadState.exe \\\\server1\\share1 /i:MigApp.xml /v:8 /decrypt","LoadState.exe \\\\server1\\share1 /i:MigDocs.xml /v:13 /decrypt /key:\"mysecretKey\"","ScanState.exe \\\\server1\\share1 /i:MigApp.xml /config:Config.xml /v:13 /encrypt /key:\"mysecretKey\"","ScanState.exe \\\\server1\\share1 /i:MigApp.xml /config:Config.xml /v:8 /encrypt","ScanState.exe \\\\server1\\share1 /i:MigDocs.xml /v:13 /encrypt /key:\"mysecretKey\""],
-    "correct":3},
-   {"label":"Device2 (nuevo, Windows 11 de 64 bits)",
-    "options":["LoadState.exe \\\\server1\\share1 /i:MigApp.xml /v:13 /decrypt /key:\"mysecretKey\"","LoadState.exe \\\\server1\\share1 /i:MigApp.xml /v:8 /decrypt","LoadState.exe \\\\server1\\share1 /i:MigDocs.xml /v:13 /decrypt /key:\"mysecretKey\"","ScanState.exe \\\\server1\\share1 /i:MigApp.xml /config:Config.xml /v:13 /encrypt /key:\"mysecretKey\"","ScanState.exe \\\\server1\\share1 /i:MigApp.xml /config:Config.xml /v:8 /encrypt","ScanState.exe \\\\server1\\share1 /i:MigDocs.xml /v:13 /encrypt /key:\"mysecretkey\""],
-    "correct":0}]},
- "69": {"kind":"select",
-  "blanks":[
-   {"label":"Device1 (Windows 10 Pro)",
-    "options":["Will activate as Windows 11 Enterprise","Will not upgrade to Windows 11 Enterprise","Will perform a clean installation of Windows 11 Enterprise","Will perform an in-place upgrade to Windows 11 Enterprise"],
-    "correct":3},
-   {"label":"Device2 (Windows 11 Pro)",
-    "options":["Will activate as Windows 11 Enterprise","Will not upgrade to Windows 11 Enterprise","Will perform a clean installation of Windows 11 Enterprise","Will perform an in-place upgrade to Windows 11 Enterprise"],
-    "correct":0}]},
- "149": {"kind":"select",
-  "blanks":[
-   {"label":"net localgroup ___","options":["\"AzureAD\\User1@Contoso.com\"","\"Contoso\\User1\"","\"Device Owners\"","\"Remote Desktop Users\"","\"User1@Contoso.com\""],"correct":3},
-   {"label":"/add ___","options":["\"AzureAD\\User1@Contoso.com\"","\"Contoso\\User1\"","\"Device Owners\"","\"Remote Desktop Users\"","\"User1@Contoso.com\""],"correct":0}]},
- "153": {"kind":"multi",
-  "options":["Custom Compliance","Device Health","Device Properties","Configuration Manager Compliance","System Security","Microsoft Defender for Endpoint"],
-  "correct":[1,4]},
- "160": {"kind":"multi",
-  "options":["Microsoft Edge Browser","Network proxy","Password","Per-app privacy exceptions","Personalization","Printer","Privacy","Projection","Reporting and Telemetry","Search","Start","Microsoft Defender SmartScreen","Windows Spootlight","Microsoft Defender Antivirus"],
-  "correct":[11,13]},
- "209": {"kind":"select",
-  "blanks":[
-   {"label":"Settings","options":["Connectors and tokens","Device diagnostics","Diagnostic settings","Intune add-ons"],"correct":2},
-   {"label":"Resource","options":["A Log Analytics workspace","An Azure logic app","A storage account","A virtual machine"],"correct":0}]},
- "216": {"kind":"select",
-  "blanks":[
-   {"label":"App1 (Microsoft 365 Apps, Windows)",
-    "options":["A Required assignment to a device group","A Required assignment to a user group","An Available assignment to a device group","An Available assignment to a user group"],"correct":1},
-   {"label":"App2 (LOB, Android personal sin inscribir)",
-    "options":["A Required assignment to a device group","A Required assignment to a user group","An Available assignment to a device group","An Available assignment to a user group"],"correct":3}]},
- "81": {"kind":"select",
-  "blanks":[
-   {"label":"Devices must be joined to AD DS regardless of their current working location",
-    "options":["Deploy Always On VPN.","Install the Intune connector for Active Directory.","Modify the Autopilot deployment profile.","Edit the Co-management settings in Intune."],
-    "correct":0},
-   {"label":"The marketing department users must have an LOB app installed during the deployment",
-    "options":["Modify the Autopilot deployment profile.","Create a Microsoft Intune app deployment.","Create a device configuration profile in Intune."],
-    "correct":1}]}
+ "19": {
+  "kind": "multi",
+  "options": [
+   "Deployment mode",
+   "Join to Azure AD as",
+   "Microsoft Software License Terms",
+   "Privacy settings",
+   "Hide change account options",
+   "User account type",
+   "Allow pre-provisioned deployment",
+   "Language (Region)",
+   "Automatically configure keyboard",
+   "Apply device name template"
+  ],
+  "correct": [
+   0,
+   9
+  ]
+ },
+ "33": {
+  "kind": "multi",
+  "options": [
+   "App Store",
+   "Cellular and connectivity",
+   "Cloud and Storage",
+   "Cloud Printer",
+   "Control Panel and Settings",
+   "Display",
+   "General",
+   "Locked Screen Experience",
+   "Messaging",
+   "Microsoft Edge Browser",
+   "Network proxy",
+   "Password",
+   "Personalization",
+   "Printer",
+   "Privacy",
+   "Projection"
+  ],
+  "correct": [
+   7,
+   12
+  ]
+ },
+ "35": {
+  "kind": "multi",
+  "options": [
+   "Monthly Enterprise",
+   "Device Configuration",
+   "Policy Management",
+   "What's New Management",
+   "Apps Health",
+   "Security Update Status",
+   "OneDrive Sync",
+   "Service Health",
+   "Inventory",
+   "Setup"
+  ],
+  "correct": [
+   1,
+   2
+  ]
+ },
+ "51": {
+  "kind": "multi",
+  "options": [
+   "Microsoft Defender Application Guard",
+   "Microsoft Defender Firewall",
+   "Microsoft Defender SmartScreen",
+   "Windows Encryption",
+   "Microsoft Defender Exploit Guard",
+   "Microsoft Defender Application Control",
+   "Microsoft Defender Credential Guard",
+   "Microsoft Defender Security Center",
+   "Local device security options",
+   "Xbox services"
+  ],
+  "correct": [
+   1,
+   4
+  ]
+ },
+ "204": {
+  "kind": "yesno",
+  "context_images": [
+   "q204_ans_p157.png"
+  ],
+  "statements": [
+   {
+    "t": "Device1 is registered for Autopilot.",
+    "a": "no"
+   },
+   {
+    "t": "Device2 is registered for Autopilot.",
+    "a": "yes"
+   },
+   {
+    "t": "Device3 is registered for Autopilot.",
+    "a": "no"
+   }
+  ]
+ },
+ "253": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Group1 (solo Device1 y Device2)",
+    "options": [
+     "(device.deviceTrustType -eq \"AzureAD\")",
+     "(device.displayName -eq \"Device1\") and (device.displayName -eq \"Device2\")",
+     "(device.displayName -startsWith \"Device\") and (device.deviceOSType -eq \"Windows\")"
+    ],
+    "correct": 2
+   },
+   {
+    "label": "Group2 (solo Device1 y Device3)",
+    "options": [
+     "(device.deviceOSType -eq \"iPhone\") and (device.deviceOSType -eq \"Windows\")",
+     "(device.deviceOSType -eq \"iPhone\") or (device.deviceOSType -eq \"Windows\")",
+     "(device.deviceTrustType -eq \"AzureAD\") or (device.deviceOSType -eq \"iPhone\")"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ "267": {
+  "kind": "yesno",
+  "context_images": [
+   "q267_ans_p199.png"
+  ],
+  "statements": [
+   {
+    "t": "You can use Action1 on Device1.",
+    "a": "no"
+   },
+   {
+    "t": "You can use Action2 on Device2.",
+    "a": "no"
+   },
+   {
+    "t": "You can use Action2 on Device3.",
+    "a": "yes"
+   }
+  ]
+ },
+ "364": {
+  "kind": "yesno",
+  "context_images": [
+   "q364_ans_p280.png"
+  ],
+  "statements": [
+   {
+    "t": "If an iOS update becomes available on Tuesday at 5 AM, the update is installed on Device1 automatically on Wednesday.",
+    "a": "yes"
+   },
+   {
+    "t": "If an iPadOS update becomes available on Thursday at 2 AM, the update is installed on Device2 automatically on Thursday.",
+    "a": "no"
+   },
+   {
+    "t": "If an iPadOS update becomes available on Friday at 10 PM, the update is installed on Device3 automatically on Sunday.",
+    "a": "no"
+   }
+  ]
+ },
+ "37": {
+  "kind": "multi",
+  "options": [
+   "Antivirus",
+   "Disk encryption",
+   "Firewall",
+   "Endpoint detection and response",
+   "Attack surface reduction",
+   "Account protection",
+   "Device compliance",
+   "Conditional access"
+  ],
+  "correct": [
+   0,
+   5
+  ]
+ },
+ "95": {
+  "kind": "multi",
+  "options": [
+   "Devices",
+   "Identities",
+   "Vulnerability management",
+   "Configuration management",
+   "Email & collaboration",
+   "Cloud apps",
+   "Reports",
+   "Audit",
+   "Health",
+   "Permissions & roles",
+   "Settings"
+  ],
+  "correct": [
+   0,
+   10
+  ]
+ },
+ "107": {
+  "kind": "yesno",
+  "context_images": [
+   "q107_ctxauto.png",
+   "q107_ans_p88.png"
+  ],
+  "statements": [
+   {
+    "t": "User1 can enroll Device1 in Intune by using automatic enrollment.",
+    "a": "yes"
+   },
+   {
+    "t": "User1 can enroll Device2 in Intune by using automatic enrollment.",
+    "a": "no"
+   },
+   {
+    "t": "User2 can enroll Device1 in Intune by using automatic enrollment.",
+    "a": "no"
+   }
+  ]
+ },
+ "158": {
+  "kind": "select",
+  "blanks": [
+   {
+    "label": "Device1 (Windows 10)",
+    "options": [
+     "Every 15 minutes for one hour, and then every eight hours",
+     "Every five minutes for 15 minutes, then every 15 minutes for two hours, and then every eight hours",
+     "Every three minutes for 15 minutes, then every 15 minutes for two hours, and then every eight hours"
+    ],
+    "correct": 2
+   },
+   {
+    "label": "Device2 (iOS)",
+    "options": [
+     "Every 15 minutes for one hour, and then every eight hours",
+     "Every five minutes for 15 minutes, then every 15 minutes for two hours, and then every eight hours",
+     "Every three minutes for 15 minutes, then every 15 minutes for two hours, and then every eight hours"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ "159": {
+  "kind": "yesno",
+  "context_images": [
+   "q159_ans_p128.png"
+  ],
+  "statements": [
+   {
+    "t": "Device1 is marked as compliant on August 4.",
+    "a": "no"
+   },
+   {
+    "t": "Device2 is marked as compliant on August 2.",
+    "a": "yes"
+   },
+   {
+    "t": "Device2 is retired on August 6.",
+    "a": "no"
+   }
+  ]
+ },
+ "183": {
+  "kind": "select",
+  "blanks": [
+   {
+    "label": "Windows Hello for Business",
+    "options": [
+     "Device restrictions",
+     "Device restrictions (Windows 10 Team)",
+     "Endpoint protection",
+     "Identity protection",
+     "Microsoft Defender for Endpoint (Desktop devices running Windows 10 or later)"
+    ],
+    "correct": 3
+   },
+   {
+    "label": "Microsoft Defender SmartScreen",
+    "options": [
+     "Windows health monitoring",
+     "Device restrictions (Windows 10 Team)",
+     "Endpoint protection",
+     "Identity protection",
+     "Microsoft Defender for Endpoint (Desktop devices running Windows 10 or later)"
+    ],
+    "correct": 2
+   }
+  ]
+ },
+ "201": {
+  "kind": "select",
+  "blanks": [
+   {
+    "label": "Users [answer choice]",
+    "options": [
+     "can access any URL",
+     "cannot view the address bar in Microsoft Edge",
+     "can only access URLs that include contoso.com",
+     "can only access URLs that start with https://contoso.com"
+    ],
+    "correct": 0
+   },
+   {
+    "label": "Windows 10 and later devices can have [answer choice]",
+    "options": [
+     "a single Microsoft Edge instance that has a single tab",
+     "a single Microsoft Edge instance that has multiple tabs",
+     "multiple Microsoft Edge instances that have multiple tabs",
+     "multiple Microsoft Edge instances that each has a single tab"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ "27": {
+  "kind": "select",
+  "blanks": [
+   {
+    "label": "Device1 (retirado, Windows 10 de 32 bits)",
+    "options": [
+     "LoadState.exe \\\\server1\\share1 /i:MigApp.xml /v:13 /decrypt /key:\"mysecretKey\"",
+     "LoadState.exe \\\\server1\\share1 /i:MigApp.xml /v:8 /decrypt",
+     "LoadState.exe \\\\server1\\share1 /i:MigDocs.xml /v:13 /decrypt /key:\"mysecretKey\"",
+     "ScanState.exe \\\\server1\\share1 /i:MigApp.xml /config:Config.xml /v:13 /encrypt /key:\"mysecretKey\"",
+     "ScanState.exe \\\\server1\\share1 /i:MigApp.xml /config:Config.xml /v:8 /encrypt",
+     "ScanState.exe \\\\server1\\share1 /i:MigDocs.xml /v:13 /encrypt /key:\"mysecretKey\""
+    ],
+    "correct": 3
+   },
+   {
+    "label": "Device2 (nuevo, Windows 11 de 64 bits)",
+    "options": [
+     "LoadState.exe \\\\server1\\share1 /i:MigApp.xml /v:13 /decrypt /key:\"mysecretKey\"",
+     "LoadState.exe \\\\server1\\share1 /i:MigApp.xml /v:8 /decrypt",
+     "LoadState.exe \\\\server1\\share1 /i:MigDocs.xml /v:13 /decrypt /key:\"mysecretKey\"",
+     "ScanState.exe \\\\server1\\share1 /i:MigApp.xml /config:Config.xml /v:13 /encrypt /key:\"mysecretKey\"",
+     "ScanState.exe \\\\server1\\share1 /i:MigApp.xml /config:Config.xml /v:8 /encrypt",
+     "ScanState.exe \\\\server1\\share1 /i:MigDocs.xml /v:13 /encrypt /key:\"mysecretkey\""
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ "69": {
+  "kind": "select",
+  "blanks": [
+   {
+    "label": "Device1 (Windows 10 Pro)",
+    "options": [
+     "Will activate as Windows 11 Enterprise",
+     "Will not upgrade to Windows 11 Enterprise",
+     "Will perform a clean installation of Windows 11 Enterprise",
+     "Will perform an in-place upgrade to Windows 11 Enterprise"
+    ],
+    "correct": 3
+   },
+   {
+    "label": "Device2 (Windows 11 Pro)",
+    "options": [
+     "Will activate as Windows 11 Enterprise",
+     "Will not upgrade to Windows 11 Enterprise",
+     "Will perform a clean installation of Windows 11 Enterprise",
+     "Will perform an in-place upgrade to Windows 11 Enterprise"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ "149": {
+  "kind": "select",
+  "blanks": [
+   {
+    "label": "net localgroup ___",
+    "options": [
+     "\"AzureAD\\User1@Contoso.com\"",
+     "\"Contoso\\User1\"",
+     "\"Device Owners\"",
+     "\"Remote Desktop Users\"",
+     "\"User1@Contoso.com\""
+    ],
+    "correct": 3
+   },
+   {
+    "label": "/add ___",
+    "options": [
+     "\"AzureAD\\User1@Contoso.com\"",
+     "\"Contoso\\User1\"",
+     "\"Device Owners\"",
+     "\"Remote Desktop Users\"",
+     "\"User1@Contoso.com\""
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ "153": {
+  "kind": "multi",
+  "options": [
+   "Custom Compliance",
+   "Device Health",
+   "Device Properties",
+   "Configuration Manager Compliance",
+   "System Security",
+   "Microsoft Defender for Endpoint"
+  ],
+  "correct": [
+   1,
+   4
+  ]
+ },
+ "160": {
+  "kind": "multi",
+  "options": [
+   "Microsoft Edge Browser",
+   "Network proxy",
+   "Password",
+   "Per-app privacy exceptions",
+   "Personalization",
+   "Printer",
+   "Privacy",
+   "Projection",
+   "Reporting and Telemetry",
+   "Search",
+   "Start",
+   "Microsoft Defender SmartScreen",
+   "Windows Spootlight",
+   "Microsoft Defender Antivirus"
+  ],
+  "correct": [
+   11,
+   13
+  ]
+ },
+ "209": {
+  "kind": "select",
+  "blanks": [
+   {
+    "label": "Settings",
+    "options": [
+     "Connectors and tokens",
+     "Device diagnostics",
+     "Diagnostic settings",
+     "Intune add-ons"
+    ],
+    "correct": 2
+   },
+   {
+    "label": "Resource",
+    "options": [
+     "A Log Analytics workspace",
+     "An Azure logic app",
+     "A storage account",
+     "A virtual machine"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ "216": {
+  "kind": "select",
+  "blanks": [
+   {
+    "label": "App1 (Microsoft 365 Apps, Windows)",
+    "options": [
+     "A Required assignment to a device group",
+     "A Required assignment to a user group",
+     "An Available assignment to a device group",
+     "An Available assignment to a user group"
+    ],
+    "correct": 1
+   },
+   {
+    "label": "App2 (LOB, Android personal sin inscribir)",
+    "options": [
+     "A Required assignment to a device group",
+     "A Required assignment to a user group",
+     "An Available assignment to a device group",
+     "An Available assignment to a user group"
+    ],
+    "correct": 3
+   }
+  ]
+ },
+ "81": {
+  "kind": "select",
+  "blanks": [
+   {
+    "label": "Devices must be joined to AD DS regardless of their current working location",
+    "options": [
+     "Deploy Always On VPN.",
+     "Install the Intune connector for Active Directory.",
+     "Modify the Autopilot deployment profile.",
+     "Edit the Co-management settings in Intune."
+    ],
+    "correct": 0
+   },
+   {
+    "label": "The marketing department users must have an LOB app installed during the deployment",
+    "options": [
+     "Modify the Autopilot deployment profile.",
+     "Create a Microsoft Intune app deployment.",
+     "Create a device configuration profile in Intune."
+    ],
+    "correct": 1
+   }
+  ]
+ }
 }

@@ -38,7 +38,21 @@ def find_ovals(path):
     if ov:
         return ov, im.shape[0], im.shape[1]
 
-    # b) recuadro negro grueso alrededor del botón de radio
+    # b) recuadro verde alrededor del botón de radio
+    grn = (g > 150) & (r < 140) & (b < 140) & (g - r > 50) & (g - b > 50)
+    if grn.sum() > 40:
+        lbl, n = ndimage.label(grn, structure=np.ones((3, 3)))
+        for i in range(1, n + 1):
+            yy, xx = np.where(lbl == i)
+            if len(xx) < 40:
+                continue
+            w = xx.max() - xx.min(); h = yy.max() - yy.min()
+            if 10 <= w <= 45 and 10 <= h <= 45 and 0.6 < (w / max(h, 1)) < 1.7:
+                ov.append((xx.mean(), yy.mean(), len(xx)))
+        if ov:
+            return ov, im.shape[0], im.shape[1]
+
+    # c) recuadro negro grueso alrededor del botón de radio
     dark = (r < 100) & (g < 100) & (b < 100)
     er = ndimage.binary_erosion(dark, structure=np.ones((3, 3)), iterations=1)
     lbl, n = ndimage.label(er, structure=np.ones((3, 3)))

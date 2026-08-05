@@ -29,6 +29,8 @@ template templates custom baseline ADMX GPO OMA URI hybrid cloud tunnel
 service principal enterprise registration privilege monitored sanctioned
 unsanctioned enforce anonymization asset rule collection collector
 requires additional hardware before upgraded activated license activate
+elevated elevation access without providing credentials business justification
+run exe member must provide user can only and app file device group
 saves spreadsheet format used automatic new will elevation rules approved
 printer printers certificate certificates wifi vpn email exchange sharepoint
 teams onedrive edge browser control application guard smartscreen exploit
