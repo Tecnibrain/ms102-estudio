@@ -16,7 +16,8 @@
   "correct": [
    0,
    9
-  ]
+  ],
+  "context_images": []
  },
  "33": {
   "kind": "multi",
@@ -41,7 +42,8 @@
   "correct": [
    7,
    12
-  ]
+  ],
+  "context_images": []
  },
  "35": {
   "kind": "multi",
@@ -60,7 +62,8 @@
   "correct": [
    1,
    2
-  ]
+  ],
+  "context_images": []
  },
  "51": {
   "kind": "multi",
@@ -79,6 +82,305 @@
   "correct": [
    1,
    4
+  ],
+  "context_images": []
+ },
+ "59": {"kind":"select","context_images":[],
+  "blanks":[
+   {"label":"Device1","options":["1","2","3","4","5"],"correct":1},
+   {"label":"Device2","options":["1","2","3","4","5"],"correct":2}]},
+ "185": {"kind":"multi",
+  "options":["Android Enterprise (work profile): Platform Allow/Block","Android device administrator: Platform Allow/Block","Android device administrator: versions min/max","iOS/iPadOS: Platform Allow/Block","iOS/iPadOS: versions min/max","macOS: Platform Allow/Block","Windows (MDM): Platform Allow/Block"],
+  "correct":[1,4]},
+ "223": {"kind":"yesno","context_images":[],
+  "statements":[
+   {"t":"Device1 is marked as compliant.","a":"no"},
+   {"t":"Device4 is marked as compliant.","a":"no"},
+   {"t":"Device5 is marked as compliant.","a":"yes"}]},
+ "314": {"kind":"multi",
+  "options":["Connections","Device and Resource Redirection","Licensing","Printer Redirection","Profiles","RD Connection Broker","Remote Session Environment","Security","Session Time Limits","Temporary folders"],
+  "correct":[6,7]},
+ "330": {"kind":"yesno","context_images":[],
+  "statements":[
+   {"t":"Device1 is compliant.","a":"no"},
+   {"t":"Device3 is compliant.","a":"yes"},
+   {"t":"Device4 is compliant.","a":"yes"}]},
+ "162": {
+  "kind": "yesno",
+  "context_images": [
+   "q162_ans_p131.png",
+   "q162_ans_p132.png"
+  ],
+  "statements": [
+   {
+    "t": "If you reset Device1, the device will be deployed by using Autopilot.",
+    "a": "no"
+   },
+   {
+    "t": "If you reset Device2, the device will be deployed by using Autopilot.",
+    "a": "no"
+   },
+   {
+    "t": "If you restart Device3, the device will be deployed by using Autopilot.",
+    "a": "yes"
+   }
+  ]
+ },
+ "241": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Device1 (compartido por turnos, inventario de almacén)",
+    "options": [
+     "Corporate-owned dedicated devices",
+     "Corporate-owned devices with work profile",
+     "Corporate-owned, fully managed user devices",
+     "Personally-owned devices with work profile"
+    ],
+    "correct": 0
+   },
+   {
+    "label": "Device2 (asignado a un solo usuario, solo trabajo)",
+    "options": [
+     "Corporate-owned dedicated devices",
+     "Corporate-owned devices with work profile",
+     "Corporate-owned, fully managed user devices",
+     "Personally-owned devices with work profile"
+    ],
+    "correct": 2
+   },
+   {
+    "label": "Device3 (uso laboral y personal, inscripción por código QR)",
+    "options": [
+     "Corporate-owned dedicated devices",
+     "Corporate-owned devices with work profile",
+     "Corporate-owned, fully managed user devices",
+     "Personally-owned devices with work profile"
+    ],
+    "correct": 3
+   }
+  ]
+ },
+ "278": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Device1",
+    "options": [
+     "Collect diagnostics only",
+     "Locate device only",
+     "Remote lock only",
+     "Collect diagnostics and Locate device only",
+     "Locate device and Remote lock only",
+     "Collect diagnostics, Locate device, and Remote lock"
+    ],
+    "correct": 5
+   },
+   {
+    "label": "Device2",
+    "options": [
+     "Collect diagnostics only",
+     "Locate device only",
+     "Remote lock only",
+     "Collect diagnostics and Locate device only",
+     "Locate device and Remote lock only",
+     "Collect diagnostics, Locate device, and Remote lock"
+    ],
+    "correct": 4
+   },
+   {
+    "label": "Device3",
+    "options": [
+     "Collect diagnostics only",
+     "Locate device only",
+     "Remote lock only",
+     "Collect diagnostics and Locate device only",
+     "Locate device and Remote lock only",
+     "Collect diagnostics, Locate device, and Remote lock"
+    ],
+    "correct": 4
+   }
+  ]
+ },
+ "310": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "On Server1",
+    "options": [
+     "Import the Deployment Image Servicing and Management (DISM) PowerShell module",
+     "Import the WindowsAutopilotIntune Windows PowerShell module",
+     "Install the Windows Assessment and Deployment Kit (Windows ADK)",
+     "Install the Windows Deployment Services server role"
+    ],
+    "correct": 2
+   },
+   {
+    "label": "Add to the MDT deployment share",
+    "options": [
+     "Windows 11 image and package only",
+     "Windows 11 image and task sequence only",
+     "Windows 11 image only",
+     "Windows 11 image, task sequence, and package"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ "321": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Sales",
+    "options": [
+     "Configuration Manager",
+     "Windows Autopilot with automatic registration",
+     "Windows Autopilot with manual registration",
+     "Windows Autopilot with OEM registration"
+    ],
+    "correct": 3
+   },
+   {
+    "label": "Marketing",
+    "options": [
+     "Configuration Manager",
+     "Windows Autopilot with automatic registration",
+     "Windows Autopilot with manual registration",
+     "Windows Autopilot with OEM registration"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ "250": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Device1 (Windows 11, grupo de trabajo)",
+    "options": [
+     "Microsoft Entra joined only",
+     "Microsoft Entra registered only",
+     "Microsoft Entra hybrid joined only",
+     "Microsoft Entra joined or Microsoft Entra registered only",
+     "Microsoft Entra registered, Microsoft Entra joined, or Microsoft Entra hybrid joined"
+    ],
+    "correct": 4
+   },
+   {
+    "label": "Device2 (iOS)",
+    "options": [
+     "Microsoft Entra joined only",
+     "Microsoft Entra registered only",
+     "Microsoft Entra hybrid joined only",
+     "Microsoft Entra joined or Microsoft Entra registered only",
+     "Microsoft Entra registered, Microsoft Entra joined, or Microsoft Entra hybrid joined"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ "285": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Software installations will [answer choice]",
+    "options": [
+     "be denied.",
+     "require support approval.",
+     "require user confirmation."
+    ],
+    "correct": 0
+   },
+   {
+    "label": "[Answer choice] will be reported",
+    "options": [
+     "All diagnostic data and elevations",
+     "No diagnostic data or elevations",
+     "Only diagnostic data"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ "299": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Access controls",
+    "options": [
+     "Set Grant to Require authentication strength.",
+     "Set Grant to Require multifactor authentication.",
+     "Set Session to Use app enforced restrictions.",
+     "Set Session to Use Conditional Access App Control."
+    ],
+    "correct": 0
+   },
+   {
+    "label": "Target resources",
+    "options": [
+     "Azure Credential Configuration Endpoint Service",
+     "Windows Azure Service Management API",
+     "Windows Cloud Login"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ "309": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "Users who deploy a device by using Profile1 [answer choice]",
+    "options": [
+     "are prevented from modifying any desktop settings",
+     "can create additional local users on the device",
+     "can modify the desktop settings for all device users",
+     "can modify the desktop settings only for themselves"
+    ],
+    "correct": 3
+   },
+   {
+    "label": "Users can configure the [answer choice] during the deployment",
+    "options": [
+     "computer name",
+     "Cortana settings",
+     "keyboard layout"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ "315": {
+  "kind": "select",
+  "context_images": [],
+  "blanks": [
+   {
+    "label": "After 30 minutes of inactivity, a user will be prompted for their",
+    "options": [
+     "account credentials only",
+     "PIN only",
+     "PIN and account credentials"
+    ],
+    "correct": 1
+   },
+   {
+    "label": "Entering the wrong PIN five times will",
+    "options": [
+     "block access",
+     "reset the app PIN",
+     "reset the device PIN",
+     "wipe company data"
+    ],
+    "correct": 2
+   }
   ]
  },
  "204": {
@@ -180,7 +482,8 @@
   "correct": [
    0,
    5
-  ]
+  ],
+  "context_images": []
  },
  "95": {
   "kind": "multi",
@@ -200,7 +503,8 @@
   "correct": [
    0,
    10
-  ]
+  ],
+  "context_images": []
  },
  "107": {
   "kind": "yesno",
@@ -244,7 +548,8 @@
     ],
     "correct": 0
    }
-  ]
+  ],
+  "context_images": []
  },
  "159": {
   "kind": "yesno",
@@ -291,7 +596,8 @@
     ],
     "correct": 2
    }
-  ]
+  ],
+  "context_images": []
  },
  "201": {
   "kind": "select",
@@ -316,7 +622,8 @@
     ],
     "correct": 1
    }
-  ]
+  ],
+  "context_images": []
  },
  "27": {
   "kind": "select",
@@ -345,7 +652,8 @@
     ],
     "correct": 0
    }
-  ]
+  ],
+  "context_images": []
  },
  "69": {
   "kind": "select",
@@ -370,7 +678,8 @@
     ],
     "correct": 0
    }
-  ]
+  ],
+  "context_images": []
  },
  "149": {
   "kind": "select",
@@ -397,7 +706,8 @@
     ],
     "correct": 0
    }
-  ]
+  ],
+  "context_images": []
  },
  "153": {
   "kind": "multi",
@@ -412,7 +722,8 @@
   "correct": [
    1,
    4
-  ]
+  ],
+  "context_images": []
  },
  "160": {
   "kind": "multi",
@@ -435,7 +746,8 @@
   "correct": [
    11,
    13
-  ]
+  ],
+  "context_images": []
  },
  "209": {
   "kind": "select",
@@ -460,7 +772,8 @@
     ],
     "correct": 0
    }
-  ]
+  ],
+  "context_images": []
  },
  "216": {
   "kind": "select",
@@ -485,7 +798,8 @@
     ],
     "correct": 3
    }
-  ]
+  ],
+  "context_images": []
  },
  "81": {
   "kind": "select",
@@ -509,6 +823,7 @@
     ],
     "correct": 1
    }
-  ]
+  ],
+  "context_images": []
  }
 }

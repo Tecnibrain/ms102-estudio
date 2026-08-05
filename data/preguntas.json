@@ -640,8 +640,8 @@
     0,
     9
    ],
-   "manual": true,
-   "context_images": []
+   "context_images": [],
+   "manual": true
   }
  },
  {
@@ -937,8 +937,8 @@
      "correct": 0
     }
    ],
-   "manual": true,
-   "context_images": []
+   "context_images": [],
+   "manual": true
   }
  },
  {
@@ -1142,8 +1142,8 @@
     7,
     12
    ],
-   "manual": true,
-   "context_images": []
+   "context_images": [],
+   "manual": true
   }
  },
  {
@@ -1207,8 +1207,8 @@
     1,
     2
    ],
-   "manual": true,
-   "context_images": []
+   "context_images": [],
+   "manual": true
   }
  },
  {
@@ -1271,8 +1271,8 @@
     0,
     5
    ],
-   "manual": true,
-   "context_images": []
+   "context_images": [],
+   "manual": true
   }
  },
  {
@@ -1752,8 +1752,8 @@
     1,
     4
    ],
-   "manual": true,
-   "context_images": []
+   "context_images": [],
+   "manual": true
   }
  },
  {
@@ -2023,7 +2023,36 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "context_images": [],
+   "blanks": [
+    {
+     "label": "Device1",
+     "options": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+     ],
+     "correct": 1
+    },
+    {
+     "label": "Device2",
+     "options": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+     ],
+     "correct": 2
+    }
+   ],
+   "manual": true
+  }
  },
  {
   "id": 60,
@@ -2369,8 +2398,8 @@
      "correct": 0
     }
    ],
-   "manual": true,
-   "context_images": []
+   "context_images": [],
+   "manual": true
   }
  },
  {
@@ -2809,8 +2838,8 @@
      "correct": 1
     }
    ],
-   "manual": true,
-   "context_images": []
+   "context_images": [],
+   "manual": true
   }
  },
  {
@@ -3284,8 +3313,8 @@
     0,
     10
    ],
-   "manual": true,
-   "context_images": []
+   "context_images": [],
+   "manual": true
   }
  },
  {
@@ -5296,8 +5325,8 @@
      "correct": 0
     }
    ],
-   "manual": true,
-   "context_images": []
+   "context_images": [],
+   "manual": true
   }
  },
  {
@@ -5421,8 +5450,8 @@
     1,
     4
    ],
-   "manual": true,
-   "context_images": []
+   "context_images": [],
+   "manual": true
   }
  },
  {
@@ -5591,8 +5620,8 @@
      "correct": 0
     }
    ],
-   "manual": true,
-   "context_images": []
+   "context_images": [],
+   "manual": true
   }
  },
  {
@@ -5664,8 +5693,8 @@
     11,
     13
    ],
-   "manual": true,
-   "context_images": []
+   "context_images": [],
+   "manual": true
   }
  },
  {
@@ -5722,7 +5751,29 @@
   "tema": "Identidad y cumplimiento normativo",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [
+    "q162_ans_p131.png",
+    "q162_ans_p132.png"
+   ],
+   "statements": [
+    {
+     "t": "If you reset Device1, the device will be deployed by using Autopilot.",
+     "a": "no"
+    },
+    {
+     "t": "If you reset Device2, the device will be deployed by using Autopilot.",
+     "a": "no"
+    },
+    {
+     "t": "If you restart Device3, the device will be deployed by using Autopilot.",
+     "a": "yes"
+    }
+   ],
+   "manual": true
+  }
  },
  {
   "id": 163,
@@ -6475,8 +6526,8 @@
      "correct": 2
     }
    ],
-   "manual": true,
-   "context_images": []
+   "context_images": [],
+   "manual": true
   }
  },
  {
@@ -6526,7 +6577,25 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "multi",
+   "options": [
+    "Android Enterprise (work profile): Platform Allow/Block",
+    "Android device administrator: Platform Allow/Block",
+    "Android device administrator: versions min/max",
+    "iOS/iPadOS: Platform Allow/Block",
+    "iOS/iPadOS: versions min/max",
+    "macOS: Platform Allow/Block",
+    "Windows (MDM): Platform Allow/Block"
+   ],
+   "correct": [
+    1,
+    4
+   ],
+   "manual": true,
+   "context_images": []
+  }
  },
  {
   "id": 186,
@@ -7043,8 +7112,8 @@
      "correct": 1
     }
    ],
-   "manual": true,
-   "context_images": []
+   "context_images": [],
+   "manual": true
   }
  },
  {
@@ -7319,8 +7388,8 @@
      "correct": 0
     }
    ],
-   "manual": true,
-   "context_images": []
+   "context_images": [],
+   "manual": true
   }
  },
  {
@@ -7559,8 +7628,8 @@
      "correct": 3
     }
    ],
-   "manual": true,
-   "context_images": []
+   "context_images": [],
+   "manual": true
   }
  },
  {
@@ -7766,7 +7835,26 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [],
+   "statements": [
+    {
+     "t": "Device1 is marked as compliant.",
+     "a": "no"
+    },
+    {
+     "t": "Device4 is marked as compliant.",
+     "a": "no"
+    },
+    {
+     "t": "Device5 is marked as compliant.",
+     "a": "yes"
+    }
+   ],
+   "manual": true
+  }
  },
  {
   "id": 224,
@@ -8366,7 +8454,44 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "context_images": [],
+   "blanks": [
+    {
+     "label": "Device1 (compartido por turnos, inventario de almacén)",
+     "options": [
+      "Corporate-owned dedicated devices",
+      "Corporate-owned devices with work profile",
+      "Corporate-owned, fully managed user devices",
+      "Personally-owned devices with work profile"
+     ],
+     "correct": 0
+    },
+    {
+     "label": "Device2 (asignado a un solo usuario, solo trabajo)",
+     "options": [
+      "Corporate-owned dedicated devices",
+      "Corporate-owned devices with work profile",
+      "Corporate-owned, fully managed user devices",
+      "Personally-owned devices with work profile"
+     ],
+     "correct": 2
+    },
+    {
+     "label": "Device3 (uso laboral y personal, inscripción por código QR)",
+     "options": [
+      "Corporate-owned dedicated devices",
+      "Corporate-owned devices with work profile",
+      "Corporate-owned, fully managed user devices",
+      "Personally-owned devices with work profile"
+     ],
+     "correct": 3
+    }
+   ],
+   "manual": true
+  }
  },
  {
   "id": 242,
@@ -8665,7 +8790,36 @@
   "tema": "Identidad y cumplimiento normativo",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "context_images": [],
+   "blanks": [
+    {
+     "label": "Device1 (Windows 11, grupo de trabajo)",
+     "options": [
+      "Microsoft Entra joined only",
+      "Microsoft Entra registered only",
+      "Microsoft Entra hybrid joined only",
+      "Microsoft Entra joined or Microsoft Entra registered only",
+      "Microsoft Entra registered, Microsoft Entra joined, or Microsoft Entra hybrid joined"
+     ],
+     "correct": 4
+    },
+    {
+     "label": "Device2 (iOS)",
+     "options": [
+      "Microsoft Entra joined only",
+      "Microsoft Entra registered only",
+      "Microsoft Entra hybrid joined only",
+      "Microsoft Entra joined or Microsoft Entra registered only",
+      "Microsoft Entra registered, Microsoft Entra joined, or Microsoft Entra hybrid joined"
+     ],
+     "correct": 1
+    }
+   ],
+   "manual": true
+  }
  },
  {
   "id": 251,
@@ -9550,7 +9704,50 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "context_images": [],
+   "blanks": [
+    {
+     "label": "Device1",
+     "options": [
+      "Collect diagnostics only",
+      "Locate device only",
+      "Remote lock only",
+      "Collect diagnostics and Locate device only",
+      "Locate device and Remote lock only",
+      "Collect diagnostics, Locate device, and Remote lock"
+     ],
+     "correct": 5
+    },
+    {
+     "label": "Device2",
+     "options": [
+      "Collect diagnostics only",
+      "Locate device only",
+      "Remote lock only",
+      "Collect diagnostics and Locate device only",
+      "Locate device and Remote lock only",
+      "Collect diagnostics, Locate device, and Remote lock"
+     ],
+     "correct": 4
+    },
+    {
+     "label": "Device3",
+     "options": [
+      "Collect diagnostics only",
+      "Locate device only",
+      "Remote lock only",
+      "Collect diagnostics and Locate device only",
+      "Locate device and Remote lock only",
+      "Collect diagnostics, Locate device, and Remote lock"
+     ],
+     "correct": 4
+    }
+   ],
+   "manual": true
+  }
  },
  {
   "id": 279,
@@ -9777,7 +9974,32 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "context_images": [],
+   "blanks": [
+    {
+     "label": "Software installations will [answer choice]",
+     "options": [
+      "be denied.",
+      "require support approval.",
+      "require user confirmation."
+     ],
+     "correct": 0
+    },
+    {
+     "label": "[Answer choice] will be reported",
+     "options": [
+      "All diagnostic data and elevations",
+      "No diagnostic data or elevations",
+      "Only diagnostic data"
+     ],
+     "correct": 0
+    }
+   ],
+   "manual": true
+  }
  },
  {
   "id": 286,
@@ -10252,7 +10474,33 @@
   "tema": "Identidad y cumplimiento normativo",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "context_images": [],
+   "blanks": [
+    {
+     "label": "Access controls",
+     "options": [
+      "Set Grant to Require authentication strength.",
+      "Set Grant to Require multifactor authentication.",
+      "Set Session to Use app enforced restrictions.",
+      "Set Session to Use Conditional Access App Control."
+     ],
+     "correct": 0
+    },
+    {
+     "label": "Target resources",
+     "options": [
+      "Azure Credential Configuration Endpoint Service",
+      "Windows Azure Service Management API",
+      "Windows Cloud Login"
+     ],
+     "correct": 1
+    }
+   ],
+   "manual": true
+  }
  },
  {
   "id": 300,
@@ -10646,7 +10894,33 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "context_images": [],
+   "blanks": [
+    {
+     "label": "Users who deploy a device by using Profile1 [answer choice]",
+     "options": [
+      "are prevented from modifying any desktop settings",
+      "can create additional local users on the device",
+      "can modify the desktop settings for all device users",
+      "can modify the desktop settings only for themselves"
+     ],
+     "correct": 3
+    },
+    {
+     "label": "Users can configure the [answer choice] during the deployment",
+     "options": [
+      "computer name",
+      "Cortana settings",
+      "keyboard layout"
+     ],
+     "correct": 1
+    }
+   ],
+   "manual": true
+  }
  },
  {
   "id": 310,
@@ -10659,7 +10933,34 @@
   "tema": "Implementación de Windows",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "context_images": [],
+   "blanks": [
+    {
+     "label": "On Server1",
+     "options": [
+      "Import the Deployment Image Servicing and Management (DISM) PowerShell module",
+      "Import the WindowsAutopilotIntune Windows PowerShell module",
+      "Install the Windows Assessment and Deployment Kit (Windows ADK)",
+      "Install the Windows Deployment Services server role"
+     ],
+     "correct": 2
+    },
+    {
+     "label": "Add to the MDT deployment share",
+     "options": [
+      "Windows 11 image and package only",
+      "Windows 11 image and task sequence only",
+      "Windows 11 image only",
+      "Windows 11 image, task sequence, and package"
+     ],
+     "correct": 1
+    }
+   ],
+   "manual": true
+  }
  },
  {
   "id": 311,
@@ -10791,7 +11092,28 @@
   "tema": "Identidad y cumplimiento normativo",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "multi",
+   "options": [
+    "Connections",
+    "Device and Resource Redirection",
+    "Licensing",
+    "Printer Redirection",
+    "Profiles",
+    "RD Connection Broker",
+    "Remote Session Environment",
+    "Security",
+    "Session Time Limits",
+    "Temporary folders"
+   ],
+   "correct": [
+    6,
+    7
+   ],
+   "manual": true,
+   "context_images": []
+  }
  },
  {
   "id": 315,
@@ -10805,7 +11127,33 @@
   "tema": "Aplicaciones y protección de endpoints",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "context_images": [],
+   "blanks": [
+    {
+     "label": "After 30 minutes of inactivity, a user will be prompted for their",
+     "options": [
+      "account credentials only",
+      "PIN only",
+      "PIN and account credentials"
+     ],
+     "correct": 1
+    },
+    {
+     "label": "Entering the wrong PIN five times will",
+     "options": [
+      "block access",
+      "reset the app PIN",
+      "reset the device PIN",
+      "wipe company data"
+     ],
+     "correct": 2
+    }
+   ],
+   "manual": true
+  }
  },
  {
   "id": 316,
@@ -11018,7 +11366,34 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "context_images": [],
+   "blanks": [
+    {
+     "label": "Sales",
+     "options": [
+      "Configuration Manager",
+      "Windows Autopilot with automatic registration",
+      "Windows Autopilot with manual registration",
+      "Windows Autopilot with OEM registration"
+     ],
+     "correct": 3
+    },
+    {
+     "label": "Marketing",
+     "options": [
+      "Configuration Manager",
+      "Windows Autopilot with automatic registration",
+      "Windows Autopilot with manual registration",
+      "Windows Autopilot with OEM registration"
+     ],
+     "correct": 0
+    }
+   ],
+   "manual": true
+  }
  },
  {
   "id": 322,
@@ -11240,7 +11615,26 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [],
+   "statements": [
+    {
+     "t": "Device1 is compliant.",
+     "a": "no"
+    },
+    {
+     "t": "Device3 is compliant.",
+     "a": "yes"
+    },
+    {
+     "t": "Device4 is compliant.",
+     "a": "yes"
+    }
+   ],
+   "manual": true
+  }
  },
  {
   "id": 331,
