@@ -21,6 +21,8 @@ for qid, m in HS.items():
     e.setdefault('context_images', [])
     if e['kind'] == 'multi':
         assert all(0 <= i < len(e['options']) for i in e['correct']), qid
+    elif e['kind'] == 'yesno':
+        assert all(s['a'] in ('yes', 'no') for s in e['statements']), qid
     else:
         assert all(0 <= b['correct'] < len(b['options']) for b in e['blanks']), qid
     inter[qid] = e

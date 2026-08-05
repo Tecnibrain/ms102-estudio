@@ -61,6 +61,19 @@ def find_marks(path):
         if w >= 55 and 15 <= h <= 70 and (len(xx) / max(w * h, 1)) < 0.55:
             marks.append((x0, y0, x1, y1, 'ring'))
 
+    # 1b) recuadro verde (otra forma de marcar la opción correcta)
+    grn = (g > 150) & (r < 140) & (b < 140) & (g - r > 50) & (g - b > 50)
+    if grn.sum() > 60:
+        lbl, n = ndimage.label(grn, structure=np.ones((3, 3)))
+        for i in range(1, n + 1):
+            yy, xx = np.where(lbl == i)
+            if len(xx) < 60:
+                continue
+            x0, x1, y0, y1 = xx.min(), xx.max(), yy.min(), yy.max()
+            w, h = x1 - x0, y1 - y0
+            if w >= 55 and 10 <= h <= 70 and (len(xx) / max(w * h, 1)) < 0.6:
+                marks.append((x0, y0, x1, y1, 'green'))
+
     # 2) resaltado amarillo
     yel = (r > 200) & (g > 190) & (b < 150)
     if yel.sum() > 120:

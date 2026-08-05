@@ -1254,7 +1254,26 @@
   "tema": "Aplicaciones y protección de endpoints",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "multi",
+   "options": [
+    "Antivirus",
+    "Disk encryption",
+    "Firewall",
+    "Endpoint detection and response",
+    "Attack surface reduction",
+    "Account protection",
+    "Device compliance",
+    "Conditional access"
+   ],
+   "correct": [
+    0,
+    5
+   ],
+   "manual": true,
+   "context_images": []
+  }
  },
  {
   "id": 38,
@@ -1906,15 +1925,15 @@
    ],
    "statements": [
     {
-     "t": "If User 1 joinsa Windows 10 device to Azure AD, the device will be enrolled in Intuneautomatically.",
+     "t": "If User 1 joinsa Windows 10 device to Azure AD, the device will be enrolled in Intune automatic ally.",
      "a": "no"
     },
     {
-     "t": "If User 2 joinsa Windows 10 device to Azure AD the device will be enrolled in Intuneautomatically.",
+     "t": "If User 2 joinsa Windows 10 device to Azure AD the device will be enrolled in Intune automatic ally.",
      "a": "yes"
     },
     {
-     "t": "If User 3 joinsa Windows 10 device to Azure AD, the device will be enrolled in Intuneautomatically.",
+     "t": "If User 3 joinsa Windows 10 device to Azure AD, the device will be enrolled in Intune automatic ally.",
      "a": "no"
     }
    ]
@@ -3245,7 +3264,29 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "multi",
+   "options": [
+    "Devices",
+    "Identities",
+    "Vulnerability management",
+    "Configuration management",
+    "Email & collaboration",
+    "Cloud apps",
+    "Reports",
+    "Audit",
+    "Health",
+    "Permissions & roles",
+    "Settings"
+   ],
+   "correct": [
+    0,
+    10
+   ],
+   "manual": true,
+   "context_images": []
+  }
  },
  {
   "id": 96,
@@ -3645,18 +3686,19 @@
    ],
    "statements": [
     {
-     "t": "User 1 can enroll Device 1 in Intune by using automatic enrollment.",
+     "t": "User1 can enroll Device1 in Intune by using automatic enrollment.",
      "a": "yes"
     },
     {
-     "t": "User 1 can enroll Device 2 in Intune by using automatic enrollment.",
+     "t": "User1 can enroll Device2 in Intune by using automatic enrollment.",
      "a": "no"
     },
     {
-     "t": "User 2 can enroll Device 1 in Intune by using automatic enrollment.",
+     "t": "User2 can enroll Device1 in Intune by using automatic enrollment.",
      "a": "no"
     }
-   ]
+   ],
+   "manual": true
   }
  },
  {
@@ -5279,15 +5321,15 @@
    ],
    "statements": [
     {
-     "t": "Device 1 can be upgraded to Windows 11 andactivated.",
+     "t": "Device 1 can be upgraded to Windows 11 and activated.",
      "a": "no"
     },
     {
-     "t": "Device 2 requiresadditionalhardwarebeforeitcanbeupgradedto Windows 11.",
+     "t": "Device 2 requires additional hardware beforeit can be upgraded to Windows 11.",
      "a": "no"
     },
     {
-     "t": "User 3 requiresanadditionallicensetoactivate Windows 11 on Device 3.",
+     "t": "User 3 requires an additional license to activate Windows 11 on Device 3.",
      "a": "yes"
     }
    ]
@@ -5526,7 +5568,32 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "blanks": [
+    {
+     "label": "Device1 (Windows 10)",
+     "options": [
+      "Every 15 minutes for one hour, and then every eight hours",
+      "Every five minutes for 15 minutes, then every 15 minutes for two hours, and then every eight hours",
+      "Every three minutes for 15 minutes, then every 15 minutes for two hours, and then every eight hours"
+     ],
+     "correct": 2
+    },
+    {
+     "label": "Device2 (iOS)",
+     "options": [
+      "Every 15 minutes for one hour, and then every eight hours",
+      "Every five minutes for 15 minutes, then every 15 minutes for two hours, and then every eight hours",
+      "Every three minutes for 15 minutes, then every 15 minutes for two hours, and then every eight hours"
+     ],
+     "correct": 0
+    }
+   ],
+   "manual": true,
+   "context_images": []
+  }
  },
  {
   "id": 159,
@@ -5540,7 +5607,28 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "yesno",
+   "context_images": [
+    "q159_ans_p128.png"
+   ],
+   "statements": [
+    {
+     "t": "Device1 is marked as compliant on August 4.",
+     "a": "no"
+    },
+    {
+     "t": "Device2 is marked as compliant on August 2.",
+     "a": "yes"
+    },
+    {
+     "t": "Device2 is retired on August 6.",
+     "a": "no"
+    }
+   ],
+   "manual": true
+  }
  },
  {
   "id": 160,
@@ -6360,7 +6448,36 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "blanks": [
+    {
+     "label": "Windows Hello for Business",
+     "options": [
+      "Device restrictions",
+      "Device restrictions (Windows 10 Team)",
+      "Endpoint protection",
+      "Identity protection",
+      "Microsoft Defender for Endpoint (Desktop devices running Windows 10 or later)"
+     ],
+     "correct": 3
+    },
+    {
+     "label": "Microsoft Defender SmartScreen",
+     "options": [
+      "Windows health monitoring",
+      "Device restrictions (Windows 10 Team)",
+      "Endpoint protection",
+      "Identity protection",
+      "Microsoft Defender for Endpoint (Desktop devices running Windows 10 or later)"
+     ],
+     "correct": 2
+    }
+   ],
+   "manual": true,
+   "context_images": []
+  }
  },
  {
   "id": 184,
@@ -6901,7 +7018,34 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "blanks": [
+    {
+     "label": "Users [answer choice]",
+     "options": [
+      "can access any URL",
+      "cannot view the address bar in Microsoft Edge",
+      "can only access URLs that include contoso.com",
+      "can only access URLs that start with https://contoso.com"
+     ],
+     "correct": 0
+    },
+    {
+     "label": "Windows 10 and later devices can have [answer choice]",
+     "options": [
+      "a single Microsoft Edge instance that has a single tab",
+      "a single Microsoft Edge instance that has multiple tabs",
+      "multiple Microsoft Edge instances that have multiple tabs",
+      "multiple Microsoft Edge instances that each has a single tab"
+     ],
+     "correct": 1
+    }
+   ],
+   "manual": true,
+   "context_images": []
+  }
  },
  {
   "id": 202,
@@ -7706,7 +7850,37 @@
   "tema": "Identidad y cumplimiento normativo",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "context_images": [
+    "q227_ans_p177.png"
+   ],
+   "blanks": [
+    {
+     "label": "Verificationcode",
+     "options": [
+      "Userlonly",
+      "User 3 and User 4 only",
+      "User 1, User 3, and User 4 only",
+      "User 2, User 3, and User 4 only",
+      "User 1, User 2, User 3, and User 4"
+     ],
+     "correct": 1
+    },
+    {
+     "label": "Text",
+     "options": [
+      "Userionly",
+      "User 3 and User 4 only",
+      "User 1, User 3, and User 4 only",
+      "User 2, User 3, and User 4 only",
+      "User 1, User 2, User 3, and User 4"
+     ],
+     "correct": 0
+    }
+   ]
+  }
  },
  {
   "id": 228,
@@ -7845,7 +8019,33 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "context_images": [],
+   "blanks": [
+    {
+     "label": "Windowsbuild",
+     "options": [
+      "Cpu",
+      "OSVersion",
+      "Systemlnfo",
+      "Windows Service"
+     ],
+     "correct": 1
+    },
+    {
+     "label": "Folder",
+     "options": [
+      "Disk Drive",
+      "Filelnfo",
+      "Memorylnfo",
+      "Systemlnfo"
+     ],
+     "correct": 1
+    }
+   ]
+  }
  },
  {
   "id": 233,
@@ -8021,7 +8221,23 @@
   "tema": "Identidad y cumplimiento normativo",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "context_images": [],
+   "blanks": [
+    {
+     "label": "Correctanswer: and",
+     "options": [
+      "device. device Category",
+      "device. deviceownership",
+      "device. device Trust Type",
+      "device. management Type"
+     ],
+     "correct": 2
+    }
+   ]
+  }
  },
  {
   "id": 239,
@@ -8220,7 +8436,36 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "context_images": [
+    "q245_ans_p188.png"
+   ],
+   "blanks": [
+    {
+     "label": "Deploy",
+     "options": [
+      "Intune Connector for Active Directory",
+      "Microsoft Entra application proxy",
+      "Microsoft Tunnel Gateway",
+      "The Microsoft Authenticator app"
+     ],
+     "correct": 2
+    },
+    {
+     "label": "Device types",
+     "options": [
+      "Windows 11 only",
+      "Windows 11 and Androidonly",
+      "Windows 11 and i OS only",
+      "Android and iosonly",
+      "Windows 11, Android, and io S"
+     ],
+     "correct": 3
+    }
+   ]
+  }
  },
  {
   "id": 246,
@@ -8263,7 +8508,31 @@
   "tema": "Administración de dispositivos con Intune",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "context_images": [],
+   "blanks": [
+    {
+     "label": "Configure",
+     "options": [
+      "An account protection profile",
+      "An endpoint detection and response (EDR) profile",
+      "An onboardingpackage for Microsoft Defender"
+     ],
+     "correct": 2
+    },
+    {
+     "label": "In portal",
+     "options": [
+      "Microsoft Defender portal",
+      "Microsoft Entra admin center",
+      "Microsoft Intune admin center"
+     ],
+     "correct": 2
+    }
+   ]
+  }
  },
  {
   "id": 248,
@@ -8819,7 +9088,7 @@
      "a": "yes"
     },
     {
-     "t": "User 1 can enroll Device 2 byusing automaticenrollment.",
+     "t": "User 1 can enroll Device 2 byusing automatic enrollment.",
      "a": "no"
     },
     {
@@ -9714,7 +9983,31 @@
   "tema": "Aplicaciones y protección de endpoints",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "context_images": [],
+   "blanks": [
+    {
+     "label": "Answer Area",
+     "options": [
+      "Monitored",
+      "Sanctioned",
+      "Unsanctioned"
+     ],
+     "correct": 2
+    },
+    {
+     "label": "",
+     "options": [
+      "Anonymization",
+      "Asset rule manaaement",
+      "Enforce app access"
+     ],
+     "correct": 2
+    }
+   ]
+  }
  },
  {
   "id": 296,
@@ -9791,7 +10084,32 @@
   "tema": "Identidad y cumplimiento normativo",
   "context_images": [],
   "options": [],
-  "correct": []
+  "correct": [],
+  "inter": {
+   "kind": "select",
+   "context_images": [],
+   "blanks": [
+    {
+     "label": "Se 5 Sku=",
+     "options": [
+      "Get-Mg Subscribed Sku",
+      "uondunsanchw Dag",
+      "Get-Mg Userlicense Detail",
+      "Get-Mg Userlicense Detail Count"
+     ],
+     "correct": 0
+    },
+    {
+     "label": "",
+     "options": [
+      "Set-Mg User License",
+      "Update-Mgsutscniber Sku",
+      "Update-Mg Subscription"
+     ],
+     "correct": 0
+    }
+   ]
+  }
  },
  {
   "id": 299,
@@ -11172,11 +11490,11 @@
    ],
    "statements": [
     {
-     "t": "If User 1 signsinto Device 1, Device 1 isupgraded to Windows 11 Enterpriseautomatically.",
+     "t": "If User 1 signsinto Device 1, Device 1 is upgraded to Windows 11 Enterprise automatic ally.",
      "a": "yes"
     },
     {
-     "t": "If User 2 signsinto Device 2, Device 2 isupgraded to Windows 11 Enterpriseautomatically",
+     "t": "If User 2 signsinto Device 2, Device 2 is upgraded to Windows 11 Enterprise automatic ally",
      "a": "yes"
     }
    ]
