@@ -1,29 +1,32 @@
 {
- "polls": {
-  "5161388810944119309": {
-   "q": 68,
-   "c": 3,
-   "tema": "Administración de dispositivos con Intune",
-   "x": null
-  },
-  "5161388810944119310": {
-   "q": 327,
-   "c": 1,
-   "tema": "Administración de dispositivos con Intune",
-   "x": null
-  },
-  "5161388810944119311": {
-   "q": 280,
-   "c": 0,
-   "tema": "Aplicaciones y protección de endpoints",
-   "x": null
-  }
- },
+ "polls": {},
  "stats": {
-  "total": 0,
-  "correct": 0,
-  "tema": {},
-  "q": {}
+  "total": 3,
+  "correct": 1,
+  "tema": {
+   "Administración de dispositivos con Intune": {
+    "n": 2,
+    "ok": 1
+   },
+   "Aplicaciones y protección de endpoints": {
+    "n": 1,
+    "ok": 0
+   }
+  },
+  "q": {
+   "68": {
+    "n": 1,
+    "ok": 1
+   },
+   "327": {
+    "n": 1,
+    "ok": 0
+   },
+   "280": {
+    "n": 1,
+    "ok": 0
+   }
+  }
  },
  "exam": null,
  "streak": {
