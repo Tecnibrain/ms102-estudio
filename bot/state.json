@@ -1,5 +1,30 @@
 {
- "polls": {},
+ "polls": {
+  "5161524476076097983": {
+   "q": 167,
+   "c": 2,
+   "tema": "Administración de dispositivos con Intune",
+   "x": null
+  },
+  "5161524476076097984": {
+   "q": 167,
+   "c": 2,
+   "tema": "Administración de dispositivos con Intune",
+   "x": null
+  },
+  "5161524476076097985": {
+   "q": 309,
+   "c": 3,
+   "tema": "Administración de dispositivos con Intune",
+   "x": null
+  },
+  "5161524476076097986": {
+   "q": 309,
+   "c": 1,
+   "tema": "Administración de dispositivos con Intune",
+   "x": null
+  }
+ },
  "stats": {
   "total": 3,
   "correct": 1,
@@ -30,8 +55,8 @@
  },
  "exam": null,
  "streak": {
-  "count": 1,
-  "last": "2026-08-05"
+  "count": 2,
+  "last": "2026-08-06"
  },
  "daily": 3
 }
