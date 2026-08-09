@@ -1,5 +1,36 @@
 {
- "polls": {},
+ "polls": {
+  "5170283701099036995": {
+   "q": 310,
+   "c": 2,
+   "tema": "Implementación de Windows",
+   "x": null
+  },
+  "5170283701099036996": {
+   "q": 310,
+   "c": 1,
+   "tema": "Implementación de Windows",
+   "x": null
+  },
+  "5170283701099036997": {
+   "q": 318,
+   "c": 2,
+   "tema": "Administración de dispositivos con Intune",
+   "x": null
+  },
+  "5170283701099036998": {
+   "q": 79,
+   "c": 2,
+   "tema": "Implementación de Windows",
+   "x": null
+  },
+  "5170283701099036999": {
+   "q": 79,
+   "c": 1,
+   "tema": "Implementación de Windows",
+   "x": null
+  }
+ },
  "stats": {
   "total": 19,
   "correct": 7,
@@ -62,8 +93,8 @@
  },
  "exam": null,
  "streak": {
-  "count": 4,
-  "last": "2026-08-08"
+  "count": 5,
+  "last": "2026-08-09"
  },
  "daily": 3
 }
