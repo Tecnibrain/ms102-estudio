@@ -71,73 +71,19 @@
    "c": 2,
    "tema": "Administración de dispositivos con Intune",
    "x": null
-  },
-  "5186336210087313796": {
-   "q": 226,
-   "c": 2,
-   "tema": "Aplicaciones y protección de endpoints",
-   "x": null
-  },
-  "5186336210087313797": {
-   "q": 122,
-   "c": 4,
-   "tema": "Administración de dispositivos con Intune",
-   "x": null
-  },
-  "5186336210087313798": {
-   "q": 122,
-   "c": 3,
-   "tema": "Administración de dispositivos con Intune",
-   "x": null
-  },
-  "5186336210087313799": {
-   "q": 315,
-   "c": 1,
-   "tema": "Aplicaciones y protección de endpoints",
-   "x": null
-  },
-  "5186336210087313800": {
-   "q": 315,
-   "c": 2,
-   "tema": "Aplicaciones y protección de endpoints",
-   "x": null
-  },
-  "4902187946947379351": {
-   "q": 262,
-   "c": 0,
-   "tema": "Administración de dispositivos con Intune",
-   "x": null
-  },
-  "4902187946947379352": {
-   "q": 277,
-   "c": 1,
-   "tema": "Administración de dispositivos con Intune",
-   "x": null
-  },
-  "4902187946947379353": {
-   "q": 277,
-   "c": 1,
-   "tema": "Administración de dispositivos con Intune",
-   "x": null
-  },
-  "4902187946947379354": {
-   "q": 188,
-   "c": 3,
-   "tema": "Aplicaciones y protección de endpoints",
-   "x": null
   }
  },
  "stats": {
-  "total": 38,
-  "correct": 16,
+  "total": 47,
+  "correct": 20,
   "tema": {
    "Administración de dispositivos con Intune": {
-    "n": 30,
-    "ok": 14
+    "n": 35,
+    "ok": 17
    },
    "Aplicaciones y protección de endpoints": {
-    "n": 1,
-    "ok": 0
+    "n": 5,
+    "ok": 1
    },
    "Implementación de Windows": {
     "n": 4,
@@ -228,6 +174,30 @@
    "138": {
     "n": 3,
     "ok": 2
+   },
+   "226": {
+    "n": 1,
+    "ok": 0
+   },
+   "122": {
+    "n": 2,
+    "ok": 1
+   },
+   "315": {
+    "n": 2,
+    "ok": 0
+   },
+   "262": {
+    "n": 1,
+    "ok": 1
+   },
+   "277": {
+    "n": 2,
+    "ok": 1
+   },
+   "188": {
+    "n": 1,
+    "ok": 1
    }
   }
  },
