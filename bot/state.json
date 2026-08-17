@@ -71,54 +71,18 @@
    "c": 2,
    "tema": "Administración de dispositivos con Intune",
    "x": null
-  },
-  "4906799702441197865": {
-   "q": 198,
-   "c": 0,
-   "tema": "Aplicaciones y protección de endpoints",
-   "x": null
-  },
-  "4906799702441197866": {
-   "q": 283,
-   "c": 1,
-   "tema": "Identidad y cumplimiento normativo",
-   "x": null
-  },
-  "4906799702441197867": {
-   "q": 283,
-   "c": 0,
-   "tema": "Identidad y cumplimiento normativo",
-   "x": null
-  },
-  "4906799702441197868": {
-   "q": 283,
-   "c": 1,
-   "tema": "Identidad y cumplimiento normativo",
-   "x": null
-  },
-  "4906799702441197869": {
-   "q": 289,
-   "c": 1,
-   "tema": "Administración de dispositivos con Intune",
-   "x": null
-  },
-  "4906799702441197870": {
-   "q": 289,
-   "c": 3,
-   "tema": "Administración de dispositivos con Intune",
-   "x": null
   }
  },
  "stats": {
-  "total": 50,
-  "correct": 22,
+  "total": 56,
+  "correct": 23,
   "tema": {
    "Administración de dispositivos con Intune": {
-    "n": 35,
+    "n": 37,
     "ok": 17
    },
    "Aplicaciones y protección de endpoints": {
-    "n": 6,
+    "n": 7,
     "ok": 1
    },
    "Implementación de Windows": {
@@ -126,8 +90,8 @@
     "ok": 2
    },
    "Identidad y cumplimiento normativo": {
-    "n": 3,
-    "ok": 2
+    "n": 6,
+    "ok": 3
    }
   },
   "q": {
@@ -246,6 +210,18 @@
    "338": {
     "n": 1,
     "ok": 1
+   },
+   "198": {
+    "n": 1,
+    "ok": 0
+   },
+   "283": {
+    "n": 3,
+    "ok": 1
+   },
+   "289": {
+    "n": 2,
+    "ok": 0
    }
   }
  },
