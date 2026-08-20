@@ -71,95 +71,23 @@
    "c": 2,
    "tema": "Administración de dispositivos con Intune",
    "x": null
-  },
-  "4909401138362581136": {
-   "q": 322,
-   "c": 1,
-   "tema": "Implementación de Windows",
-   "x": null
-  },
-  "4909401138362581137": {
-   "q": 90,
-   "c": 4,
-   "tema": "Administración de dispositivos con Intune",
-   "x": null
-  },
-  "4913755844358701331": {
-   "q": 286,
-   "c": 0,
-   "tema": "Administración de dispositivos con Intune",
-   "x": null
-  },
-  "4913755844358701332": {
-   "q": 278,
-   "c": 5,
-   "tema": "Administración de dispositivos con Intune",
-   "x": null
-  },
-  "4913755844358701333": {
-   "q": 278,
-   "c": 4,
-   "tema": "Administración de dispositivos con Intune",
-   "x": null
-  },
-  "4913755844358701334": {
-   "q": 278,
-   "c": 4,
-   "tema": "Administración de dispositivos con Intune",
-   "x": null
-  },
-  "4913755844358701335": {
-   "q": 295,
-   "c": 2,
-   "tema": "Aplicaciones y protección de endpoints",
-   "x": null
-  },
-  "4913755844358701336": {
-   "q": 295,
-   "c": 2,
-   "tema": "Aplicaciones y protección de endpoints",
-   "x": null
-  },
-  "4916007644172386453": {
-   "q": 274,
-   "c": 1,
-   "tema": "Administración de dispositivos con Intune",
-   "x": null
-  },
-  "4916007644172386454": {
-   "q": 240,
-   "c": 0,
-   "tema": "Administración de dispositivos con Intune",
-   "x": null
-  },
-  "4916007644172386455": {
-   "q": 240,
-   "c": 1,
-   "tema": "Administración de dispositivos con Intune",
-   "x": null
-  },
-  "4916007644172386456": {
-   "q": 240,
-   "c": 1,
-   "tema": "Administración de dispositivos con Intune",
-   "x": null
   }
  },
  "stats": {
-  "total": 58,
-  "correct": 23,
+  "total": 70,
+  "correct": 29,
   "tema": {
    "Administración de dispositivos con Intune": {
-    "n": 37,
-    "ok": 17
+    "n": 46,
+    "ok": 20
    },
    "Aplicaciones y protección de endpoints": {
-    "n": 7,
-    "ok": 1
+    "n": 9,
+    "ok": 3
    },
    "Implementación de Windows": {
-    "n": 8,
-    "ok": 2
+    "n": 9,
+    "ok": 3
    },
    "Identidad y cumplimiento normativo": {
     "n": 6,
@@ -298,6 +226,34 @@
    "45": {
     "n": 2,
     "ok": 0
+   },
+   "322": {
+    "n": 1,
+    "ok": 1
+   },
+   "90": {
+    "n": 1,
+    "ok": 1
+   },
+   "286": {
+    "n": 1,
+    "ok": 0
+   },
+   "278": {
+    "n": 3,
+    "ok": 0
+   },
+   "295": {
+    "n": 2,
+    "ok": 2
+   },
+   "274": {
+    "n": 1,
+    "ok": 0
+   },
+   "240": {
+    "n": 3,
+    "ok": 2
    }
   }
  },
