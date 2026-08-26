@@ -149,6 +149,30 @@
    "c": 3,
    "tema": "Implementación de Windows",
    "x": null
+  },
+  "4933990358708125977": {
+   "q": 356,
+   "c": 1,
+   "tema": "Administración de dispositivos con Intune",
+   "x": null
+  },
+  "4933990358708125978": {
+   "q": 292,
+   "c": 2,
+   "tema": "Identidad y cumplimiento normativo",
+   "x": null
+  },
+  "4933990358708125979": {
+   "q": 292,
+   "c": 0,
+   "tema": "Identidad y cumplimiento normativo",
+   "x": null
+  },
+  "4933990358708125980": {
+   "q": 359,
+   "c": 3,
+   "tema": "Aplicaciones y protección de endpoints",
+   "x": null
   }
  },
  "stats": {
@@ -345,8 +369,8 @@
  },
  "exam": null,
  "streak": {
-  "count": 21,
-  "last": "2026-08-25"
+  "count": 22,
+  "last": "2026-08-26"
  },
  "daily": 3
 }
