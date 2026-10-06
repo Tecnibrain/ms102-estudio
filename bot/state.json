@@ -1145,6 +1145,24 @@
    "c": 1,
    "tema": "Aplicaciones y protección de endpoints",
    "x": null
+  },
+  "5055617682137678236": {
+   "q": 242,
+   "c": 0,
+   "tema": "Administración de dispositivos con Intune",
+   "x": null
+  },
+  "5055617682137678237": {
+   "q": 67,
+   "c": 1,
+   "tema": "Administración de dispositivos con Intune",
+   "x": null
+  },
+  "5055617682137678238": {
+   "q": 353,
+   "c": 0,
+   "tema": "Aplicaciones y protección de endpoints",
+   "x": null
   }
  },
  "stats": {
@@ -1341,8 +1359,8 @@
  },
  "exam": null,
  "streak": {
-  "count": 11,
-  "last": "2026-10-05"
+  "count": 12,
+  "last": "2026-10-06"
  },
  "daily": 3
 }
