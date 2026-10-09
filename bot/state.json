@@ -1217,6 +1217,36 @@
    "c": 2,
    "tema": "Aplicaciones y protección de endpoints",
    "x": null
+  },
+  "5066778034397249955": {
+   "q": 136,
+   "c": 3,
+   "tema": "Aplicaciones y protección de endpoints",
+   "x": null
+  },
+  "5066778034397249956": {
+   "q": 169,
+   "c": 3,
+   "tema": "Implementación de Windows",
+   "x": null
+  },
+  "5066778034397249957": {
+   "q": 169,
+   "c": 0,
+   "tema": "Implementación de Windows",
+   "x": null
+  },
+  "5066778034397249958": {
+   "q": 169,
+   "c": 1,
+   "tema": "Implementación de Windows",
+   "x": null
+  },
+  "5066778034397249959": {
+   "q": 140,
+   "c": 0,
+   "tema": "Administración de dispositivos con Intune",
+   "x": null
   }
  },
  "stats": {
@@ -1413,8 +1443,8 @@
  },
  "exam": null,
  "streak": {
-  "count": 14,
-  "last": "2026-10-08"
+  "count": 15,
+  "last": "2026-10-09"
  },
  "daily": 3
 }
