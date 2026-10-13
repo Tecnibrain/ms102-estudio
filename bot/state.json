@@ -1319,6 +1319,42 @@
    "c": 0,
    "tema": "Implementación de Windows",
    "x": null
+  },
+  "5077994912721404245": {
+   "q": 250,
+   "c": 4,
+   "tema": "Identidad y cumplimiento normativo",
+   "x": null
+  },
+  "5077994912721404246": {
+   "q": 250,
+   "c": 1,
+   "tema": "Identidad y cumplimiento normativo",
+   "x": null
+  },
+  "5077994912721404247": {
+   "q": 80,
+   "c": 1,
+   "tema": "Implementación de Windows",
+   "x": null
+  },
+  "5077994912721404248": {
+   "q": 267,
+   "c": 1,
+   "tema": "Administración de dispositivos con Intune",
+   "x": null
+  },
+  "5077994912721404249": {
+   "q": 267,
+   "c": 1,
+   "tema": "Administración de dispositivos con Intune",
+   "x": null
+  },
+  "5077994912721404250": {
+   "q": 267,
+   "c": 0,
+   "tema": "Administración de dispositivos con Intune",
+   "x": null
   }
  },
  "stats": {
@@ -1515,8 +1551,8 @@
  },
  "exam": null,
  "streak": {
-  "count": 18,
-  "last": "2026-10-12"
+  "count": 19,
+  "last": "2026-10-13"
  },
  "daily": 3
 }
