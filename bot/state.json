@@ -1469,6 +1469,36 @@
    "c": 1,
    "tema": "Identidad y cumplimiento normativo",
    "x": null
+  },
+  "5091702021673714081": {
+   "q": 150,
+   "c": 1,
+   "tema": "Administración de dispositivos con Intune",
+   "x": null
+  },
+  "5091702021673714082": {
+   "q": 150,
+   "c": 1,
+   "tema": "Administración de dispositivos con Intune",
+   "x": null
+  },
+  "5091702021673714083": {
+   "q": 150,
+   "c": 0,
+   "tema": "Administración de dispositivos con Intune",
+   "x": null
+  },
+  "5091702021673714084": {
+   "q": 213,
+   "c": 2,
+   "tema": "Administración de dispositivos con Intune",
+   "x": null
+  },
+  "5091702021673714085": {
+   "q": 135,
+   "c": 0,
+   "tema": "Administración de dispositivos con Intune",
+   "x": null
   }
  },
  "stats": {
@@ -1665,8 +1695,8 @@
  },
  "exam": null,
  "streak": {
-  "count": 23,
-  "last": "2026-10-17"
+  "count": 24,
+  "last": "2026-10-18"
  },
  "daily": 3
 }
