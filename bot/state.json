@@ -1553,6 +1553,30 @@
    "c": 2,
    "tema": "Implementación de Windows",
    "x": null
+  },
+  "5100645427779207420": {
+   "q": 358,
+   "c": 0,
+   "tema": "Administración de dispositivos con Intune",
+   "x": null
+  },
+  "5100645427779207421": {
+   "q": 81,
+   "c": 0,
+   "tema": "Aplicaciones y protección de endpoints",
+   "x": null
+  },
+  "5100645427779207422": {
+   "q": 81,
+   "c": 1,
+   "tema": "Aplicaciones y protección de endpoints",
+   "x": null
+  },
+  "5100645427779207423": {
+   "q": 44,
+   "c": 1,
+   "tema": "Administración de dispositivos con Intune",
+   "x": null
   }
  },
  "stats": {
@@ -1749,8 +1773,8 @@
  },
  "exam": null,
  "streak": {
-  "count": 26,
-  "last": "2026-10-20"
+  "count": 27,
+  "last": "2026-10-21"
  },
  "daily": 3
 }
