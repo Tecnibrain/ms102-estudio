@@ -1967,6 +1967,18 @@
    "c": 0,
    "tema": "Administración de dispositivos con Intune",
    "x": null
+  },
+  "5141326821136007628": {
+   "q": 156,
+   "c": 2,
+   "tema": "Administración de dispositivos con Intune",
+   "x": null
+  },
+  "5141326821136007629": {
+   "q": 36,
+   "c": 0,
+   "tema": "Administración de dispositivos con Intune",
+   "x": null
   }
  },
  "stats": {
@@ -2163,8 +2175,8 @@
  },
  "exam": null,
  "streak": {
-  "count": 40,
-  "last": "2026-11-03"
+  "count": 41,
+  "last": "2026-11-04"
  },
  "daily": 3
 }
