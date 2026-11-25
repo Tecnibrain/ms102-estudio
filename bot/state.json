@@ -1619,6 +1619,36 @@
    "c": 3,
    "tema": "Administración de dispositivos con Intune",
    "x": null
+  },
+  "4915984399809380746": {
+   "q": 74,
+   "c": 2,
+   "tema": "Implementación de Windows",
+   "x": null
+  },
+  "4915984399809380747": {
+   "q": 74,
+   "c": 3,
+   "tema": "Implementación de Windows",
+   "x": null
+  },
+  "4915984399809380748": {
+   "q": 74,
+   "c": 4,
+   "tema": "Implementación de Windows",
+   "x": null
+  },
+  "4915984399809380749": {
+   "q": 352,
+   "c": 3,
+   "tema": "Administración de dispositivos con Intune",
+   "x": null
+  },
+  "4915984399809380750": {
+   "q": 34,
+   "c": 3,
+   "tema": "Administración de dispositivos con Intune",
+   "x": null
   }
  },
  "stats": {
@@ -1815,8 +1845,8 @@
  },
  "exam": null,
  "streak": {
-  "count": 1,
-  "last": "2026-11-24"
+  "count": 2,
+  "last": "2026-11-25"
  },
  "daily": 3
 }
